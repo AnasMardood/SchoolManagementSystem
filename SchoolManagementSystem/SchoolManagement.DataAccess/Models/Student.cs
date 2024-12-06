@@ -22,10 +22,12 @@ namespace SchoolManagement.DataAccess.Models
         public string Status { get; set; }
         public byte ProfilePicture { get; set; }
         public string Nationality { get; set; }
+
         public int ClassID {  get; set; }
         public Classes Class {  get; set; }
-        public ICollection<StudentSemester>? StudentSemesters { get; set; } 
-        public ICollection<Materials>? Materials { get; set; }
+
+        public ICollection<StudentSemester>? StudentSemesters { get; set; }
+        public ICollection<StudentMaterial>? StudentMaterials { get; set; }
         public ICollection<Attendance>? Attendances { get; set; }
         public ICollection<StudentMark>? StudentMark { get; set; }
     }

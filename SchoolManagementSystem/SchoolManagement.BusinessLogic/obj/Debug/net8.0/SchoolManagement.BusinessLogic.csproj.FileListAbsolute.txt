@@ -1,0 +1,12 @@
+C:\Users\ENES\Desktop\Okul_öğrenci_yönetim_Sistemi\SchoolManagementSystem\SchoolManagementSystem\SchoolManagement.BusinessLogic\bin\Debug\net8.0\SchoolManagement.BusinessLogic.deps.json
+C:\Users\ENES\Desktop\Okul_öğrenci_yönetim_Sistemi\SchoolManagementSystem\SchoolManagementSystem\SchoolManagement.BusinessLogic\bin\Debug\net8.0\SchoolManagement.BusinessLogic.dll
+C:\Users\ENES\Desktop\Okul_öğrenci_yönetim_Sistemi\SchoolManagementSystem\SchoolManagementSystem\SchoolManagement.BusinessLogic\bin\Debug\net8.0\SchoolManagement.BusinessLogic.pdb
+C:\Users\ENES\Desktop\Okul_öğrenci_yönetim_Sistemi\SchoolManagementSystem\SchoolManagementSystem\SchoolManagement.BusinessLogic\obj\Debug\net8.0\SchoolManagement.BusinessLogic.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ENES\Desktop\Okul_öğrenci_yönetim_Sistemi\SchoolManagementSystem\SchoolManagementSystem\SchoolManagement.BusinessLogic\obj\Debug\net8.0\SchoolManagement.BusinessLogic.AssemblyInfoInputs.cache
+C:\Users\ENES\Desktop\Okul_öğrenci_yönetim_Sistemi\SchoolManagementSystem\SchoolManagementSystem\SchoolManagement.BusinessLogic\obj\Debug\net8.0\SchoolManagement.BusinessLogic.AssemblyInfo.cs
+C:\Users\ENES\Desktop\Okul_öğrenci_yönetim_Sistemi\SchoolManagementSystem\SchoolManagementSystem\SchoolManagement.BusinessLogic\obj\Debug\net8.0\SchoolManagement.BusinessLogic.csproj.CoreCompileInputs.cache
+C:\Users\ENES\Desktop\Okul_öğrenci_yönetim_Sistemi\SchoolManagementSystem\SchoolManagementSystem\SchoolManagement.BusinessLogic\obj\Debug\net8.0\SchoolManagement.BusinessLogic.sourcelink.json
+C:\Users\ENES\Desktop\Okul_öğrenci_yönetim_Sistemi\SchoolManagementSystem\SchoolManagementSystem\SchoolManagement.BusinessLogic\obj\Debug\net8.0\SchoolManagement.BusinessLogic.dll
+C:\Users\ENES\Desktop\Okul_öğrenci_yönetim_Sistemi\SchoolManagementSystem\SchoolManagementSystem\SchoolManagement.BusinessLogic\obj\Debug\net8.0\refint\SchoolManagement.BusinessLogic.dll
+C:\Users\ENES\Desktop\Okul_öğrenci_yönetim_Sistemi\SchoolManagementSystem\SchoolManagementSystem\SchoolManagement.BusinessLogic\obj\Debug\net8.0\SchoolManagement.BusinessLogic.pdb
+C:\Users\ENES\Desktop\Okul_öğrenci_yönetim_Sistemi\SchoolManagementSystem\SchoolManagementSystem\SchoolManagement.BusinessLogic\obj\Debug\net8.0\ref\SchoolManagement.BusinessLogic.dll

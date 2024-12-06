@@ -1,0 +1,13 @@
+C:\Users\ENES\Desktop\Okul_öğrenci_yönetim_Sistemi\SchoolManagementSystem\SchoolManagementSystem\SchoolManagement.DataAccess\bin\Debug\net8.0\SchoolManagement.DataAccess.deps.json
+C:\Users\ENES\Desktop\Okul_öğrenci_yönetim_Sistemi\SchoolManagementSystem\SchoolManagementSystem\SchoolManagement.DataAccess\bin\Debug\net8.0\SchoolManagement.DataAccess.dll
+C:\Users\ENES\Desktop\Okul_öğrenci_yönetim_Sistemi\SchoolManagementSystem\SchoolManagementSystem\SchoolManagement.DataAccess\bin\Debug\net8.0\SchoolManagement.DataAccess.pdb
+C:\Users\ENES\Desktop\Okul_öğrenci_yönetim_Sistemi\SchoolManagementSystem\SchoolManagementSystem\SchoolManagement.DataAccess\obj\Debug\net8.0\SchoolManagement.DataAccess.csproj.AssemblyReference.cache
+C:\Users\ENES\Desktop\Okul_öğrenci_yönetim_Sistemi\SchoolManagementSystem\SchoolManagementSystem\SchoolManagement.DataAccess\obj\Debug\net8.0\SchoolManagement.DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ENES\Desktop\Okul_öğrenci_yönetim_Sistemi\SchoolManagementSystem\SchoolManagementSystem\SchoolManagement.DataAccess\obj\Debug\net8.0\SchoolManagement.DataAccess.AssemblyInfoInputs.cache
+C:\Users\ENES\Desktop\Okul_öğrenci_yönetim_Sistemi\SchoolManagementSystem\SchoolManagementSystem\SchoolManagement.DataAccess\obj\Debug\net8.0\SchoolManagement.DataAccess.AssemblyInfo.cs
+C:\Users\ENES\Desktop\Okul_öğrenci_yönetim_Sistemi\SchoolManagementSystem\SchoolManagementSystem\SchoolManagement.DataAccess\obj\Debug\net8.0\SchoolManagement.DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\ENES\Desktop\Okul_öğrenci_yönetim_Sistemi\SchoolManagementSystem\SchoolManagementSystem\SchoolManagement.DataAccess\obj\Debug\net8.0\SchoolManagement.DataAccess.sourcelink.json
+C:\Users\ENES\Desktop\Okul_öğrenci_yönetim_Sistemi\SchoolManagementSystem\SchoolManagementSystem\SchoolManagement.DataAccess\obj\Debug\net8.0\SchoolManagement.DataAccess.dll
+C:\Users\ENES\Desktop\Okul_öğrenci_yönetim_Sistemi\SchoolManagementSystem\SchoolManagementSystem\SchoolManagement.DataAccess\obj\Debug\net8.0\refint\SchoolManagement.DataAccess.dll
+C:\Users\ENES\Desktop\Okul_öğrenci_yönetim_Sistemi\SchoolManagementSystem\SchoolManagementSystem\SchoolManagement.DataAccess\obj\Debug\net8.0\SchoolManagement.DataAccess.pdb
+C:\Users\ENES\Desktop\Okul_öğrenci_yönetim_Sistemi\SchoolManagementSystem\SchoolManagementSystem\SchoolManagement.DataAccess\obj\Debug\net8.0\ref\SchoolManagement.DataAccess.dll
