@@ -2,6 +2,7 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using SchoolManagement.DataAccess.Data;
 using SchoolManagement.DataAccess.Models;
+using SchoolManagement.DataAccess.Repositories;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -11,9 +12,17 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlServer(connectionString));
 builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 
-builder.Services.AddDefaultIdentity<ApplicationUser>(options => options.SignIn.RequireConfirmedAccount = true)
+builder.Services.AddIdentity<ApplicationUser,IdentityRole>(options => options.SignIn.RequireConfirmedAccount = true)
     .AddEntityFrameworkStores<ApplicationDbContext>();
 builder.Services.AddControllersWithViews();
+builder.Services.AddScoped<IStudentRepository, StudentRepository>();
+builder.Services.AddScoped<IMaterialsRepository,MaterialsRepository>();
+builder.Services.AddScoped<IAcademicCalendarRepository,AcademicCalendarRepository>();
+builder.Services.AddScoped<IClassesRepository,ClassesRepository>();
+builder.Services.AddScoped<IAttendanceRepository, AttendanceRepository>();
+builder.Services.AddScoped<IAdvisorRepository,AdvisorRepository>();
+builder.Services.AddScoped<ISemesterRepository,SemesterRepository>();
+
 
 var app = builder.Build();
 

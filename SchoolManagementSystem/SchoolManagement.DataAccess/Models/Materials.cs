@@ -17,7 +17,7 @@
             public Advisor Advisor { get; set; }     
             public int ClassID { get; set; }
             public Classes Class { get; set; }
-
+            
            public ICollection<StudentMaterial>? StudentMaterials { get; set; }
            public ICollection<Attendance>? Attendances { get; set; }
            public ICollection<StudentMark>? StudentMarks { get; set; }
