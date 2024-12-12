@@ -17,7 +17,6 @@ namespace SchoolManagement.DataAccess.Repositories
     {
     }
 
-        //Get student data with details
         public async Task<Student> GetStudentWithDetailsAsync(int studentId)
     {
         return await _dbSet
@@ -26,7 +25,6 @@ namespace SchoolManagement.DataAccess.Repositories
             .FirstOrDefaultAsync(s => s.StudentID == studentId);
     }
 
-    // جلب جميع الطلاب حسب الفصل الدراسي
     public async Task<IEnumerable<Student>> GetStudentByClassAsync(int classId)
     {
         return await _dbSet
@@ -34,6 +32,10 @@ namespace SchoolManagement.DataAccess.Repositories
             .ToListAsync();
     }
 
+        public async Task<IEnumerable<Student>> GetAllStudent()
+        {
+            return await _dbSet.ToListAsync();
+        }
     }
     }
 

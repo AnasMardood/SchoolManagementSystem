@@ -3062,11 +3062,25 @@
           }
         }
       },
+      "SchoolManagement.BusinessLogic/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "SchoolManagement.DataAccess": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/SchoolManagement.BusinessLogic.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/SchoolManagement.BusinessLogic.dll": {}
+        }
+      },
       "SchoolManagement.DataAccess/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "8.0.10",
+          "Microsoft.AspNetCore.Identity.UI": "8.0.11",
           "Microsoft.EntityFrameworkCore.SqlServer": "8.0.11"
         },
         "compile": {
@@ -8359,6 +8373,11 @@
         "useSharedDesignerContext.txt"
       ]
     },
+    "SchoolManagement.BusinessLogic/1.0.0": {
+      "type": "project",
+      "path": "../SchoolManagement.BusinessLogic/SchoolManagement.BusinessLogic.csproj",
+      "msbuildProject": "../SchoolManagement.BusinessLogic/SchoolManagement.BusinessLogic.csproj"
+    },
     "SchoolManagement.DataAccess/1.0.0": {
       "type": "project",
       "path": "../SchoolManagement.DataAccess/SchoolManagement.DataAccess.csproj",
@@ -8374,6 +8393,7 @@
       "Microsoft.EntityFrameworkCore.Sqlite >= 8.0.11",
       "Microsoft.EntityFrameworkCore.Tools >= 8.0.11",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 8.0.7",
+      "SchoolManagement.BusinessLogic >= 1.0.0",
       "SchoolManagement.DataAccess >= 1.0.0"
     ]
   },
@@ -8404,6 +8424,9 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
+            "C:\\Users\\ENES\\Desktop\\Okul_öğrenci_yönetim_Sistemi\\SchoolManagementSystem\\SchoolManagementSystem\\SchoolManagement.BusinessLogic\\SchoolManagement.BusinessLogic.csproj": {
+              "projectPath": "C:\\Users\\ENES\\Desktop\\Okul_öğrenci_yönetim_Sistemi\\SchoolManagementSystem\\SchoolManagementSystem\\SchoolManagement.BusinessLogic\\SchoolManagement.BusinessLogic.csproj"
+            },
             "C:\\Users\\ENES\\Desktop\\Okul_öğrenci_yönetim_Sistemi\\SchoolManagementSystem\\SchoolManagementSystem\\SchoolManagement.DataAccess\\SchoolManagement.DataAccess.csproj": {
               "projectPath": "C:\\Users\\ENES\\Desktop\\Okul_öğrenci_yönetim_Sistemi\\SchoolManagementSystem\\SchoolManagementSystem\\SchoolManagement.DataAccess\\SchoolManagement.DataAccess.csproj"
             }

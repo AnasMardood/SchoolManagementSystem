@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace SchoolManagement.DataAccess.Repositories
 {
-    internal interface IUnitOfWork : IDisposable
+    public interface IUnitOfWork : IDisposable
         {
         IBaseRepository<TEntity> BaseRepository<TEntity>() where TEntity : class;
         Task SaveChangesAsync();

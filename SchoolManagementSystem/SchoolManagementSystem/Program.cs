@@ -1,8 +1,12 @@
 using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity.UI.Services;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection.Extensions;
+using SchoolManagement.BusinessLogic.Services;
 using SchoolManagement.DataAccess.Data;
 using SchoolManagement.DataAccess.Models;
 using SchoolManagement.DataAccess.Repositories;
+using SchoolManagement.DataAccess.Utilities;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -15,6 +19,8 @@ builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 builder.Services.AddIdentity<ApplicationUser,IdentityRole>(options => options.SignIn.RequireConfirmedAccount = true)
     .AddEntityFrameworkStores<ApplicationDbContext>();
 builder.Services.AddControllersWithViews();
+builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
+builder.Services.AddScoped<IEmailSender, EmailSender>();
 builder.Services.AddScoped<IStudentRepository, StudentRepository>();
 builder.Services.AddScoped<IMaterialsRepository,MaterialsRepository>();
 builder.Services.AddScoped<IAcademicCalendarRepository,AcademicCalendarRepository>();
@@ -22,6 +28,11 @@ builder.Services.AddScoped<IClassesRepository,ClassesRepository>();
 builder.Services.AddScoped<IAttendanceRepository, AttendanceRepository>();
 builder.Services.AddScoped<IAdvisorRepository,AdvisorRepository>();
 builder.Services.AddScoped<ISemesterRepository,SemesterRepository>();
+
+builder.Services.AddScoped<IStudentService, StudentService>();
+
+builder.Services.AddControllersWithViews();
+builder.Services.AddRazorPages();
 
 
 var app = builder.Build();

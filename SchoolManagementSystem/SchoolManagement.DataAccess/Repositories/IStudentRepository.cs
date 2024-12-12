@@ -9,6 +9,7 @@ namespace SchoolManagement.DataAccess.Repositories
 {
     public interface IStudentRepository : IBaseRepository<Student>
     {
+        Task<IEnumerable<Student>> GetAllStudent();
         Task<Student> GetStudentWithDetailsAsync(int StudentId);
         Task<IEnumerable<Student>> GetStudentByClassAsync(int ClassId);
 
