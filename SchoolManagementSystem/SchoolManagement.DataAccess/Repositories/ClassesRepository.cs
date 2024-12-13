@@ -16,6 +16,12 @@ namespace SchoolManagement.DataAccess.Repositories
     : base(context, logger)
         {
         }
+
+        public async Task<IEnumerable<Classes>> GetAllClasses()
+        {
+            return await _dbSet.ToListAsync();
+        }
+
         public async Task<IEnumerable<Classes>> GetClassesWithStudentAsync()
         {
             return await _dbSet

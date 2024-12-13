@@ -1,6 +1,7 @@
 ﻿using Microsoft.Extensions.Logging;
 using SchoolManagement.BusinessLogic.Dto;
 using SchoolManagement.BusinessLogic.Mappers;
+using SchoolManagement.DataAccess.Models;
 using SchoolManagement.DataAccess.Repositories;
 using System;
 using System.Collections.Generic;
@@ -21,6 +22,20 @@ namespace SchoolManagement.BusinessLogic.Services
             _logger = logger;
         }
 
+        public async Task<IEnumerable<ClassDTO>> GetAllClasses()
+        {
+            try
+            {
+                var classes = await _repository.GetAllClasses();
+                return classes.Select(ClassMapper.Map).ToList();
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "An error occurred while fetching classes.");
+                throw;
+            }
+        }
+
         public async Task<IEnumerable<ClassDTO>> GetClassesWithStudentsAsync()
         {
             try
@@ -38,5 +53,7 @@ namespace SchoolManagement.BusinessLogic.Services
     public interface IClassesService
     {
         Task<IEnumerable<ClassDTO>> GetClassesWithStudentsAsync();
+        Task<IEnumerable<ClassDTO>> GetAllClasses();
+
     }
 }

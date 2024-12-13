@@ -35,7 +35,7 @@ namespace SchoolManagement.BusinessLogic.Mappers
         public static List<StudentDTO> Map(IEnumerable<Student> students)
         {
             return students.Select(Map).ToList();
-        }       
+        }
         public static Student Map(StudentDTO student)
         {
             return new Student
@@ -55,6 +55,7 @@ namespace SchoolManagement.BusinessLogic.Mappers
                 ProfilePicture = student.ProfilePicture,
                 Nationality = student.Nationality,
                 ClassID = student.ClassID
+
             };
         }
 

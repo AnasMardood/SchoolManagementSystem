@@ -1,4 +1,4 @@
-﻿@model IEnumerable<SchoolManagement.DataAccess.Models.Student>
+﻿@model IEnumerable<SchoolManagement.BusinessLogic.Dto.StudentDTO>
 
 @{
     ViewData["Title"] = "Index";
@@ -52,7 +52,7 @@
                 @Html.DisplayNameFor(model => model.Nationality)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Class)
+                @Html.DisplayNameFor(model => model.ClassID)
             </th>
             <th></th>
         </tr>
@@ -100,7 +100,7 @@
                 @Html.DisplayFor(modelItem => item.Nationality)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Class.ClassName)
+                @Html.DisplayFor(modelItem => item.ClassID)
             </td>
             <td>
                 <a asp-action="Edit" asp-route-id="@item.StudentID">Edit</a> |

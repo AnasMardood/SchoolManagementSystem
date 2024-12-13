@@ -26,8 +26,24 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\ENES\Desktop\Okul_öğrenci_yönetim_Sistemi\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/ENES/Desktop/Okul_öğrenci_yönetim_Sistemi/SchoolManagementSystem/SchoolManagementSystem/SchoolManagementSystem/Areas/Admin/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ENES/Desktop/Okul_öğrenci_yönetim_Sistemi/SchoolManagementSystem/SchoolManagementSystem/SchoolManagementSystem/Areas/Admin/Views/Student/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU3R1ZGVudFxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/ENES/Desktop/Okul_öğrenci_yönetim_Sistemi/SchoolManagementSystem/SchoolManagementSystem/SchoolManagementSystem/Areas/Admin/Views/Student/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU3R1ZGVudFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ENES/Desktop/Okul_öğrenci_yönetim_Sistemi/SchoolManagementSystem/SchoolManagementSystem/SchoolManagementSystem/Areas/Admin/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ENES/Desktop/Okul_öğrenci_yönetim_Sistemi/SchoolManagementSystem/SchoolManagementSystem/SchoolManagementSystem/Areas/Admin/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/ENES/Desktop/Okul_öğrenci_yönetim_Sistemi/SchoolManagementSystem/SchoolManagementSystem/SchoolManagementSystem/Areas/Identity/Pages/Account/AccessDenied.cshtml]

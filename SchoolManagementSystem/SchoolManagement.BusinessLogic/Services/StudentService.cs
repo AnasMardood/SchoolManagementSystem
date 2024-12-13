@@ -68,9 +68,8 @@ namespace SchoolManagement.BusinessLogic.Services
         {
             try
             {
-                var Student = StudentMapper.Map(student);
-
-                _repository.Create(Student);
+                var _student = StudentMapper.Map(student);
+               _repository.Create(_student);
                 
                 _repository.SaveChanges();
             }
