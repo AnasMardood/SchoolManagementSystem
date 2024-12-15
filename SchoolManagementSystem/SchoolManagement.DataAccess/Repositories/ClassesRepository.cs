@@ -12,8 +12,9 @@ namespace SchoolManagement.DataAccess.Repositories
 {
     public class ClassesRepository : BaseRepository<Classes> , IClassesRepository
     {
+
         public ClassesRepository(ApplicationDbContext context, ILogger<ClassesRepository> logger)
-    : base(context, logger)
+        : base(context, logger)
         {
         }
 

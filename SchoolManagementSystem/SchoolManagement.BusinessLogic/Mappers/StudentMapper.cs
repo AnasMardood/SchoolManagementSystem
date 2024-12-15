@@ -28,7 +28,8 @@ namespace SchoolManagement.BusinessLogic.Mappers
                 Status = student.Status,
                 ProfilePicture = student.ProfilePicture,
                 Nationality = student.Nationality,
-                ClassID = student.ClassID
+                ClassID = student.ClassID,
+                
             };
         }
 

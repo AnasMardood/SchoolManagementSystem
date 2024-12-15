@@ -34,7 +34,9 @@ namespace SchoolManagement.DataAccess.Repositories
 
         public async Task<IEnumerable<Student>> GetAllStudent()
         {
-            return await _dbSet.ToListAsync();
+            return await _dbSet
+                  .Include(s => s.Class)
+                  .ToListAsync();
         }
     }
     }

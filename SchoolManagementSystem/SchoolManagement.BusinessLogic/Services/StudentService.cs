@@ -70,14 +70,56 @@ namespace SchoolManagement.BusinessLogic.Services
             {
                 var _student = StudentMapper.Map(student);
                _repository.Create(_student);
-                
-                _repository.SaveChanges();
+
+                await _repository.SaveChangesAsync();
             }
             catch (Exception ex)
             {
                 _logger.LogError(ex, $"Error occurred while create student");
                 throw;
             }
+
+        }
+
+        public async Task DeletStudentAsync(int studentId)
+        {
+            try
+            {
+
+                var student = _repository.GetAllStudent();
+                foreach(var Dstudent in await student)
+                {
+                    if(Dstudent.StudentID == studentId) { _repository.Delete(Dstudent); }
+                }
+                await _repository.SaveChangesAsync();
+
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, $"Error occurred while delete student");
+                throw;
+            }
+        }
+
+        public async Task EditStudentAsync(StudentDTO studentDTO)
+        {
+            try
+            {
+                var student =  StudentMapper.Map(studentDTO);
+                if (student == null)
+                {
+                    throw new Exception("Student not found");
+                }
+          
+                      _repository.Update(student);
+                await _repository.SaveChangesAsync();
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "Error occurred while updating student");
+                throw;
+            }
+
         }
     }
     public interface IStudentService
@@ -86,5 +128,7 @@ namespace SchoolManagement.BusinessLogic.Services
         Task CreateStudentAsync(StudentDTO student);
         Task<StudentDTO> GetStudentWithDetailsAsync(int studentId);
         Task<IEnumerable<StudentDTO>> GetStudentsByClassAsync(int classId);
+        Task DeletStudentAsync(int studentId);
+        Task EditStudentAsync(StudentDTO studentDTO);
     }
 }

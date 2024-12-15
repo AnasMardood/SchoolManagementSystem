@@ -23,5 +23,6 @@ namespace SchoolManagement.BusinessLogic.Dto
         public byte ProfilePicture { get; set; }
         public string Nationality { get; set; }
         public int ClassID { get; set; }
+       
     }
 }
