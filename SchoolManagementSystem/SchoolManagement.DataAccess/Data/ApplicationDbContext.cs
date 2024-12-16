@@ -20,6 +20,7 @@ namespace SchoolManagement.DataAccess.Data
         }
         public DbSet<ApplicationUser> ApplicationUsers { get; set; }
         public DbSet<Student> Students { get; set; }
+        public DbSet<Advisor> Advisors { get; set; }
         public DbSet<Classes> Classes { get; set; }
         public DbSet<Materials> Materials { get; set; }
         public DbSet<Message> Message { get; set; }

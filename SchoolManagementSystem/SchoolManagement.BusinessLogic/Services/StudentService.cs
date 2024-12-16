@@ -69,8 +69,9 @@ namespace SchoolManagement.BusinessLogic.Services
             try
             {
                 var _student = StudentMapper.Map(student);
-               _repository.Create(_student);
+                _student.ClassID= student.ClassID;
 
+               _repository.Create(_student);
                 await _repository.SaveChangesAsync();
             }
             catch (Exception ex)
@@ -110,8 +111,22 @@ namespace SchoolManagement.BusinessLogic.Services
                 {
                     throw new Exception("Student not found");
                 }
-          
-                      _repository.Update(student);
+                student.FirstName = studentDTO.FirstName;
+                student.LastName = studentDTO.LastName;
+                student.MotherName = studentDTO.MotherName;
+                student.FatherName = studentDTO.FatherName;
+                student.BirthDate = studentDTO.BirthDate;
+                student.EnrollementDate = studentDTO.EnrollementDate;
+                student.ParentPhone = studentDTO.ParentPhone;
+                student.StudentPhone = studentDTO.StudentPhone;
+                student.Gender = studentDTO.Gender;
+                student.Address = studentDTO.Address;
+                student.Status = studentDTO.Status;
+                student.ProfilePicture = studentDTO.ProfilePicture;
+                student.Nationality = studentDTO.Nationality;
+                student.ClassID = studentDTO.ClassID;
+
+                _repository.Update(student);
                 await _repository.SaveChangesAsync();
             }
             catch (Exception ex)

@@ -20,5 +20,10 @@ namespace SchoolManagement.DataAccess.Repositories
                 .Include(a => a.Materials)
                 .FirstOrDefaultAsync(a => a.AdvisorID == advisorId);
         }
+
+        public async Task<IEnumerable<Advisor>> GetAdvisorWithMaterialsAsync()
+        {
+            return await _dbSet.Include(m => m.Materials) . ToListAsync();
+        }
     }
 }

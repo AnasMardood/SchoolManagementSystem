@@ -51,6 +51,7 @@ namespace SchoolManagementSystem.Areas.Admin.Controllers
             {
                 try
                 {
+                    studentDto.ClassDTO = null;
                     await _studentService.CreateStudentAsync(studentDto);
                     return RedirectToAction(nameof(Index));
                 }
@@ -82,6 +83,9 @@ namespace SchoolManagementSystem.Areas.Admin.Controllers
             if (student == null) {
                 return NotFound(); 
             }
+            if(student.ClassDTO == null) {
+            student.ClassDTO = new ClassDTO();
+            }
             var classes = await _classesService.GetAllClasses();
             ViewBag.Classes = new SelectList(classes, "ClassID", "ClassName", student.ClassID);
             return View(student);
@@ -98,7 +102,7 @@ namespace SchoolManagementSystem.Areas.Admin.Controllers
 
             if (ModelState.IsValid)
             {
-                
+                studentDto.ClassDTO = null;
                 await _studentService.EditStudentAsync(studentDto);
                 return RedirectToAction(nameof(Index));
             }

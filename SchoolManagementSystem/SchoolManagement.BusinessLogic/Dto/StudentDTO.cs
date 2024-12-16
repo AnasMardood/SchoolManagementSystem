@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -13,8 +14,10 @@ namespace SchoolManagement.BusinessLogic.Dto
         public string LastName { get; set; }
         public string MotherName { get; set; }
         public string FatherName { get; set; }
+        [DataType(DataType.Date)]
         public DateTime BirthDate { get; set; }
-        public DateTime EnrollementDate { get; set; }
+        [DataType(DataType.Date)]
+        public DateTime EnrollementDate { get; set; } 
         public string ParentPhone { get; set; }
         public string StudentPhone { get; set; }
         public string Gender { get; set; }
@@ -23,6 +26,8 @@ namespace SchoolManagement.BusinessLogic.Dto
         public byte ProfilePicture { get; set; }
         public string Nationality { get; set; }
         public int ClassID { get; set; }
+        public ClassDTO? ClassDTO { get; set; }
+
        
     }
 }

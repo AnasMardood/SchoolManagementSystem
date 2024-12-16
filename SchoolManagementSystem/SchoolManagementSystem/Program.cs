@@ -34,6 +34,8 @@ builder.Services.AddScoped<ISemesterRepository,SemesterRepository>();
 
 builder.Services.AddScoped<IStudentService, StudentService>();
 builder.Services.AddScoped<IClassesService, ClassesService>();
+builder.Services.AddScoped<IAdvisorService, AdvisorService>();
+builder.Services.AddScoped<IMaterialsService,MaterialsService>();
 
 
 

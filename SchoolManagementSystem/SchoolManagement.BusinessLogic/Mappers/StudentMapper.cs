@@ -29,6 +29,7 @@ namespace SchoolManagement.BusinessLogic.Mappers
                 ProfilePicture = student.ProfilePicture,
                 Nationality = student.Nationality,
                 ClassID = student.ClassID,
+                ClassDTO =new ClassDTO { ClassID = student.Class.ClassID ,ClassName=student.Class.ClassName},                
                 
             };
         }
@@ -55,8 +56,14 @@ namespace SchoolManagement.BusinessLogic.Mappers
                 Status = student.Status,
                 ProfilePicture = student.ProfilePicture,
                 Nationality = student.Nationality,
-                ClassID = student.ClassID
-
+                ClassID = student.ClassID,
+                Class = student.ClassDTO != null
+            ? new Classes
+            {
+                ClassID = student.ClassDTO.ClassID,
+                ClassName = student.ClassDTO.ClassName
+            }
+            : null
             };
         }
 
