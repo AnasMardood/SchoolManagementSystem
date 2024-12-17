@@ -24,16 +24,17 @@ namespace SchoolManagementSystem.Areas.Admin.Controllers
         }
         public async Task<IActionResult> Index()
         {
-            var advisors =await _advisorService.GetAdvisorWithMaterialsAsync();
+            var advisors = await _advisorService.GetAllAdvisorAsyn();
             return View(advisors);
         }
 
         // GET: AdvisorController/Details/5
         public async Task<IActionResult> Details(int id)
         {
-            var advisor=await _advisorService.GetAdvisorByIdlsAsync(id);
-            if (advisor == null) NotFound();
-            return View(advisor);
+         var advisor = await _advisorService.GetAdvisorWithMaterialsAsync(id);
+        if (advisor == null) return NotFound();
+
+        return View(advisor);
         }
 
         // GET: AdvisorController/Create
@@ -48,20 +49,15 @@ namespace SchoolManagementSystem.Areas.Admin.Controllers
         // POST: AdvisorController/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create(AdvisorDTO advisorDto,List<int> selectedMaterials)
+        public async Task<IActionResult> Create(AdvisorDTO advisorDto, List<int> selectedMaterials)
         {
             if (ModelState.IsValid)
             {
                 try
                 {
-                    // قم بربط المواد المختارة مع الكائن MaterialsDTO
-                    advisorDto.Materials = selectedMaterials.Select(id => new MaterialsDTO
-                    {
-                        MaterialID = id
-                    }).ToList();
-
+                    advisorDto.Materials = selectedMaterials.Select(id => new MaterialsDTO { MaterialID = id }).ToList();
                     await _advisorService.CreateAdvisorAsync(advisorDto);
-                    
+                    Console.WriteLine("------------------------------", advisorDto.Materials.Count , "----------------------------------------------");
                     return RedirectToAction(nameof(Index));
                 }
                 catch (Exception ex)
@@ -80,19 +76,22 @@ namespace SchoolManagementSystem.Areas.Admin.Controllers
                 }
             }
             var materials = await _materialsService.GetMaterialsAsyn();
-            ViewBag.Materials = new MultiSelectList(materials, "MaterialID", "LessonsName");
+            ViewBag.Materials = new SelectList(materials, "MaterialID", "LessonsName");
             return View(advisorDto);
         }
 
         public async Task<IActionResult> Edit(int id)
         {
             var advisor =await _advisorService.GetAdvisorByIdlsAsync(id);
+            if (advisor == null) return NotFound();
+            var materials = await _materialsService.GetMaterialsAsyn();
+            ViewBag.Materials = new MultiSelectList(materials, "MaterialID", "LessonsName", advisor.Materials.Select(m => m.MaterialID));
             return View(advisor);
         }
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, AdvisorDTO advisorDto)
+        public async Task<IActionResult> Edit(int id, AdvisorDTO advisorDto, List<int> selectedMaterials)
         {
             if (id != advisorDto.AdvisorID)
             {
@@ -100,8 +99,9 @@ namespace SchoolManagementSystem.Areas.Admin.Controllers
             }
             if (ModelState.IsValid)
             {
-                    await _advisorService.EditAdvisorAsync(advisorDto);
-                    return RedirectToAction(nameof(Index));             
+                advisorDto.Materials = selectedMaterials.Select(materialId => new MaterialsDTO { MaterialID = materialId }).ToList();
+                await _advisorService.EditAdvisorAsync(advisorDto);
+                return RedirectToAction(nameof(Index));
             }
             return View(advisorDto);
 

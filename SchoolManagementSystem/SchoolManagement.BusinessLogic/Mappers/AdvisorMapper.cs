@@ -25,7 +25,7 @@ namespace SchoolManagement.BusinessLogic.Mappers
                 ProfilePicture = advisor.ProfilePicture,
                 Role = advisor.Role,
                 Materials = advisor.Materials?.Select(m => new MaterialsDTO
-                {  MaterialID = m.MaterialID}).ToList()
+                {  MaterialID = m.MaterialID}).ToList() ?? new List<MaterialsDTO>()
             };
         }
 
@@ -47,11 +47,12 @@ namespace SchoolManagement.BusinessLogic.Mappers
                 EnrollmentDate = advisor.EnrollmentDate,
                 ProfilePicture = advisor.ProfilePicture,
                 Role = advisor.Role,
-                Materials = advisor.Materials ?.Select(m => new Materials { MaterialID = m.MaterialID ,
-                                                                            AdvisorID = m.AdvisorID,
-                                                                            
-                })
-            .ToList()
+                Materials = advisor.Materials?.Select(m => new Materials
+                {
+                    MaterialID = m.MaterialID,
+                    LessonsName = m.LessonsName,
+                    ClassID = m.ClassID
+                }).ToList() ?? new List<Materials>()
             };
         }
 

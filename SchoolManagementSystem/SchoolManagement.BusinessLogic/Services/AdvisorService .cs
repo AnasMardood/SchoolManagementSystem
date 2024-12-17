@@ -29,7 +29,8 @@ namespace SchoolManagement.BusinessLogic.Services
                 var _advisor = AdvisorMapper.Map(advisorDto);
 
                 _repository.Create(_advisor);
-              await _repository.SaveChangesAsync();
+                await _repository.SaveChangesAsync();
+                Console.WriteLine("------------------------------",_advisor.Materials.Count,"----------------------------------------------");
             }
             catch (Exception ex)
             {

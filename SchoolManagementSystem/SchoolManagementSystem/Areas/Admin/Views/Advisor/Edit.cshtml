@@ -59,6 +59,12 @@
                 <span asp-validation-for="Role" class="text-danger"></span>
             </div>
             <div class="form-group">
+                <label>Materials</label>
+                <select asp-for="Materials" class="form-control" asp-items="ViewBag.Materials" multiple>
+                </select>
+            </div>
+
+            <div class="form-group">
                 <input type="submit" value="Save" class="btn btn-primary" />
             </div>
         </form>
