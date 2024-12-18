@@ -4,75 +4,117 @@
     ViewData["Title"] = "Create";
 }
 
-<h1>Create</h1>
+<h1>Add Advisor</h1>
+<form asp-action="Create" method="post">
+    <fieldset>
+        <legend>Advisor Information</legend>
+        <div class="form-group">
+            <label asp-for="FirstName"></label>
+            <input asp-for="FirstName" class="form-control" />
+            <span asp-validation-for="FirstName" class="text-danger"></span>
+        </div>
 
-<h4>Advisor</h4>
-<hr />
-<div class="row">
-    <div class="col-md-4">
-        <form asp-action="Create">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <div class="form-group">
-                <label asp-for="FirstName" class="control-label"></label>
-                <input asp-for="FirstName" class="form-control" />
-                <span asp-validation-for="FirstName" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="LastName" class="control-label"></label>
-                <input asp-for="LastName" class="form-control" />
-                <span asp-validation-for="LastName" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Nationality" class="control-label"></label>
-                <input asp-for="Nationality" class="form-control" />
-                <span asp-validation-for="Nationality" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Email" class="control-label"></label>
-                <input asp-for="Email" class="form-control" />
-                <span asp-validation-for="Email" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Phone" class="control-label"></label>
-                <input asp-for="Phone" class="form-control" />
-                <span asp-validation-for="Phone" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Address" class="control-label"></label>
-                <input asp-for="Address" class="form-control" />
-                <span asp-validation-for="Address" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="EnrollmentDate" class="control-label"></label>
-                <input asp-for="EnrollmentDate" class="form-control" />
-                <span asp-validation-for="EnrollmentDate" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="ProfilePicture" class="control-label"></label>
-                <input asp-for="ProfilePicture" class="form-control" />
-                <span asp-validation-for="ProfilePicture" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Role" class="control-label"></label>
-                <input asp-for="Role" class="form-control" />
-                <span asp-validation-for="Role" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label for="Materials">Select Materials</label>
-                <select asp-for="Materials" asp-items="ViewBag.Materials" class="form-control" multiple="multiple"></select>
-                <span asp-validation-for="Materials" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
-            </div>
-        </form>
-    </div>
-</div>
+        <div class="form-group">
+            <label asp-for="LastName"></label>
+            <input asp-for="LastName" class="form-control" />
+            <span asp-validation-for="LastName" class="text-danger"></span>
+        </div>
 
-<div>
-    <a asp-action="Index">Back to List</a>
-</div>
+        <div class="form-group">
+            <label asp-for="Email"></label>
+            <input asp-for="Email" class="form-control" />
+            <span asp-validation-for="Email" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="Phone"></label>
+            <input asp-for="Phone" class="form-control" />
+            <span asp-validation-for="Phone" class="text-danger"></span>
+        </div>     
+        <div class="form-group">
+            <label asp-for="Nationality"></label>
+            <input asp-for="Nationality" class="form-control" />
+            <span asp-validation-for="Nationality" class="text-danger"></span>
+        </div>      
+        <div class="form-group">
+            <label asp-for="EnrollmentDate"></label>
+            <input asp-for="EnrollmentDate" class="form-control" />
+            <span asp-validation-for="EnrollmentDate" class="text-danger"></span>
+        </div>   
+        <div class="form-group">
+            <label asp-for="ProfilePicture"></label>
+            <input asp-for="ProfilePicture" class="form-control" />
+            <span asp-validation-for="ProfilePicture" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="Address"></label>
+            <input asp-for="Address" class="form-control" />
+            <span asp-validation-for="Address" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="Role"></label>
+            <input asp-for="Role" class="form-control" />
+            <span asp-validation-for="Role" class="text-danger"></span>
+        </div>
+    </fieldset>
+
+    <fieldset>
+        <legend>Materials</legend>
+        <div id="materials-container">
+            <div class="form-group">
+                <label for="Materials[0].LessonsName">Lesson Name:</label>
+                <input name="Materials[0].LessonsName" class="form-control" required />
+                <label for="Materials[0].CreditHours">Credit Hours:</label>
+                <input name="Materials[0].CreditHours" class="form-control" type="number" required />
+                <label for="Materials[0].ClassID">Class ID:</label>
+                <input name="Materials[0].ClassID" class="form-control" type="number" required />
+            </div>
+        </div>
+ 
+        <button type="button" class="btn btn-secondary" onclick="addMaterial()">Add Material</button>
+    </fieldset>
+
+    <button type="submit" class="btn btn-primary" >Save Advisor</button>
+</form>
 
 @section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    <script>
+        let materialIndex = 1;
+
+        function addMaterial() {
+            const container = document.getElementById('materials-container');
+            const newMaterial = document.createElement('div');
+            newMaterial.className = 'form-group';
+            newMaterial.innerHTML = `
+                        <label for="Materials[${materialIndex}].LessonsName">Lesson Name:</label>
+                        <input name="Materials[${materialIndex}].LessonsName" class="form-control" required />
+                        <label for="Materials[${materialIndex}].CreditHours">Credit Hours:</label>
+                        <input name="Materials[${materialIndex}].CreditHours" class="form-control" type="number" required />
+                        <label for="Materials[${materialIndex}].ClassID">Class ID:</label>
+                        <input name="Materials[${materialIndex}].ClassID" class="form-control" type="number" required />
+                    `;
+            container.appendChild(newMaterial);
+            materialIndex++;
+        }
+        function toggleMaterialsSection() {
+            const role = document.getElementById('role').value.toLowerCase();
+            const materialsFieldset = document.getElementById('materials-fieldset');
+            const addMaterialButton = document.getElementById('add-material');
+
+            if (role === "boss") {
+                materialsFieldset.style.display = 'none';  
+                addMaterialButton.style.display = 'none';  
+            } else {
+                materialsFieldset.style.display = 'block'; 
+                addMaterialButton.style.display = 'inline-block'; 
+            }
+        }   
+
+        document.getElementById('role').addEventListener('input', toggleMaterialsSection);
+
+
+        toggleMaterialsSection();
+    </script>
 }

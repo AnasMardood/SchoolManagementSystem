@@ -25,7 +25,11 @@ namespace SchoolManagement.BusinessLogic.Mappers
                 ProfilePicture = advisor.ProfilePicture,
                 Role = advisor.Role,
                 Materials = advisor.Materials?.Select(m => new MaterialsDTO
-                {  MaterialID = m.MaterialID}).ToList() ?? new List<MaterialsDTO>()
+                {
+                    MaterialID = m.MaterialID,
+                    LessonsName = m.LessonsName,
+                    ClassID = m.ClassID
+                }).ToList() ?? new List<MaterialsDTO>()
             };
         }
 

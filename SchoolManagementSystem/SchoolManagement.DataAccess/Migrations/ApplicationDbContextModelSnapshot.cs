@@ -188,7 +188,7 @@ namespace SchoolManagement.DataAccess.Migrations
 
                     b.HasIndex("AdvisorID");
 
-                    b.ToTable("AcademicCalendars");
+                    b.ToTable("AcademicCalendars", (string)null);
                 });
 
             modelBuilder.Entity("SchoolManagement.DataAccess.Models.Advisor", b =>
@@ -236,7 +236,7 @@ namespace SchoolManagement.DataAccess.Migrations
 
                     b.HasKey("AdvisorID");
 
-                    b.ToTable("Advisors");
+                    b.ToTable("Advisors", (string)null);
                 });
 
             modelBuilder.Entity("SchoolManagement.DataAccess.Models.AdvisorSemester", b =>
@@ -258,7 +258,7 @@ namespace SchoolManagement.DataAccess.Migrations
 
                     b.HasIndex("SemesterId");
 
-                    b.ToTable("AdvisorSemesters");
+                    b.ToTable("AdvisorSemesters", (string)null);
                 });
 
             modelBuilder.Entity("SchoolManagement.DataAccess.Models.Announcement", b =>
@@ -291,7 +291,7 @@ namespace SchoolManagement.DataAccess.Migrations
 
                     b.HasIndex("AdvisorID");
 
-                    b.ToTable("Announcements");
+                    b.ToTable("Announcements", (string)null);
                 });
 
             modelBuilder.Entity("SchoolManagement.DataAccess.Models.ApplicationUser", b =>
@@ -402,7 +402,7 @@ namespace SchoolManagement.DataAccess.Migrations
 
                     b.HasIndex("StudentID");
 
-                    b.ToTable("Attendances");
+                    b.ToTable("Attendances", (string)null);
                 });
 
             modelBuilder.Entity("SchoolManagement.DataAccess.Models.Classes", b =>
@@ -419,7 +419,7 @@ namespace SchoolManagement.DataAccess.Migrations
 
                     b.HasKey("ClassID");
 
-                    b.ToTable("Classes");
+                    b.ToTable("Classes", (string)null);
                 });
 
             modelBuilder.Entity("SchoolManagement.DataAccess.Models.Materials", b =>
@@ -449,7 +449,7 @@ namespace SchoolManagement.DataAccess.Migrations
 
                     b.HasIndex("ClassID");
 
-                    b.ToTable("Materials");
+                    b.ToTable("Materials", (string)null);
                 });
 
             modelBuilder.Entity("SchoolManagement.DataAccess.Models.Message", b =>
@@ -482,7 +482,7 @@ namespace SchoolManagement.DataAccess.Migrations
 
                     b.HasIndex("StudentID");
 
-                    b.ToTable("Message");
+                    b.ToTable("Message", (string)null);
                 });
 
             modelBuilder.Entity("SchoolManagement.DataAccess.Models.Semester", b =>
@@ -499,7 +499,7 @@ namespace SchoolManagement.DataAccess.Migrations
 
                     b.HasKey("SemesterId");
 
-                    b.ToTable("Semesters");
+                    b.ToTable("Semesters", (string)null);
                 });
 
             modelBuilder.Entity("SchoolManagement.DataAccess.Models.Student", b =>
@@ -566,7 +566,7 @@ namespace SchoolManagement.DataAccess.Migrations
 
                     b.HasIndex("ClassID");
 
-                    b.ToTable("Students");
+                    b.ToTable("Students", (string)null);
                 });
 
             modelBuilder.Entity("SchoolManagement.DataAccess.Models.StudentMark", b =>
@@ -596,7 +596,7 @@ namespace SchoolManagement.DataAccess.Migrations
 
                     b.HasIndex("StudentID");
 
-                    b.ToTable("StudentMarks");
+                    b.ToTable("StudentMarks", (string)null);
                 });
 
             modelBuilder.Entity("SchoolManagement.DataAccess.Models.StudentMaterial", b =>
@@ -611,7 +611,7 @@ namespace SchoolManagement.DataAccess.Migrations
 
                     b.HasIndex("MaterialID");
 
-                    b.ToTable("StudentMaterial");
+                    b.ToTable("StudentMaterial", (string)null);
                 });
 
             modelBuilder.Entity("SchoolManagement.DataAccess.Models.StudentSemester", b =>
@@ -633,7 +633,7 @@ namespace SchoolManagement.DataAccess.Migrations
 
                     b.HasIndex("SemesterId");
 
-                    b.ToTable("StudentSemesters");
+                    b.ToTable("StudentSemesters", (string)null);
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>

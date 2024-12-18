@@ -17,12 +17,26 @@ namespace SchoolManagement.BusinessLogic.Mappers
                 MaterialID = material.MaterialID,
                 LessonsName = material.LessonsName,
                 CreditHours = material.CreditHours,
-                AdvisorID = material.AdvisorID,
                 ClassID = material.ClassID
             };
         }
 
         public static List<MaterialsDTO> Map(IEnumerable<Materials> materials)
+        {
+            return materials.Select(Map).ToList();
+        }
+        public static Materials Map(MaterialsDTO materialsDTO)
+        {
+            return new Materials
+            {
+                MaterialID = materialsDTO.MaterialID,
+                LessonsName = materialsDTO.LessonsName,
+                CreditHours = materialsDTO.CreditHours,
+                ClassID = materialsDTO.ClassID
+            };
+        }
+
+        public static List<Materials> Map(IEnumerable<MaterialsDTO> materials)
         {
             return materials.Select(Map).ToList();
         }

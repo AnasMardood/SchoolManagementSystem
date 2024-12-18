@@ -14,10 +14,12 @@ namespace SchoolManagement.BusinessLogic.Services
     public class AdvisorService : IAdvisorService
     {
         private readonly IAdvisorRepository _repository;
+        private readonly IUnitOfWork _unitOfWork;
         private readonly ILogger<AdvisorService> _logger;
 
-        public AdvisorService(IAdvisorRepository repository, ILogger<AdvisorService> logger)
+        public AdvisorService(IAdvisorRepository repository, ILogger<AdvisorService> logger,IUnitOfWork unitOfWork)
         {
+            _unitOfWork = unitOfWork;
             _repository = repository;
             _logger = logger;
         }
@@ -27,10 +29,18 @@ namespace SchoolManagement.BusinessLogic.Services
             try
             {
                 var _advisor = AdvisorMapper.Map(advisorDto);
+                if (advisorDto.Materials != null && advisorDto.Materials.Any())
+                {
+                    _advisor.Materials = advisorDto.Materials.Select(m => new Materials
+                    {
+                        LessonsName = m.LessonsName,
+                        CreditHours = m.CreditHours,
+                        ClassID = m.ClassID
+                    }).ToList();
+                }
 
                 _repository.Create(_advisor);
                 await _repository.SaveChangesAsync();
-                Console.WriteLine("------------------------------",_advisor.Materials.Count,"----------------------------------------------");
             }
             catch (Exception ex)
             {
@@ -50,9 +60,17 @@ namespace SchoolManagement.BusinessLogic.Services
 
             try
             {
-                var _advisor = AdvisorMapper.Map(advisorDto);
+  
+               var advisor = await _repository.GetAdvisorWithMaterialsAsync(advisorDto.AdvisorID);
+              //  var advisor = AdvisorMapper.Map(advisorDto);
 
-                _repository.Update(_advisor); 
+                if (advisorDto.Materials == null) throw new Exception("Advisor not found");
+
+                foreach(var _advisor in advisorDto.Materials)
+                {
+                    advisor.Materials.Add(new Materials { LessonsName=_advisor.LessonsName});
+                }
+               _repository.Update(advisor); 
               await _repository.SaveChangesAsync();
 
                
@@ -68,7 +86,7 @@ namespace SchoolManagement.BusinessLogic.Services
         {
             try
             {
-                var advisor= await _repository.GetByIdAsync(advisorId);
+                var advisor= await _repository.GetAdvisorWithMaterialsAsync(advisorId);
 
                 return AdvisorMapper.Map(advisor);
             }
@@ -121,6 +139,7 @@ namespace SchoolManagement.BusinessLogic.Services
                 throw;
             }
         }
+
     }
     public interface IAdvisorService
     {

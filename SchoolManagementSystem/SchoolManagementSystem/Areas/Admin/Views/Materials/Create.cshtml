@@ -1,0 +1,48 @@
+﻿@model SchoolManagement.BusinessLogic.Dto.MaterialsDTO
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>Materials</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="LessonsName" class="control-label"></label>
+                <input asp-for="LessonsName" class="form-control" />
+                <span asp-validation-for="LessonsName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CreditHours" class="control-label"></label>
+                <input asp-for="CreditHours" class="form-control" />
+                <span asp-validation-for="CreditHours" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ClassID" class="control-label"></label>
+                <select id="ClassID" name="ClassID" class="form-control">
+                    <option value="">-- Select Class --</option>
+                    @foreach (var classItem in ViewBag.Classes)
+                    {
+                        <option value="@classItem.Value">@classItem.Text</option>
+                    }
+                </select>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

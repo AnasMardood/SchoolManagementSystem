@@ -73,8 +73,7 @@
         <dt class = "col-sm-2">
             @Html.DisplayNameFor(model => model.Materials)
         </dt>
-        <dd class = "col-sm-10">
-            <dt>
+        <dd class = "col-sm-10">    
                 @if (Model.Materials != null && Model.Materials.Any())
                 {
                 <ul>
@@ -88,7 +87,6 @@
                 {
                 <span>No Materials Assigned</span>
                 }
-            </dt>
 
         </dd>
     </dl>

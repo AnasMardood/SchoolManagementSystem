@@ -20,7 +20,6 @@ namespace SchoolManagement.BusinessLogic.Dto
         public DateTime EnrollmentDate { get; set; }
         public string ProfilePicture { get; set; }
         public string Role { get; set; }
-        public List<MaterialsDTO>? Materials { get; set; } 
-
+        public List<MaterialsDTO> Materials { get; set; }
     }
 }

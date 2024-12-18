@@ -10,6 +10,7 @@ namespace SchoolManagement.DataAccess.Repositories
     public interface IMaterialsRepository  : IBaseRepository<Materials>
     {
         Task<IEnumerable<Materials>> GetMaterialsBySemesterAsync(int classId);
-   
+        Task<IEnumerable<Materials>> GetMaterialsAsync();
+
     }
 }

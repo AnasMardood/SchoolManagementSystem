@@ -49,10 +49,43 @@ namespace SchoolManagement.BusinessLogic.Services
                 throw;
             }
         }
+        public async Task EditMaterialAsyn(MaterialsDTO materialDto)
+        {
+
+            try
+            {
+                var material = MaterialsMapper.Map(materialDto);
+                _repository.Update(material);
+                await _repository.SaveChangesAsync();
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, $"An error occurred while update material {materialDto.MaterialID}.");
+                throw;
+            }
+        }
+        public async Task CreateMaterialAsyn(MaterialsDTO materialDto)
+        {
+            try
+            {
+                var material = MaterialsMapper.Map(materialDto);
+                _repository.Create(material);
+                await _repository.SaveChangesAsync();
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, $"An error occurred while Create material {materialDto.MaterialID}.");
+                throw;
+            }
+        }
+
+
     }
     public interface IMaterialsService
     {
         Task<IEnumerable<MaterialsDTO>> GetMaterialsByClassAsync(int classId);
         Task<IEnumerable<MaterialsDTO>> GetMaterialsAsyn();
+        Task CreateMaterialAsyn(MaterialsDTO materialDto);
+        Task EditMaterialAsyn(MaterialsDTO materialDto);
     }
 }

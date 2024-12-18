@@ -24,6 +24,12 @@ namespace SchoolManagement.DataAccess.Repositories
                 .Where(m => m.ClassID == classId)
                 .ToListAsync();
         }
+        public async Task<IEnumerable<Materials>> GetMaterialsAsync()
+        {
+            return await _dbSet.Include(a => a.AdvisorID)
+                                .Include(c => c.ClassID)
+                                .ToListAsync();
+        }
     }
 }
 

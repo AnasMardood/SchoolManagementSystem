@@ -18,7 +18,7 @@ namespace SchoolManagement.DataAccess.Models
         public DateTime EnrollmentDate { get; set; }
         public string ProfilePicture { get; set; }
         public string Role { get; set; }
-        public ICollection<Materials>? Materials { get; set; }
+        public ICollection<Materials> Materials { get; set; } 
         public ICollection<Attendance>? Attendances { get; set; }
         public ICollection<Announcement>? Announcements { get; set; }
         public ICollection<Message>? Messages { get; set; }

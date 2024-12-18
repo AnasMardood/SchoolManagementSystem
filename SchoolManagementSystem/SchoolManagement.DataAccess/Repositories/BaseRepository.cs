@@ -93,6 +93,7 @@ namespace SchoolManagement.DataAccess.Repositories
         public virtual void Create(TEntity entity)
         {
             _dbSet.Add(entity);
+            
         }
 
         public virtual void Delete(TEntity entityToDelete)
