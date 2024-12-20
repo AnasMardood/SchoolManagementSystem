@@ -12,7 +12,7 @@ namespace SchoolManagement.DataAccess.Models
         [Key]
         public int  ClassID {  get; set; }
         public string ClassName { get; set; }
-        public ICollection<Materials> Materials { get; set; }
-        public ICollection<Student> Students { get; set; }
+        public virtual ICollection<Materials> Materials { get; set; }
+        public virtual ICollection<Student> Students { get; set; }
     }
 }

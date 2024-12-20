@@ -1,0 +1,200 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\ENES\\Desktop\\Okul_\u00F6\u011Frenci_y\u00F6netim_Sistemi\\SchoolManagementSystem\\SchoolManagementSystem\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{896286B0-E7CB-472D-9E1B-38BDE5B647B1}|SchoolManagementSystem\\SchoolManagementSystem.csproj|c:\\users\\enes\\desktop\\okul_\u00F6\u011Frenci_y\u00F6netim_sistemi\\schoolmanagementsystem\\schoolmanagementsystem\\schoolmanagementsystem\\areas\\admin\\controllers\\classescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{896286B0-E7CB-472D-9E1B-38BDE5B647B1}|SchoolManagementSystem\\SchoolManagementSystem.csproj|solutionrelative:schoolmanagementsystem\\areas\\admin\\controllers\\classescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{896286B0-E7CB-472D-9E1B-38BDE5B647B1}|SchoolManagementSystem\\SchoolManagementSystem.csproj|c:\\users\\enes\\desktop\\okul_\u00F6\u011Frenci_y\u00F6netim_sistemi\\schoolmanagementsystem\\schoolmanagementsystem\\schoolmanagementsystem\\areas\\admin\\views\\classes\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{896286B0-E7CB-472D-9E1B-38BDE5B647B1}|SchoolManagementSystem\\SchoolManagementSystem.csproj|solutionrelative:schoolmanagementsystem\\areas\\admin\\views\\classes\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D284D34F-DCC5-41DC-B019-29F08757F7D3}|SchoolManagement.BusinessLogic\\SchoolManagement.BusinessLogic.csproj|c:\\users\\enes\\desktop\\okul_\u00F6\u011Frenci_y\u00F6netim_sistemi\\schoolmanagementsystem\\schoolmanagementsystem\\schoolmanagement.businesslogic\\services\\classesservice .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D284D34F-DCC5-41DC-B019-29F08757F7D3}|SchoolManagement.BusinessLogic\\SchoolManagement.BusinessLogic.csproj|solutionrelative:schoolmanagement.businesslogic\\services\\classesservice .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{896286B0-E7CB-472D-9E1B-38BDE5B647B1}|SchoolManagementSystem\\SchoolManagementSystem.csproj|c:\\users\\enes\\desktop\\okul_\u00F6\u011Frenci_y\u00F6netim_sistemi\\schoolmanagementsystem\\schoolmanagementsystem\\schoolmanagementsystem\\areas\\admin\\controllers\\studentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{896286B0-E7CB-472D-9E1B-38BDE5B647B1}|SchoolManagementSystem\\SchoolManagementSystem.csproj|solutionrelative:schoolmanagementsystem\\areas\\admin\\controllers\\studentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D284D34F-DCC5-41DC-B019-29F08757F7D3}|SchoolManagement.BusinessLogic\\SchoolManagement.BusinessLogic.csproj|c:\\users\\enes\\desktop\\okul_\u00F6\u011Frenci_y\u00F6netim_sistemi\\schoolmanagementsystem\\schoolmanagementsystem\\schoolmanagement.businesslogic\\services\\studentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D284D34F-DCC5-41DC-B019-29F08757F7D3}|SchoolManagement.BusinessLogic\\SchoolManagement.BusinessLogic.csproj|solutionrelative:schoolmanagement.businesslogic\\services\\studentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CFDBB6C1-3561-4114-8CAF-C8CF1D149E45}|SchoolManagement.DataAccess\\SchoolManagement.DataAccess.csproj|c:\\users\\enes\\desktop\\okul_\u00F6\u011Frenci_y\u00F6netim_sistemi\\schoolmanagementsystem\\schoolmanagementsystem\\schoolmanagement.dataaccess\\repositories\\iclassesrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CFDBB6C1-3561-4114-8CAF-C8CF1D149E45}|SchoolManagement.DataAccess\\SchoolManagement.DataAccess.csproj|solutionrelative:schoolmanagement.dataaccess\\repositories\\iclassesrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CFDBB6C1-3561-4114-8CAF-C8CF1D149E45}|SchoolManagement.DataAccess\\SchoolManagement.DataAccess.csproj|c:\\users\\enes\\desktop\\okul_\u00F6\u011Frenci_y\u00F6netim_sistemi\\schoolmanagementsystem\\schoolmanagementsystem\\schoolmanagement.dataaccess\\repositories\\classesrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CFDBB6C1-3561-4114-8CAF-C8CF1D149E45}|SchoolManagement.DataAccess\\SchoolManagement.DataAccess.csproj|solutionrelative:schoolmanagement.dataaccess\\repositories\\classesrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CFDBB6C1-3561-4114-8CAF-C8CF1D149E45}|SchoolManagement.DataAccess\\SchoolManagement.DataAccess.csproj|c:\\users\\enes\\desktop\\okul_\u00F6\u011Frenci_y\u00F6netim_sistemi\\schoolmanagementsystem\\schoolmanagementsystem\\schoolmanagement.dataaccess\\models\\classes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CFDBB6C1-3561-4114-8CAF-C8CF1D149E45}|SchoolManagement.DataAccess\\SchoolManagement.DataAccess.csproj|solutionrelative:schoolmanagement.dataaccess\\models\\classes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D284D34F-DCC5-41DC-B019-29F08757F7D3}|SchoolManagement.BusinessLogic\\SchoolManagement.BusinessLogic.csproj|c:\\users\\enes\\desktop\\okul_\u00F6\u011Frenci_y\u00F6netim_sistemi\\schoolmanagementsystem\\schoolmanagementsystem\\schoolmanagement.businesslogic\\mappers\\classmapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D284D34F-DCC5-41DC-B019-29F08757F7D3}|SchoolManagement.BusinessLogic\\SchoolManagement.BusinessLogic.csproj|solutionrelative:schoolmanagement.businesslogic\\mappers\\classmapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{896286B0-E7CB-472D-9E1B-38BDE5B647B1}|SchoolManagementSystem\\SchoolManagementSystem.csproj|c:\\users\\enes\\desktop\\okul_\u00F6\u011Frenci_y\u00F6netim_sistemi\\schoolmanagementsystem\\schoolmanagementsystem\\schoolmanagementsystem\\areas\\admin\\controllers\\materialscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{896286B0-E7CB-472D-9E1B-38BDE5B647B1}|SchoolManagementSystem\\SchoolManagementSystem.csproj|solutionrelative:schoolmanagementsystem\\areas\\admin\\controllers\\materialscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ClassesController.cs",
+              "DocumentMoniker": "C:\\Users\\ENES\\Desktop\\Okul_\u00F6\u011Frenci_y\u00F6netim_Sistemi\\SchoolManagementSystem\\SchoolManagementSystem\\SchoolManagementSystem\\Areas\\Admin\\Controllers\\ClassesController.cs",
+              "RelativeDocumentMoniker": "SchoolManagementSystem\\Areas\\Admin\\Controllers\\ClassesController.cs",
+              "ToolTip": "C:\\Users\\ENES\\Desktop\\Okul_\u00F6\u011Frenci_y\u00F6netim_Sistemi\\SchoolManagementSystem\\SchoolManagementSystem\\SchoolManagementSystem\\Areas\\Admin\\Controllers\\ClassesController.cs",
+              "RelativeToolTip": "SchoolManagementSystem\\Areas\\Admin\\Controllers\\ClassesController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACMAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-20T12:22:52.717Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ClassesService .cs",
+              "DocumentMoniker": "C:\\Users\\ENES\\Desktop\\Okul_\u00F6\u011Frenci_y\u00F6netim_Sistemi\\SchoolManagementSystem\\SchoolManagementSystem\\SchoolManagement.BusinessLogic\\Services\\ClassesService .cs",
+              "RelativeDocumentMoniker": "SchoolManagement.BusinessLogic\\Services\\ClassesService .cs",
+              "ToolTip": "C:\\Users\\ENES\\Desktop\\Okul_\u00F6\u011Frenci_y\u00F6netim_Sistemi\\SchoolManagementSystem\\SchoolManagementSystem\\SchoolManagement.BusinessLogic\\Services\\ClassesService .cs",
+              "RelativeToolTip": "SchoolManagement.BusinessLogic\\Services\\ClassesService .cs",
+              "ViewState": "AQIAABMAAAAAAAAAAAAowCgAAAA4AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-20T12:28:01.005Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ClassMapper.cs",
+              "DocumentMoniker": "C:\\Users\\ENES\\Desktop\\Okul_\u00F6\u011Frenci_y\u00F6netim_Sistemi\\SchoolManagementSystem\\SchoolManagementSystem\\SchoolManagement.BusinessLogic\\Mappers\\ClassMapper.cs",
+              "RelativeDocumentMoniker": "SchoolManagement.BusinessLogic\\Mappers\\ClassMapper.cs",
+              "ToolTip": "C:\\Users\\ENES\\Desktop\\Okul_\u00F6\u011Frenci_y\u00F6netim_Sistemi\\SchoolManagementSystem\\SchoolManagementSystem\\SchoolManagement.BusinessLogic\\Mappers\\ClassMapper.cs",
+              "RelativeToolTip": "SchoolManagement.BusinessLogic\\Mappers\\ClassMapper.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAACAAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-20T12:36:37.149Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ClassesRepository.cs",
+              "DocumentMoniker": "C:\\Users\\ENES\\Desktop\\Okul_\u00F6\u011Frenci_y\u00F6netim_Sistemi\\SchoolManagementSystem\\SchoolManagementSystem\\SchoolManagement.DataAccess\\Repositories\\ClassesRepository.cs",
+              "RelativeDocumentMoniker": "SchoolManagement.DataAccess\\Repositories\\ClassesRepository.cs",
+              "ToolTip": "C:\\Users\\ENES\\Desktop\\Okul_\u00F6\u011Frenci_y\u00F6netim_Sistemi\\SchoolManagementSystem\\SchoolManagementSystem\\SchoolManagement.DataAccess\\Repositories\\ClassesRepository.cs",
+              "RelativeToolTip": "SchoolManagement.DataAccess\\Repositories\\ClassesRepository.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAwAAABRAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-20T12:41:18.958Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\ENES\\Desktop\\Okul_\u00F6\u011Frenci_y\u00F6netim_Sistemi\\SchoolManagementSystem\\SchoolManagementSystem\\SchoolManagementSystem\\Areas\\Admin\\Views\\Classes\\Edit.cshtml",
+              "RelativeDocumentMoniker": "SchoolManagementSystem\\Areas\\Admin\\Views\\Classes\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\ENES\\Desktop\\Okul_\u00F6\u011Frenci_y\u00F6netim_Sistemi\\SchoolManagementSystem\\SchoolManagementSystem\\SchoolManagementSystem\\Areas\\Admin\\Views\\Classes\\Edit.cshtml",
+              "RelativeToolTip": "SchoolManagementSystem\\Areas\\Admin\\Views\\Classes\\Edit.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAyAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-20T19:58:54.917Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Classes.cs",
+              "DocumentMoniker": "C:\\Users\\ENES\\Desktop\\Okul_\u00F6\u011Frenci_y\u00F6netim_Sistemi\\SchoolManagementSystem\\SchoolManagementSystem\\SchoolManagement.DataAccess\\Models\\Classes.cs",
+              "RelativeDocumentMoniker": "SchoolManagement.DataAccess\\Models\\Classes.cs",
+              "ToolTip": "C:\\Users\\ENES\\Desktop\\Okul_\u00F6\u011Frenci_y\u00F6netim_Sistemi\\SchoolManagementSystem\\SchoolManagementSystem\\SchoolManagement.DataAccess\\Models\\Classes.cs",
+              "RelativeToolTip": "SchoolManagement.DataAccess\\Models\\Classes.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-20T19:27:45.681Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "IClassesRepository.cs",
+              "DocumentMoniker": "C:\\Users\\ENES\\Desktop\\Okul_\u00F6\u011Frenci_y\u00F6netim_Sistemi\\SchoolManagementSystem\\SchoolManagementSystem\\SchoolManagement.DataAccess\\Repositories\\IClassesRepository.cs",
+              "RelativeDocumentMoniker": "SchoolManagement.DataAccess\\Repositories\\IClassesRepository.cs",
+              "ToolTip": "C:\\Users\\ENES\\Desktop\\Okul_\u00F6\u011Frenci_y\u00F6netim_Sistemi\\SchoolManagementSystem\\SchoolManagementSystem\\SchoolManagement.DataAccess\\Repositories\\IClassesRepository.cs",
+              "RelativeToolTip": "SchoolManagement.DataAccess\\Repositories\\IClassesRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwA4AAAA9AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-20T12:49:41.111Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "StudentController.cs",
+              "DocumentMoniker": "C:\\Users\\ENES\\Desktop\\Okul_\u00F6\u011Frenci_y\u00F6netim_Sistemi\\SchoolManagementSystem\\SchoolManagementSystem\\SchoolManagementSystem\\Areas\\Admin\\Controllers\\StudentController.cs",
+              "RelativeDocumentMoniker": "SchoolManagementSystem\\Areas\\Admin\\Controllers\\StudentController.cs",
+              "ToolTip": "C:\\Users\\ENES\\Desktop\\Okul_\u00F6\u011Frenci_y\u00F6netim_Sistemi\\SchoolManagementSystem\\SchoolManagementSystem\\SchoolManagementSystem\\Areas\\Admin\\Controllers\\StudentController.cs",
+              "RelativeToolTip": "SchoolManagementSystem\\Areas\\Admin\\Controllers\\StudentController.cs",
+              "ViewState": "AQIAAGkAAAAAAAAAAAAmwH0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-20T12:48:52.355Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "StudentService.cs",
+              "DocumentMoniker": "C:\\Users\\ENES\\Desktop\\Okul_\u00F6\u011Frenci_y\u00F6netim_Sistemi\\SchoolManagementSystem\\SchoolManagementSystem\\SchoolManagement.BusinessLogic\\Services\\StudentService.cs",
+              "RelativeDocumentMoniker": "SchoolManagement.BusinessLogic\\Services\\StudentService.cs",
+              "ToolTip": "C:\\Users\\ENES\\Desktop\\Okul_\u00F6\u011Frenci_y\u00F6netim_Sistemi\\SchoolManagementSystem\\SchoolManagementSystem\\SchoolManagement.BusinessLogic\\Services\\StudentService.cs",
+              "RelativeToolTip": "SchoolManagement.BusinessLogic\\Services\\StudentService.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAQwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-20T12:31:37.898Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "MaterialsController.cs",
+              "DocumentMoniker": "C:\\Users\\ENES\\Desktop\\Okul_\u00F6\u011Frenci_y\u00F6netim_Sistemi\\SchoolManagementSystem\\SchoolManagementSystem\\SchoolManagementSystem\\Areas\\Admin\\Controllers\\MaterialsController.cs",
+              "RelativeDocumentMoniker": "SchoolManagementSystem\\Areas\\Admin\\Controllers\\MaterialsController.cs",
+              "ToolTip": "C:\\Users\\ENES\\Desktop\\Okul_\u00F6\u011Frenci_y\u00F6netim_Sistemi\\SchoolManagementSystem\\SchoolManagementSystem\\SchoolManagementSystem\\Areas\\Admin\\Controllers\\MaterialsController.cs",
+              "RelativeToolTip": "SchoolManagementSystem\\Areas\\Admin\\Controllers\\MaterialsController.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-20T12:24:58.238Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

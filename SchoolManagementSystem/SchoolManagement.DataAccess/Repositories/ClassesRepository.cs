@@ -23,6 +23,19 @@ namespace SchoolManagement.DataAccess.Repositories
             return await _dbSet.ToListAsync();
         }
 
+        public async Task<IEnumerable<Classes>> GetAllClassesWithDetailsAsync()
+        {
+            return await _dbSet.Include(s => s.Students)
+                               .Include(m => m.Materials)
+                               .ToListAsync();
+        }     
+        public async Task<Classes> GetClassWithDetailsAsync(int _classId)
+        {
+            return await _dbSet.Include(s => s.Students)
+                               .Include(m => m.Materials)
+                               .FirstOrDefaultAsync(c => c.ClassID == _classId);
+        }
+
         public async Task<IEnumerable<Classes>> GetClassesWithStudentAsync()
         {
             return await _dbSet
