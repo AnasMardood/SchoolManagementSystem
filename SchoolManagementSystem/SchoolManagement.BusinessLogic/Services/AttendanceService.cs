@@ -1,6 +1,7 @@
 ﻿using Microsoft.Extensions.Logging;
 using SchoolManagement.BusinessLogic.Dto;
 using SchoolManagement.BusinessLogic.Mappers;
+using SchoolManagement.DataAccess.Models;
 using SchoolManagement.DataAccess.Repositories;
 using System;
 using System.Collections.Generic;
@@ -19,6 +20,23 @@ namespace SchoolManagement.BusinessLogic.Services
         {
             _repository = repository;
             _logger = logger;
+        }
+
+        public async Task<AttendanceDTO> CreateAttendanceAsync(AttendanceDTO Attendancedto)
+        {
+
+            try
+            {
+              var attendance=AttendanceMapper.Map(Attendancedto);  
+                _repository.Create(attendance);
+                await _repository.SaveChangesAsync();
+                return AttendanceMapper.Map(attendance);
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, $"An error occurred while Create attendances .");
+                throw;
+            }
         }
 
         public async Task<IEnumerable<AttendanceDTO>> GetAttendancesByMaterialIdAsync(int materialId)
@@ -48,10 +66,33 @@ namespace SchoolManagement.BusinessLogic.Services
                 throw;
             }
         }
+
+        public Task<IEnumerable<AttendanceDTO>> GetAttendancesWithDetailsAsync(int studentId)
+        {
+            throw new NotImplementedException();
+        }
+
+        public async Task<IEnumerable<AttendanceDTO>> GetAttendancesWithDetailsAsync()
+        {
+            try
+            {
+                var attendances = await _repository.GetAttendancesWithDetailsAsync();
+                return attendances.Select(AttendanceMapper.Map).ToList();
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, $"An error occurred while fetching attendances .");
+                throw;
+            }
+        }
     }
     public interface IAttendanceService
     {
         Task<IEnumerable<AttendanceDTO>> GetAttendancesByMaterialIdAsync(int materialId);
         Task<IEnumerable<AttendanceDTO>> GetAttendancesByStudentIdAsync(int studentId);
+        Task<IEnumerable<AttendanceDTO>> GetAttendancesWithDetailsAsync(int studentId);
+        Task<IEnumerable<AttendanceDTO>> GetAttendancesWithDetailsAsync();
+        Task<AttendanceDTO> CreateAttendanceAsync(AttendanceDTO Attendancedto);
+
     }
 }

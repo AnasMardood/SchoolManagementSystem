@@ -46,6 +46,14 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWR2aXNvclxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/ENES/Desktop/Okul_öğrenci_yönetim_Sistemi/SchoolManagementSystem/SchoolManagementSystem/SchoolManagementSystem/Areas/Admin/Views/Attendance/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQXR0ZW5kYW5jZVxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ENES/Desktop/Okul_öğrenci_yönetim_Sistemi/SchoolManagementSystem/SchoolManagementSystem/SchoolManagementSystem/Areas/Admin/Views/Attendance/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQXR0ZW5kYW5jZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/ENES/Desktop/Okul_öğrenci_yönetim_Sistemi/SchoolManagementSystem/SchoolManagementSystem/SchoolManagementSystem/Areas/Admin/Views/Classes/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQ2xhc3Nlc1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 

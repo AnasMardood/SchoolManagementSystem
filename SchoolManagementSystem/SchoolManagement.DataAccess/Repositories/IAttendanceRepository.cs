@@ -11,6 +11,7 @@ namespace SchoolManagement.DataAccess.Repositories
     {
         Task<IEnumerable<Attendance>> GetAttendancesByMaterialIdAsync(int materialId);
         Task<IEnumerable<Attendance>> GetAttendancesByStudentIdAsync(int studentId);
+        Task<IEnumerable<Attendance>> GetAttendancesWithDetailsAsync();
 
 
     }
