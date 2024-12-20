@@ -55,7 +55,8 @@ namespace SchoolManagement.BusinessLogic.Mappers
                 {
                     MaterialID = m.MaterialID,
                     LessonsName = m.LessonsName,
-                    ClassID = m.ClassID
+                    ClassID = m.ClassID,
+                    CreditHours=m.CreditHours,
                 }).ToList() ?? new List<Materials>()
             };
         }

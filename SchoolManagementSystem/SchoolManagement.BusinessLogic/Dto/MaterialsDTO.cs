@@ -12,5 +12,7 @@ namespace SchoolManagement.BusinessLogic.Dto
         public string LessonsName { get; set; }
         public int CreditHours { get; set; }
         public int ClassID { get; set; }
+        public int AdvisorID { get; set; }
+
     }
 }

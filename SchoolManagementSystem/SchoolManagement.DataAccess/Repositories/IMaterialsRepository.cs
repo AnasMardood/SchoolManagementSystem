@@ -11,6 +11,7 @@ namespace SchoolManagement.DataAccess.Repositories
     {
         Task<IEnumerable<Materials>> GetMaterialsBySemesterAsync(int classId);
         Task<IEnumerable<Materials>> GetMaterialsAsync();
+        Task<Materials> GetMaterialsWithDetailsAsync(int materialId);
 
     }
 }

@@ -5,7 +5,10 @@ using SchoolManagement.DataAccess.Models;
 using SchoolManagement.DataAccess.Repositories;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
+using System.Net;
+using System.Numerics;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -55,25 +58,58 @@ namespace SchoolManagement.BusinessLogic.Services
             _repository.SaveChanges();
         }
 
-        public async Task EditAdvisorAsync(AdvisorDTO advisorDto)
+        public async Task<AdvisorDTO> EditAdvisorAsync(AdvisorDTO advisorDto)
         {
 
             try
             {
-  
-               var advisor = await _repository.GetAdvisorWithMaterialsAsync(advisorDto.AdvisorID);
-              //  var advisor = AdvisorMapper.Map(advisorDto);
 
-                if (advisorDto.Materials == null) throw new Exception("Advisor not found");
+                var advisor =await _repository.GetAdvisorWithMaterialsAsync(advisorDto.AdvisorID);
+                advisor.FirstName = advisorDto.FirstName;
+                advisor.LastName = advisorDto.LastName;
+                advisor.Nationality = advisorDto.Nationality;
+                advisor.Email = advisorDto.Email;
+                advisor.Phone = advisorDto.Phone;
+                advisor.Address = advisorDto.Address;
+                advisor.EnrollmentDate = advisorDto.EnrollmentDate;
+                advisor.ProfilePicture = advisorDto.ProfilePicture;
+                advisor.Role = advisorDto.Role;
 
-                foreach(var _advisor in advisorDto.Materials)
+                // تحديث المواد
+                foreach (var materialDto in advisorDto.Materials)
                 {
-                    advisor.Materials.Add(new Materials { LessonsName=_advisor.LessonsName});
-                }
-               _repository.Update(advisor); 
-              await _repository.SaveChangesAsync();
+                    var existingMaterial = advisor.Materials.FirstOrDefault(m => m.MaterialID == materialDto.MaterialID);
 
-               
+                    if (existingMaterial != null)
+                    {
+                        // تحديث المادة الموجودة
+                        existingMaterial.LessonsName = materialDto.LessonsName;
+                        existingMaterial.CreditHours = materialDto.CreditHours;
+                        existingMaterial.ClassID = materialDto.ClassID;
+                    }
+                    else
+                    {
+                        // إضافة مادة جديدة
+                        advisor.Materials.Add(new Materials
+                        {
+                            LessonsName = materialDto.LessonsName,
+                            CreditHours = materialDto.CreditHours,
+                            ClassID = materialDto.ClassID,
+                            AdvisorID = advisor.AdvisorID
+                        });
+                    }
+                }
+
+                // حذف المواد غير الموجودة في DTO
+                var existingMaterialIds = advisorDto.Materials.Select(m => m.MaterialID).ToList();
+                var materialsToRemove = advisor.Materials
+                    .Where(m => !existingMaterialIds.Contains(m.MaterialID))
+                    .ToList();
+
+                _repository.Update(advisor);
+                await _repository.SaveChangesAsync();
+
+               return AdvisorMapper.Map(advisor);
             }
             catch (Exception ex)
             {
@@ -147,7 +183,7 @@ namespace SchoolManagement.BusinessLogic.Services
         Task<IEnumerable<AdvisorDTO>> GetAllAdvisorAsyn();
         Task<AdvisorDTO> GetAdvisorByIdlsAsync(int advisorId);
         Task CreateAdvisorAsync(AdvisorDTO advisor);
-        Task EditAdvisorAsync(AdvisorDTO advisor);
+        Task<AdvisorDTO> EditAdvisorAsync(AdvisorDTO advisorDto);
         Task DeleteAdvisorAsync(int advisorId);
         Task<IEnumerable<AdvisorDTO>> GetAdvisorWithMaterialsAsync();
     }

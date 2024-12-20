@@ -17,7 +17,8 @@ namespace SchoolManagement.BusinessLogic.Mappers
                 MaterialID = material.MaterialID,
                 LessonsName = material.LessonsName,
                 CreditHours = material.CreditHours,
-                ClassID = material.ClassID
+                ClassID = material.ClassID,
+                AdvisorID= material.AdvisorID,
             };
         }
 
@@ -32,7 +33,8 @@ namespace SchoolManagement.BusinessLogic.Mappers
                 MaterialID = materialsDTO.MaterialID,
                 LessonsName = materialsDTO.LessonsName,
                 CreditHours = materialsDTO.CreditHours,
-                ClassID = materialsDTO.ClassID
+                ClassID = materialsDTO.ClassID,
+                AdvisorID = materialsDTO.AdvisorID,
             };
         }
 

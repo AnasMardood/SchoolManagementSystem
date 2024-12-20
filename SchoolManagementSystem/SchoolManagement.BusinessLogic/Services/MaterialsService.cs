@@ -49,14 +49,19 @@ namespace SchoolManagement.BusinessLogic.Services
                 throw;
             }
         }
-        public async Task EditMaterialAsyn(MaterialsDTO materialDto)
+        public async Task<MaterialsDTO> EditMaterialAsyn(MaterialsDTO materialDto)
         {
-
             try
             {
-                var material = MaterialsMapper.Map(materialDto);
+                var material = await _repository.GetMaterialsWithDetailsAsync(materialDto.MaterialID);
+                material.LessonsName = materialDto.LessonsName;
+                material.CreditHours = materialDto.CreditHours;
+                material.ClassID = materialDto.ClassID;
+                material.AdvisorID = materialDto.AdvisorID;
+                
                 _repository.Update(material);
                 await _repository.SaveChangesAsync();
+                return MaterialsMapper.Map(material);
             }
             catch (Exception ex)
             {
@@ -79,13 +84,45 @@ namespace SchoolManagement.BusinessLogic.Services
             }
         }
 
+        public async Task<MaterialsDTO> GetMaterialsWithDetails(int materialId)
+        {
+            try
+            {
+                var materials = await _repository.GetMaterialsWithDetailsAsync(materialId);
+                return MaterialsMapper.Map(materials);
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, $"An error occurred while fetching materials for material ID {materialId}.");
+                throw;
+            }
 
+        }
+
+        public async Task DeleteMaterialAsync(int materialId)
+        {
+            try
+            {
+                var material = await _repository.GetByIdAsync(materialId);
+                _repository.Delete(material);
+                await _repository.SaveChangesAsync();
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, $"An error occurred while delete material for material ID {materialId}.");
+                throw;
+            }
+
+
+        }
     }
     public interface IMaterialsService
     {
         Task<IEnumerable<MaterialsDTO>> GetMaterialsByClassAsync(int classId);
         Task<IEnumerable<MaterialsDTO>> GetMaterialsAsyn();
         Task CreateMaterialAsyn(MaterialsDTO materialDto);
-        Task EditMaterialAsyn(MaterialsDTO materialDto);
+        Task<MaterialsDTO> EditMaterialAsyn(MaterialsDTO materialDto);
+        Task<MaterialsDTO> GetMaterialsWithDetails(int materialId);
+        Task DeleteMaterialAsync(int materialId);
     }
 }

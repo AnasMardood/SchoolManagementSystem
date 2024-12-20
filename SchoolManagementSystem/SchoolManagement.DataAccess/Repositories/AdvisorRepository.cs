@@ -17,8 +17,8 @@ namespace SchoolManagement.DataAccess.Repositories
         public async Task<Advisor> GetAdvisorWithMaterialsAsync(int advisorId)
         {
             return await _dbSet
-                .Include(a => a.Materials)
-                .FirstOrDefaultAsync(a => a.AdvisorID == advisorId);
+                .Include(m => m.Materials)
+                .FirstOrDefaultAsync(a =>a.AdvisorID == advisorId);
         }
 
         public async Task<IEnumerable<Advisor>> GetAdvisorWithMaterialsAsync()

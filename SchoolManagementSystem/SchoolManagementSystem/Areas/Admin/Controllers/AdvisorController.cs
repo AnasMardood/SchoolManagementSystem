@@ -77,34 +77,23 @@ namespace SchoolManagementSystem.Areas.Admin.Controllers
 
         public async Task<IActionResult> Edit(int id)
         {
-            var advisor =await _advisorService.GetAdvisorByIdlsAsync(id);
+            var advisor =await _advisorService.GetAdvisorWithMaterialsAsync(id);
             if (advisor == null) return NotFound();
 
-            var materials = await _materialsService.GetMaterialsAsyn();
-            ViewBag.Materials = new MultiSelectList(materials, "MaterialID", "LessonsName");
             return View(advisor);
         }
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, AdvisorDTO advisorDto)
+        public async Task<IActionResult> Edit(int id , AdvisorDTO advisorDto)
         {
-            if (id != advisorDto.AdvisorID)
-            {
-                return NotFound();
-            }
+            if (id != advisorDto.AdvisorID) return NotFound();
             if (ModelState.IsValid)
             {
-
-                
                 await _advisorService.EditAdvisorAsync(advisorDto);
                 return RedirectToAction(nameof(Index));
             }
-            var materials = await _materialsService.GetMaterialsAsyn();
-            ViewBag.Materials = new MultiSelectList(materials, "MaterialID", "LessonsName",advisorDto.Materials);
-            ;
             return View(advisorDto);
-
         }
 
         public async Task<IActionResult> Delete(int id)
