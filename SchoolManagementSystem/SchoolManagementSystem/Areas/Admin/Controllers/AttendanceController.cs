@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using SchoolManagement.BusinessLogic.Dto;
 using SchoolManagement.BusinessLogic.Services;
+using SchoolManagement.DataAccess.Models;
 
 namespace SchoolManagementSystem.Areas.Admin.Controllers
 {
@@ -11,13 +12,13 @@ namespace SchoolManagementSystem.Areas.Admin.Controllers
     {
         private readonly IAttendanceService _attendanceService;
         private readonly IStudentService _studentService;
-        private readonly IAdvisorService _advisorService;
+        private readonly IMaterialsService _materialsService;
         private readonly ILogger<AttendanceController> _logger;
-        public AttendanceController(IAttendanceService attendanceService, ILogger<AttendanceController> logger,IAdvisorService advisorService, IStudentService studentService)
+        public AttendanceController(IAttendanceService attendanceService, ILogger<AttendanceController> logger,IMaterialsService materialsService, IStudentService studentService)
         {
             _attendanceService = attendanceService;
             _studentService = studentService;
-            _advisorService = advisorService;
+            _materialsService = materialsService;
             _logger = logger;
         }
         public async Task<ActionResult> Index()
@@ -30,10 +31,7 @@ namespace SchoolManagementSystem.Areas.Admin.Controllers
         // GET: AttendanceController/Create
         public async Task<ActionResult> Create()
         {
-            var students = await _studentService.GetAllStudent();
-            var advisors = await _advisorService.GetAllAdvisorAsyn();
-            ViewBag.Students = new SelectList(students, "StudentID", "FirstName");
-            ViewBag.Advisors = new SelectList(advisors, "AdvisorID", "FirstName");
+            ListingMaterialsandStudent();
             return View();
         }
 
@@ -44,70 +42,87 @@ namespace SchoolManagementSystem.Areas.Admin.Controllers
         {
             try
             {
-                if(ModelState.IsValid)
+                if (ModelState.IsValid)
                 {
+
                     await _attendanceService.CreateAttendanceAsync(attendanceDTO);
                     return RedirectToAction(nameof(Index));
                 }
+                else
+                {
+                    foreach (var modelState in ModelState.Values)
+                    {
+                        foreach (var error in modelState.Errors)
+                        {
+                            _logger.LogError(error.ErrorMessage);
+                        }
+                    }
+                }
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 _logger.LogError(ex, "Error occurred while creating attendance.");
             }
-            var students = await _studentService.GetAllStudent();
-            var advisors = await _advisorService.GetAllAdvisorAsyn();
-            ViewBag.Students = new SelectList(students, "StudentID", "FirstName");
-            ViewBag.Advisors = new SelectList(advisors, "AdvisorID", "FirstName");
+
+            ListingMaterialsandStudent();
             return View(attendanceDTO);
         }
 
         // GET: AttendanceController/Edit/5
-        public ActionResult Edit(int id)
+        public async Task<ActionResult> Edit(int id)
         {
-            return View();
+            var attendance =await _attendanceService.GetAttendancesWithDetailsAsync(id);
+            if (attendance == null) return NotFound();
+            ListingMaterialsandStudent();
+            return View(attendance);
         }
 
         // POST: AttendanceController/Edit/5
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit(int id, IFormCollection collection)
+        public async Task<ActionResult> Edit(int id, AttendanceDTO attendanceDTO)
         {
+            if (id != attendanceDTO.AttendanceID) return NotFound();
             try
             {
-                return RedirectToAction(nameof(Index));
+                if (ModelState.IsValid)
+                {
+                    await _attendanceService.EditAttendanceAsync(attendanceDTO);
+                    return RedirectToAction(nameof(Index));
+
+                }
+              
             }
-            catch
+            catch (Exception ex)
             {
-                return View();
+                _logger.LogError(ex, "Error occurred while updating attendance.");
             }
+            ListingMaterialsandStudent();
+            return View(attendanceDTO);
         }
-
-        // GET: AttendanceController/Details/5
-        public ActionResult Details(int id)
-        {
-            return View();
-        }
-
 
         // GET: AttendanceController/Delete/5
-        public ActionResult Delete(int id)
+        public async Task<ActionResult> Delete(int id)
         {
-            return View();
+            var attendance = await _attendanceService.GetAttendancesWithDetailsAsync(id);
+            ListingMaterialsandStudent();
+            return View(attendance);
         }
 
         // POST: AttendanceController/Delete/5
-        [HttpPost]
+        [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
-        public ActionResult Delete(int id, IFormCollection collection)
+        public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            try
-            {
-                return RedirectToAction(nameof(Index));
-            }
-            catch
-            {
-                return View();
-            }
+            await _attendanceService.DeleteAttendanceAsync(id);
+            return RedirectToAction(nameof(Index));
+        }
+        private async void ListingMaterialsandStudent()
+        {
+            var students = await _studentService.GetAllStudent();
+            var materials = await _materialsService.GetMaterialsAsyn();
+            ViewBag.Students = new SelectList(students, "StudentID", "FirstName");
+            ViewBag.Materials = new SelectList(materials, "MaterialID", "LessonsName");
         }
     }
 }

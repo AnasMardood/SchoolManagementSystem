@@ -15,7 +15,7 @@ namespace SchoolManagement.BusinessLogic.Dto
         public bool Status { get; set; }
         public int? StudentID { get; set; }
         public int MaterialID { get; set; }
-        public StudentDTO StudentDTO { get; set; }
-        public MaterialsDTO MaterialsDTO { get; set; }
+        public StudentDTO? StudentDTO { get; set; }
+        public MaterialsDTO? MaterialsDTO { get; set; }
     }
 }

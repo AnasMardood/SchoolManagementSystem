@@ -38,14 +38,21 @@ namespace SchoolManagement.BusinessLogic.Mappers
                 Status = attendance.Status,
                 StudentID = attendance.StudentID,
                 MaterialID = attendance.MaterialID,
-                Student =new Student() { FirstName =attendance.StudentDTO.FirstName,
-                                          LastName =attendance.StudentDTO.LastName},
-                Material=new Materials() { LessonsName = attendance.MaterialsDTO.LessonsName}
+                Student = attendance.StudentDTO != null ? new Student
+                {
+                    StudentID = attendance.StudentDTO.StudentID,
+                    FirstName = attendance.StudentDTO.FirstName,
+                    LastName = attendance.StudentDTO.LastName
+                } : null,
+                Material = attendance.MaterialsDTO != null ? new Materials
+                {
+                    MaterialID=attendance.MaterialsDTO.MaterialID,
+                    LessonsName=attendance.MaterialsDTO.LessonsName
+                } : null,
                 
             };
         }
-
-        public static List<Attendance> Map(IEnumerable<AttendanceDTO> attendances)
+public static List<Attendance> Map(IEnumerable<AttendanceDTO> attendances)
         {
             return attendances.Select(Map).ToList();
         }
