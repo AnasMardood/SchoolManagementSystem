@@ -7,16 +7,20 @@
       "RelativeMoniker": "D:0:0:{896286B0-E7CB-472D-9E1B-38BDE5B647B1}|SchoolManagementSystem\\SchoolManagementSystem.csproj|solutionrelative:schoolmanagementsystem\\areas\\admin\\controllers\\attendancecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D284D34F-DCC5-41DC-B019-29F08757F7D3}|SchoolManagement.BusinessLogic\\SchoolManagement.BusinessLogic.csproj|c:\\users\\enes\\desktop\\okul_\u00F6\u011Frenci_y\u00F6netim_sistemi\\schoolmanagementsystem\\schoolmanagementsystem\\schoolmanagement.businesslogic\\dto\\attendancedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D284D34F-DCC5-41DC-B019-29F08757F7D3}|SchoolManagement.BusinessLogic\\SchoolManagement.BusinessLogic.csproj|solutionrelative:schoolmanagement.businesslogic\\dto\\attendancedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{D284D34F-DCC5-41DC-B019-29F08757F7D3}|SchoolManagement.BusinessLogic\\SchoolManagement.BusinessLogic.csproj|c:\\users\\enes\\desktop\\okul_\u00F6\u011Frenci_y\u00F6netim_sistemi\\schoolmanagementsystem\\schoolmanagementsystem\\schoolmanagement.businesslogic\\services\\attendanceservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D284D34F-DCC5-41DC-B019-29F08757F7D3}|SchoolManagement.BusinessLogic\\SchoolManagement.BusinessLogic.csproj|solutionrelative:schoolmanagement.businesslogic\\services\\attendanceservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{CFDBB6C1-3561-4114-8CAF-C8CF1D149E45}|SchoolManagement.DataAccess\\SchoolManagement.DataAccess.csproj|c:\\users\\enes\\desktop\\okul_\u00F6\u011Frenci_y\u00F6netim_sistemi\\schoolmanagementsystem\\schoolmanagementsystem\\schoolmanagement.dataaccess\\repositories\\iattendancerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CFDBB6C1-3561-4114-8CAF-C8CF1D149E45}|SchoolManagement.DataAccess\\SchoolManagement.DataAccess.csproj|solutionrelative:schoolmanagement.dataaccess\\repositories\\iattendancerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{CFDBB6C1-3561-4114-8CAF-C8CF1D149E45}|SchoolManagement.DataAccess\\SchoolManagement.DataAccess.csproj|c:\\users\\enes\\desktop\\okul_\u00F6\u011Frenci_y\u00F6netim_sistemi\\schoolmanagementsystem\\schoolmanagementsystem\\schoolmanagement.dataaccess\\repositories\\attendancerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CFDBB6C1-3561-4114-8CAF-C8CF1D149E45}|SchoolManagement.DataAccess\\SchoolManagement.DataAccess.csproj|solutionrelative:schoolmanagement.dataaccess\\repositories\\attendancerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D284D34F-DCC5-41DC-B019-29F08757F7D3}|SchoolManagement.BusinessLogic\\SchoolManagement.BusinessLogic.csproj|c:\\users\\enes\\desktop\\okul_\u00F6\u011Frenci_y\u00F6netim_sistemi\\schoolmanagementsystem\\schoolmanagementsystem\\schoolmanagement.businesslogic\\dto\\attendancedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D284D34F-DCC5-41DC-B019-29F08757F7D3}|SchoolManagement.BusinessLogic\\SchoolManagement.BusinessLogic.csproj|solutionrelative:schoolmanagement.businesslogic\\dto\\attendancedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -36,7 +40,7 @@
               "RelativeDocumentMoniker": "SchoolManagementSystem\\Areas\\Admin\\Controllers\\AttendanceController.cs",
               "ToolTip": "C:\\Users\\ENES\\Desktop\\Okul_\u00F6\u011Frenci_y\u00F6netim_Sistemi\\SchoolManagementSystem\\SchoolManagementSystem\\SchoolManagementSystem\\Areas\\Admin\\Controllers\\AttendanceController.cs",
               "RelativeToolTip": "SchoolManagementSystem\\Areas\\Admin\\Controllers\\AttendanceController.cs",
-              "ViewState": "AQIAAAsAAAAAAAAAAAAQwCgAAAASAAAA",
+              "ViewState": "AQIAACcAAAAAAAAAAAAwwA8AAAA1AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-20T20:17:26.572Z",
               "IsPinned": true,
@@ -44,16 +48,17 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "AttendanceService.cs",
               "DocumentMoniker": "C:\\Users\\ENES\\Desktop\\Okul_\u00F6\u011Frenci_y\u00F6netim_Sistemi\\SchoolManagementSystem\\SchoolManagementSystem\\SchoolManagement.BusinessLogic\\Services\\AttendanceService.cs",
               "RelativeDocumentMoniker": "SchoolManagement.BusinessLogic\\Services\\AttendanceService.cs",
               "ToolTip": "C:\\Users\\ENES\\Desktop\\Okul_\u00F6\u011Frenci_y\u00F6netim_Sistemi\\SchoolManagementSystem\\SchoolManagementSystem\\SchoolManagement.BusinessLogic\\Services\\AttendanceService.cs",
               "RelativeToolTip": "SchoolManagement.BusinessLogic\\Services\\AttendanceService.cs",
-              "ViewState": "AQIAACUAAAAAAAAAAAAuwFYAAAAIAAAA",
+              "ViewState": "AQIAAC8AAAAAAAAAAAAwwDIAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-20T20:23:07.243Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -63,23 +68,39 @@
               "RelativeDocumentMoniker": "SchoolManagement.DataAccess\\Repositories\\AttendanceRepository.cs",
               "ToolTip": "C:\\Users\\ENES\\Desktop\\Okul_\u00F6\u011Frenci_y\u00F6netim_Sistemi\\SchoolManagementSystem\\SchoolManagementSystem\\SchoolManagement.DataAccess\\Repositories\\AttendanceRepository.cs",
               "RelativeToolTip": "SchoolManagement.DataAccess\\Repositories\\AttendanceRepository.cs",
-              "ViewState": "AQIAAAgAAAAAAAAAAAAiwCYAAAAIAAAA",
+              "ViewState": "AQIAABkAAAAAAAAAAAAmwCYAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-20T20:15:38.3Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "AttendanceDTO.cs",
               "DocumentMoniker": "C:\\Users\\ENES\\Desktop\\Okul_\u00F6\u011Frenci_y\u00F6netim_Sistemi\\SchoolManagementSystem\\SchoolManagementSystem\\SchoolManagement.BusinessLogic\\Dto\\AttendanceDTO.cs",
               "RelativeDocumentMoniker": "SchoolManagement.BusinessLogic\\Dto\\AttendanceDTO.cs",
               "ToolTip": "C:\\Users\\ENES\\Desktop\\Okul_\u00F6\u011Frenci_y\u00F6netim_Sistemi\\SchoolManagementSystem\\SchoolManagementSystem\\SchoolManagement.BusinessLogic\\Dto\\AttendanceDTO.cs",
               "RelativeToolTip": "SchoolManagement.BusinessLogic\\Dto\\AttendanceDTO.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAFAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAkAAAAeAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-20T21:37:46.482Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "IAttendanceRepository.cs",
+              "DocumentMoniker": "C:\\Users\\ENES\\Desktop\\Okul_\u00F6\u011Frenci_y\u00F6netim_Sistemi\\SchoolManagementSystem\\SchoolManagementSystem\\SchoolManagement.DataAccess\\Repositories\\IAttendanceRepository.cs",
+              "RelativeDocumentMoniker": "SchoolManagement.DataAccess\\Repositories\\IAttendanceRepository.cs",
+              "ToolTip": "C:\\Users\\ENES\\Desktop\\Okul_\u00F6\u011Frenci_y\u00F6netim_Sistemi\\SchoolManagementSystem\\SchoolManagementSystem\\SchoolManagement.DataAccess\\Repositories\\IAttendanceRepository.cs",
+              "RelativeToolTip": "SchoolManagement.DataAccess\\Repositories\\IAttendanceRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAABKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-21T11:01:44.857Z",
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Bookmark",
@@ -88,10 +109,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             }
           ]
         }

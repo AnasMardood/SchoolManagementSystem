@@ -36,6 +36,14 @@ namespace SchoolManagement.DataAccess.Repositories
                                 .Include(m => m.Material)
                                 .ToListAsync();
 
+        }     
+        public async Task<Attendance> GetAttendancesWithDetailsAsync(int attendanceId)
+        {
+            return await _dbSet.Include(s => s.Student)
+                                .Include(a => a.Advisor)
+                                .Include(m => m.Material)
+                                .FirstOrDefaultAsync(A => A.AttendanceID == attendanceId);
+
         }
     }
 }

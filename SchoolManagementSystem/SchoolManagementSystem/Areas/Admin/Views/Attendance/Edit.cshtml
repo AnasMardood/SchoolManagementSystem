@@ -1,17 +1,18 @@
 ﻿@model SchoolManagement.BusinessLogic.Dto.AttendanceDTO
 
 @{
-    ViewData["Title"] = "Create";
+    ViewData["Title"] = "Edit";
 }
 
-<h1>Create</h1>
+<h1>Edit</h1>
 
 <h4>Attendance</h4>
 <hr />
 <div class="row">
     <div class="col-md-4">
-        <form asp-action="Create">
+        <form asp-action="Edit">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="AttendanceID" />
             <div class="form-group">
                 <label asp-for="Date" class="control-label"></label>
                 <input asp-for="Date" class="form-control" />
@@ -21,16 +22,6 @@
                 <label class="form-check-label">
                     <input class="form-check-input" asp-for="Status" /> @Html.DisplayNameFor(model => model.Status)
                 </label>
-            </div>
-            <div class="form-group">
-                <label asp-for="MaterialID" class="control-label"></label>
-                <select id="MaterialID" name="MaterialID" class="form-control">
-                    <option value="">-- Select Material --</option>
-                    @foreach (var materialItem in ViewBag.Materials)
-                    {
-                        <option value="@materialItem.Value">@materialItem.Text</option>
-                    }
-                </select>
             </div>
             <div class="form-group">
                 <label asp-for="StudentID" class="control-label"></label>
@@ -43,7 +34,17 @@
                 </select>
             </div>
             <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
+                <label asp-for="MaterialID" class="control-label"></label>
+                <select id="MaterialID" name="MaterialID" class="form-control">
+                    <option value="">-- Select Material --</option>
+                    @foreach (var materialItem in ViewBag.Materials)
+                    {
+                        <option value="@materialItem.Value">@materialItem.Text</option>
+                    }
+                </select>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
             </div>
         </form>
     </div>

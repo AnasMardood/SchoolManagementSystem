@@ -22,19 +22,54 @@ namespace SchoolManagement.BusinessLogic.Services
             _logger = logger;
         }
 
-        public async Task<AttendanceDTO> CreateAttendanceAsync(AttendanceDTO Attendancedto)
+        public async Task CreateAttendanceAsync(AttendanceDTO Attendancedto)
         {
 
             try
             {
-              var attendance=AttendanceMapper.Map(Attendancedto);  
+              var attendance=AttendanceMapper.Map(Attendancedto); 
+
                 _repository.Create(attendance);
                 await _repository.SaveChangesAsync();
-                return AttendanceMapper.Map(attendance);
             }
             catch (Exception ex)
             {
                 _logger.LogError(ex, $"An error occurred while Create attendances .");
+                throw;
+            }
+        }
+
+        public async Task DeleteAttendanceAsync(int  AttendanceId)
+        {
+            try
+            {
+                var attendance = await _repository.GetAttendancesWithDetailsAsync(AttendanceId);
+                _repository.Delete(attendance);
+                await _repository.SaveChangesAsync();
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, $"An error occurred while Delete attendances .");
+                throw;
+            }
+        }
+
+        public async Task EditAttendanceAsync(AttendanceDTO Attendancedto)
+        {
+            try
+            {
+                var attendance = await _repository.GetAttendancesWithDetailsAsync(Attendancedto.AttendanceID);
+                attendance.StudentID = Attendancedto.StudentID;
+                attendance.MaterialID = Attendancedto.MaterialID;
+                attendance.Status = Attendancedto.Status;
+                attendance.Date = Attendancedto.Date;
+                
+                _repository.Update(attendance);
+                await _repository.SaveChangesAsync();
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, $"An error occurred while Update attendances  ID {Attendancedto.AttendanceID}.");
                 throw;
             }
         }
@@ -67,9 +102,18 @@ namespace SchoolManagement.BusinessLogic.Services
             }
         }
 
-        public Task<IEnumerable<AttendanceDTO>> GetAttendancesWithDetailsAsync(int studentId)
+        public async Task<AttendanceDTO> GetAttendancesWithDetailsAsync(int attendaneDto)
         {
-            throw new NotImplementedException();
+            try
+            {
+                var attendance = await _repository.GetAttendancesWithDetailsAsync(attendaneDto);
+                return AttendanceMapper.Map(attendance);
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, $"An error occurred while fetching attendances ID {attendaneDto}.");
+                throw;
+            }
         }
 
         public async Task<IEnumerable<AttendanceDTO>> GetAttendancesWithDetailsAsync()
@@ -90,9 +134,11 @@ namespace SchoolManagement.BusinessLogic.Services
     {
         Task<IEnumerable<AttendanceDTO>> GetAttendancesByMaterialIdAsync(int materialId);
         Task<IEnumerable<AttendanceDTO>> GetAttendancesByStudentIdAsync(int studentId);
-        Task<IEnumerable<AttendanceDTO>> GetAttendancesWithDetailsAsync(int studentId);
+        Task<AttendanceDTO> GetAttendancesWithDetailsAsync(int studentId);
         Task<IEnumerable<AttendanceDTO>> GetAttendancesWithDetailsAsync();
-        Task<AttendanceDTO> CreateAttendanceAsync(AttendanceDTO Attendancedto);
+        Task CreateAttendanceAsync(AttendanceDTO Attendancedto);
+        Task EditAttendanceAsync(AttendanceDTO Attendancedto);
+        Task DeleteAttendanceAsync(int AttendanceId);
 
     }
 }
