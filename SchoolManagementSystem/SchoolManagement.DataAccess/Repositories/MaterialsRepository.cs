@@ -26,8 +26,10 @@ namespace SchoolManagement.DataAccess.Repositories
         }
         public async Task<IEnumerable<Materials>> GetMaterialsAsync()
         {
-            return await _dbSet.Include(a => a.AdvisorID)
-                                .Include(c => c.ClassID)
+            return await _dbSet.Include(a => a.Advisor)
+                                .Include(c => c.Class)
+                                .Include(m =>m.StudentMarks)
+                                .Include(s => s.StudentMaterials)
                                 .ToListAsync();
         }     
         public async Task<Materials> GetMaterialsWithDetailsAsync(int materialId)

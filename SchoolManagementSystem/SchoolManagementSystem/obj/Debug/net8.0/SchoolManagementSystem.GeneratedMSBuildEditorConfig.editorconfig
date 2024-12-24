@@ -98,6 +98,22 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/ENES/Desktop/Okul_öğrenci_yönetim_Sistemi/SchoolManagementSystem/SchoolManagementSystem/SchoolManagementSystem/Areas/Admin/Views/StudentMark/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU3R1ZGVudE1hcmtcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ENES/Desktop/Okul_öğrenci_yönetim_Sistemi/SchoolManagementSystem/SchoolManagementSystem/SchoolManagementSystem/Areas/Admin/Views/StudentMark/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU3R1ZGVudE1hcmtcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ENES/Desktop/Okul_öğrenci_yönetim_Sistemi/SchoolManagementSystem/SchoolManagementSystem/SchoolManagementSystem/Areas/Admin/Views/StudentMark/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU3R1ZGVudE1hcmtcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ENES/Desktop/Okul_öğrenci_yönetim_Sistemi/SchoolManagementSystem/SchoolManagementSystem/SchoolManagementSystem/Areas/Admin/Views/StudentMark/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU3R1ZGVudE1hcmtcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/ENES/Desktop/Okul_öğrenci_yönetim_Sistemi/SchoolManagementSystem/SchoolManagementSystem/SchoolManagementSystem/Areas/Admin/Views/Student/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU3R1ZGVudFxDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 

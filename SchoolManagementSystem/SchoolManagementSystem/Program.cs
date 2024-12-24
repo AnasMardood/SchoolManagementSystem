@@ -31,12 +31,14 @@ builder.Services.AddScoped<IClassesRepository,ClassesRepository>();
 builder.Services.AddScoped<IAttendanceRepository, AttendanceRepository>();
 builder.Services.AddScoped<IAdvisorRepository,AdvisorRepository>();
 builder.Services.AddScoped<ISemesterRepository,SemesterRepository>();
+builder.Services.AddScoped<IStudentMarkRepository,StudentMarkRepository>();
 
 builder.Services.AddScoped<IStudentService, StudentService>();
 builder.Services.AddScoped<IClassesService, ClassesService>();
 builder.Services.AddScoped<IAdvisorService, AdvisorService>();
 builder.Services.AddScoped<IMaterialsService,MaterialsService>();
 builder.Services.AddScoped<IAttendanceService,AttendanceService>();
+builder.Services.AddScoped<IStudentMarkService,StudentMarkService>();
 
 
 

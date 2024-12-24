@@ -73,7 +73,10 @@ namespace SchoolManagementSystem.Areas.Admin.Controllers
         {
             var attendance =await _attendanceService.GetAttendancesWithDetailsAsync(id);
             if (attendance == null) return NotFound();
-            ListingMaterialsandStudent();
+            var students = await _studentService.GetAllStudent();
+            var materials = await _materialsService.GetMaterialsAsyn();
+            ViewBag.Students = new SelectList(students, "StudentID", "FirstName");
+            ViewBag.Materials = new SelectList(materials, "MaterialID", "LessonsName");
             return View(attendance);
         }
 

@@ -36,6 +36,7 @@ namespace SchoolManagement.DataAccess.Repositories
         {
             return await _dbSet
                   .Include(s => s.Class)
+                  .Include(m => m.StudentMaterials)
                   .ToListAsync();
         }
     }

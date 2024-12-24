@@ -14,9 +14,9 @@
             public string LessonsName { get; set; }
             public int CreditHours { get; set; }
             public int AdvisorID { get; set; }
-            public Advisor Advisor { get; set; }     
+            public Advisor? Advisor { get; set; }     
             public int ClassID { get; set; }
-            public Classes Class { get; set; }
+            public Classes? Class { get; set; }
             
            public ICollection<StudentMaterial>? StudentMaterials { get; set; }
            public ICollection<Attendance>? Attendances { get; set; }

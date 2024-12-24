@@ -13,5 +13,7 @@ namespace SchoolManagement.BusinessLogic.Dto
         public int MaterialID { get; set; }
         public string ExamType { get; set; }
         public decimal Mark { get; set; }
+        public StudentDTO? StudentDTO { get; set; }
+        public MaterialsDTO? MaterialsDTO { get; set; }
     }
 }

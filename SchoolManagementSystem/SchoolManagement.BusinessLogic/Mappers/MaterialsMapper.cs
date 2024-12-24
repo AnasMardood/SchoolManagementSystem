@@ -19,6 +19,8 @@ namespace SchoolManagement.BusinessLogic.Mappers
                 CreditHours = material.CreditHours,
                 ClassID = material.ClassID,
                 AdvisorID= material.AdvisorID,
+                
+                
             };
         }
 
