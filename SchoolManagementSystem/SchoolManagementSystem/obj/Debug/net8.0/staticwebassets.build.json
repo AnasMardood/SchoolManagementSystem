@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "1euiKwxgFzXCobQKGegxizn+vG11bSxqe0Ovs3vIMDA=",
+  "Hash": "3JSiO5HXw6CAS0iaeNiWkbUwkcNmhzrALl/2bzW/0+U=",
   "Source": "SchoolManagementSystem",
   "BasePath": "_content/SchoolManagementSystem",
   "Mode": "Default",
@@ -1214,6 +1214,25 @@
       "OriginalItemSpec": "wwwroot\\css\\site.css"
     },
     {
+      "Identity": "C:\\Users\\ENES\\Desktop\\Okul_öğrenci_yönetim_Sistemi\\SchoolManagementSystem\\SchoolManagementSystem\\SchoolManagementSystem\\wwwroot\\css\\style.css",
+      "SourceId": "SchoolManagementSystem",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ENES\\Desktop\\Okul_öğrenci_yönetim_Sistemi\\SchoolManagementSystem\\SchoolManagementSystem\\SchoolManagementSystem\\wwwroot\\",
+      "BasePath": "_content/SchoolManagementSystem",
+      "RelativePath": "css/style.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\style.css"
+    },
+    {
       "Identity": "C:\\Users\\ENES\\Desktop\\Okul_öğrenci_yönetim_Sistemi\\SchoolManagementSystem\\SchoolManagementSystem\\SchoolManagementSystem\\wwwroot\\favicon.ico",
       "SourceId": "SchoolManagementSystem",
       "SourceType": "Discovered",
@@ -1231,6 +1250,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\ENES\\Desktop\\Okul_öğrenci_yönetim_Sistemi\\SchoolManagementSystem\\SchoolManagementSystem\\SchoolManagementSystem\\wwwroot\\images\\avatar-male.jpg",
+      "SourceId": "SchoolManagementSystem",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ENES\\Desktop\\Okul_öğrenci_yönetim_Sistemi\\SchoolManagementSystem\\SchoolManagementSystem\\SchoolManagementSystem\\wwwroot\\",
+      "BasePath": "_content/SchoolManagementSystem",
+      "RelativePath": "images/avatar-male.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\avatar-male.jpg"
     },
     {
       "Identity": "C:\\Users\\ENES\\Desktop\\Okul_öğrenci_yönetim_Sistemi\\SchoolManagementSystem\\SchoolManagementSystem\\SchoolManagementSystem\\wwwroot\\js\\site.js",

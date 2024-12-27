@@ -1,12 +1,15 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using SchoolManagement.BusinessLogic.Dto;
 using SchoolManagement.BusinessLogic.Services;
 using SchoolManagement.DataAccess.Models;
+using SchoolManagement.DataAccess.Utilities;
 
 namespace SchoolManagementSystem.Areas.Admin.Controllers
 {
     [Area("Admin")]
+    [Authorize(Roles =WebSiteRole.WebSite_Admin)]
     public class ClassesController : Controller
     {
         private readonly IMaterialsService _materialsService;

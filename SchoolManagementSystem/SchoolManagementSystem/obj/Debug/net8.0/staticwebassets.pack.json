@@ -9,8 +9,16 @@
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
+      "Id": "C:\\Users\\ENES\\Desktop\\Okul_öğrenci_yönetim_Sistemi\\SchoolManagementSystem\\SchoolManagementSystem\\SchoolManagementSystem\\wwwroot\\css\\style.css",
+      "PackagePath": "staticwebassets\\css\\style.css"
+    },
+    {
       "Id": "C:\\Users\\ENES\\Desktop\\Okul_öğrenci_yönetim_Sistemi\\SchoolManagementSystem\\SchoolManagementSystem\\SchoolManagementSystem\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\ENES\\Desktop\\Okul_öğrenci_yönetim_Sistemi\\SchoolManagementSystem\\SchoolManagementSystem\\SchoolManagementSystem\\wwwroot\\images\\avatar-male.jpg",
+      "PackagePath": "staticwebassets\\images\\avatar-male.jpg"
     },
     {
       "Id": "C:\\Users\\ENES\\Desktop\\Okul_öğrenci_yönetim_Sistemi\\SchoolManagementSystem\\SchoolManagementSystem\\SchoolManagementSystem\\wwwroot\\js\\site.js",
