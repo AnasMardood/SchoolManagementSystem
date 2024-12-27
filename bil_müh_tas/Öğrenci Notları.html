@@ -42,12 +42,7 @@
                     <p>Sinav Takvimi</p>
                 </a>
             </li>
-            <li>
-                <a href="Devamsız durumu.html">
-                    <i class="fa-solid fa-atom"></i>
-                    <p>Devamsız durumu</p>
-                </a>
-            </li>
+           
         
           
                  <li>
@@ -74,24 +69,6 @@
                         <p>Dersler</p>
                     </a>
                 </li>
-                <li>
-                    <a href="Kitabler.html">
-                        <i class="fa-solid fa-book"></i>
-                        <p>Kitabler</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="Çalışmalarım ve ödev.html">
-                        <i class="fa-solid fa-bars-progress"></i>
-                        <p>Çalışmalarım ve ödev</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="Canlı Dersler.html">
-                        <i class="fa-solid fa-globe"></i>
-                        <p>Canlı Dersler</p>
-                    </a>
-                </li>
                 <li class="log-out">
                     <a href="Log Out.html">
                         <i class="fas fa-sign-out"></i>
@@ -101,83 +78,36 @@
            
         </ul>
     </div>
-    <div class="Öğrenci-notu-table">
-        <table>
-            <thead>
-                <tr>
-                    <th></th>
-                    <th>Ders Adı</th>
-                    <th>Tamamlama Ödevleri Sayısı</th>
-                    <th>Ara Sınavı 1</th>
-                    <th>Final Sınavı 1</th>
-                    <th>Ara Sınavı 2</th>
-                    <th>Final Sınavı 2</th>
-                    
-                    <th>Son Not</th>
-                   
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <th>1</th>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+    <div class="content">
+        <div class="category-bar">
+            <label for="year-select">اختر السنة:</label>
+            <select id="year-select" onchange="updateTable()">
+                <option value="year1">1.sınıf</option>
+                <option value="year2">2.sınıf</option>
+                <option value="year3">3.sınıf</option>
+                <option value="year4">4.sınıf</option>
+            </select>
+        </div>
 
-                   
-                </tr>
-                <tr>
-                    <th>2</th>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    
-                </tr>
-                <tr>
-                    <th>3</th>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                   
-                </tr>
-                <tr>
-                    <th>4</th>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                   
-                   
-                </tr>
-                
-                <tr>
-                    <th>5</th>
-                    <td>--</td>
-                    <td>--</td>
-                    <td>--</td>
-                    <td>--</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    
-                </tr>
-            </tbody>
-        </table>
+        <!-- الجدول -->
+        <div class="table-container">
+            <table id="student-table">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>اسم المادة</th>
+                        <th>الأعمال الفصلية</th>
+                        <th>الاختبار الأول</th>
+                        <th>الاختبار النهائي</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- محتويات الجدول ستُضاف ديناميكيًا -->
+                </tbody>
+            </table>
+        </div>
     </div>
+
+    <script src="script.js"></script>
 </body>
 </html>

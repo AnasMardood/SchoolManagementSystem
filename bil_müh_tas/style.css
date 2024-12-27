@@ -5,7 +5,7 @@ color: rgb(245, 242, 242);
 font-family:'Times New Roman', Times, serif;
 }
 body{
-    background-color: rgb(0, 0, 0);
+    background-color: #2a2a3e;
     display: flex;
 
 }
@@ -187,4 +187,165 @@ input[type="datetime-local"] {
     input[type="datetime-local"] {
         font-size: 14px;
     }
+}
+
+
+/* لجعل الجدول متجاوبًا مع الشاشات الصغيرة */
+
+
+.profile-container {
+    background: 123;
+            border: 1px solid #2a2a3e;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(183, 177, 177, 0.1);
+            width: 100%;
+            max-width: 600px;
+            padding: 20px;
+            box-sizing: border-box;
+            margin: 20px;
+}
+
+.profile-container h2 {
+    margin-bottom: 20px;
+    font-size: 20px;
+    text-align: center;
+    color: #eadfdf;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #ffffff;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #f0dede;
+    color: #a59c9c;
+    border-radius: 90px;
+    box-sizing: border-box;
+}
+
+.form-group input[type="radio"] {
+    width: auto;
+    margin-left: 12px;
+}
+
+.form-group .radio-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    
+}
+
+.form-group .radio-group label {
+    margin: 0;
+}
+
+.btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #d9534f;
+    color: #101010;
+    text-align: center;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.btn:hover {
+    background-color: #c9302c;
+}
+select option {
+    color: #333; /* Yazı rengi */
+    background-color: #f9f9f9; /* Arka plan rengi */
+}
+
+
+
+/* Vali sayfası*/
+
+.advisor-container {
+    background: #2a2a3e;
+    border: 1px solid #2a2a3e;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 600px;
+    padding: 20px;
+}
+
+.advisor-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.advisor-header img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-right: 20px;
+    border: 1px solid #ccc;
+    object-fit: cover;
+}
+
+.advisor-header .advisor-info {
+    font-size: 18px;
+    color: #333;
+}
+
+.advisor-header .advisor-info span {
+    display: block;
+    font-weight: bold;
+}
+
+.advisor-details {
+    margin-top: 10px;
+    line-height: 1.6;
+    color: #555;
+}
+
+.advisor-details span {
+    font-weight: bold;
+}
+
+.advisor-links {
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+}
+
+.advisor-links a {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    color: #007bff;
+    font-size: 14px;
+}
+
+.advisor-links a:hover {
+    text-decoration: underline;
+}
+.category-bar select {
+    background-color: #007bff ; /* تغيير لون الخلفية */
+    color: #ffffff ; /* تغيير لون النص */
+    padding: 8px;
+    border: 1px solid #444;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.category-bar select option {
+    background-color: #123 ; /* لون خلفية الخيارات */
+    color: #ffffff ; /* لون النص داخل الخيارات */
 }
