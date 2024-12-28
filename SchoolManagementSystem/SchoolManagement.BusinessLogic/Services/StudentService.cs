@@ -122,10 +122,13 @@ namespace SchoolManagement.BusinessLogic.Services
                 student.Gender = studentDTO.Gender;
                 student.Address = studentDTO.Address;
                 student.Status = studentDTO.Status;
-                student.ProfilePicture = studentDTO.ProfilePicture;
                 student.Nationality = studentDTO.Nationality;
                 student.ClassID = studentDTO.ClassID;
 
+                if (studentDTO.ProfilePicture != null && studentDTO.ProfilePicture.Length > 0)
+                {
+                    student.ProfilePicture = studentDTO.ProfilePicture;
+                }
                 _repository.Update(student);
                 await _repository.SaveChangesAsync();
             }

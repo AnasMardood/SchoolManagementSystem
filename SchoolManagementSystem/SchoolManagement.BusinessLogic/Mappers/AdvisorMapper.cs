@@ -22,7 +22,7 @@ namespace SchoolManagement.BusinessLogic.Mappers
                 Phone = advisor.Phone,
                 Address = advisor.Address,
                 EnrollmentDate = advisor.EnrollmentDate,
-                ProfilePicture = advisor.ProfilePicture,
+                Picture = advisor.ProfilePicture,
                 Role = advisor.Role,
                 Materials = advisor.Materials?.Select(m => new MaterialsDTO
                 {
@@ -49,7 +49,7 @@ namespace SchoolManagement.BusinessLogic.Mappers
                 Phone = advisor.Phone,
                 Address = advisor.Address,
                 EnrollmentDate = advisor.EnrollmentDate,
-                ProfilePicture = advisor.ProfilePicture,
+                ProfilePicture = advisor.Picture,
                 Role = advisor.Role,
                 Materials = advisor.Materials?.Select(m => new Materials
                 {

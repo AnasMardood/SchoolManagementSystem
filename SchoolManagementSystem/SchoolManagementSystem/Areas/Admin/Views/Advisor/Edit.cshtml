@@ -7,7 +7,7 @@
 
     <div class="container mt-5">
         <h2>@ViewData["Title"] Advisor</h2>
-        <form asp-action="Edit" asp-controller="Advisor" method="post" >
+        <form asp-action="Edit" asp-controller="Advisor" method="post" enctype="multipart/form-data">
             <input type="hidden" name="AdvisorID" value="@Model.AdvisorID" />
 
             <div class="mb-3">
@@ -45,10 +45,28 @@
                 <input type="date" class="form-control" id="EnrollmentDate" name="EnrollmentDate" value="@Model.EnrollmentDate.ToString("yyyy-MM-dd")" required />
             </div>
 
-            <div class="mb-3">
-                <label for="ProfilePicture" class="form-label">Profile Picture</label>
-                <input type="text" class="form-control" id="ProfilePicture" name="ProfilePicture" accept="image/*" />
+        <div class="col-md-6">
+            <div class="form-group">
+                <label asp-for="Picture" class="w-100"></label>
+                @if (Model.Picture != null)
+                {
+                    <img id="Picture" alt="profile" class="profile-picture" src="data:image/*;base64,@(Convert.ToBase64String(Model.Picture))" />
+                }
+                else
+                {
+                    <img id="Picture" alt="profile" class="profile-picture" src="~/images/avatar-male.jpg" />
+                }
+                <div class="custom-file mt-2">
+                    <input type="file"
+                           accept="image/*"
+                           asp-for="PictureFile"
+                           class="custom-file-input"
+                           onchange="document.getElementById('Picture').src = window.URL.createObjectURL(this.files[0])" />
+                    <label class="custom-file-label" asp-for="PictureFile">Choose picture...</label>
+                    <span asp-validation-for="PictureFile" class="text-danger"></span>
+                </div>
             </div>
+        </div>
 
             <div class="mb-3">
                 <label for="Role" class="form-label">Role</label>

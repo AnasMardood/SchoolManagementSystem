@@ -16,7 +16,7 @@ namespace SchoolManagement.DataAccess.Models
         public string Phone { get; set; }
         public string Address { get; set; }
         public DateTime EnrollmentDate { get; set; }
-        public string ProfilePicture { get; set; }
+        public byte[]? ProfilePicture { get; set; }
         public string Role { get; set; }
         public ICollection<Materials> Materials { get; set; } 
         public ICollection<Attendance>? Attendances { get; set; }

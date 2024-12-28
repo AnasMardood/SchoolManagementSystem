@@ -20,7 +20,7 @@ namespace SchoolManagement.DataAccess.Models
         public string Gender { get; set; }
         public string Address { get; set; }
         public string Status { get; set; }
-        public byte ProfilePicture { get; set; }
+        public byte[]? ProfilePicture { get; set; }
         public string Nationality { get; set; }
 
         public int ClassID {  get; set; }

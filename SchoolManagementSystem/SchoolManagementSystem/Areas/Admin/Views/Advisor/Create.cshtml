@@ -5,7 +5,7 @@
 }
 
 <h1>Add Advisor</h1>
-<form asp-action="Create" method="post">
+<form asp-action="Create" method="post" enctype="multipart/form-data">
     <fieldset>
         <legend>Advisor Information</legend>
         <div class="form-group">
@@ -41,10 +41,20 @@
             <input asp-for="EnrollmentDate" class="form-control" />
             <span asp-validation-for="EnrollmentDate" class="text-danger"></span>
         </div>   
-        <div class="form-group">
-            <label asp-for="ProfilePicture"></label>
-            <input asp-for="ProfilePicture" class="form-control" />
-            <span asp-validation-for="ProfilePicture" class="text-danger"></span>
+        <div class="col-md-6">
+            <div class="form-group">
+                <label asp-for="Picture" class="w-100"></label>
+                    <img id="Picture" alt="profile" class="profile-picture" src="~/images/avatar-male.jpg" />
+                <div class="custom-file mt-2">
+                    <input type="file"
+                           accept="image/*"
+                           asp-for="PictureFile"
+                           class="custom-file-input"
+                           onchange="document.getElementById('Picture').src = window.URL.createObjectURL(this.files[0])" />
+                    <label class="custom-file-label" asp-for="PictureFile">Choose picture...</label>
+                    <span asp-validation-for="PictureFile" class="text-danger"></span>
+                </div>
+            </div>
         </div>
 
         <div class="form-group">

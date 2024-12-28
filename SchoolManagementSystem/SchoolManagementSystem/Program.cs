@@ -41,6 +41,7 @@ builder.Services.AddScoped<IAdvisorService, AdvisorService>();
 builder.Services.AddScoped<IMaterialsService,MaterialsService>();
 builder.Services.AddScoped<IAttendanceService,AttendanceService>();
 builder.Services.AddScoped<IStudentMarkService,StudentMarkService>();
+builder.Services.AddScoped<IUserService,UserService>();
 
 
 

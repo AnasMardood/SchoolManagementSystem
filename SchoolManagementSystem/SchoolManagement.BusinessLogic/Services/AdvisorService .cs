@@ -72,9 +72,11 @@ namespace SchoolManagement.BusinessLogic.Services
                 advisor.Phone = advisorDto.Phone;
                 advisor.Address = advisorDto.Address;
                 advisor.EnrollmentDate = advisorDto.EnrollmentDate;
-                advisor.ProfilePicture = advisorDto.ProfilePicture;
                 advisor.Role = advisorDto.Role;
-
+                if (advisorDto.Picture != null && advisorDto.Picture.Length > 0)
+                {
+                    advisor.ProfilePicture = advisorDto.Picture;
+                }
                 // تحديث المواد
                 foreach (var materialDto in advisorDto.Materials)
                 {

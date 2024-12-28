@@ -18,6 +18,6 @@ namespace SchoolManagement.DataAccess.Models
         public string Description { get; set; }
         public string TargetGroup { get; set; }
         public int AdvisorID { get; set; }
-        public Advisor Advisor { get; set; }
+        public Advisor? Advisor { get; set; }
     }
 }

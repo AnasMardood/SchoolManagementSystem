@@ -43,8 +43,6 @@ namespace SchoolManagementSystem.Areas.Admin.Controllers
         // GET: AdvisorController/Create
         public async Task<IActionResult> Create()
         {
-
-
             return View();
         }
 
@@ -57,6 +55,14 @@ namespace SchoolManagementSystem.Areas.Admin.Controllers
             {
                 try
                 {
+                    if (advisorDto.PictureFile != null)
+                    {
+                        using (var memoryStream = new MemoryStream())
+                        {
+                            await advisorDto.PictureFile.CopyToAsync(memoryStream);
+                            advisorDto.Picture = memoryStream.ToArray();
+                        }
+                    }
                     await _advisorService.CreateAdvisorAsync(advisorDto);
                     return RedirectToAction(nameof(Index));
                 }
@@ -93,6 +99,14 @@ namespace SchoolManagementSystem.Areas.Admin.Controllers
             if (id != advisorDto.AdvisorID) return NotFound();
             if (ModelState.IsValid)
             {
+                if (advisorDto.PictureFile != null)
+                {
+                    using (var memoryStream = new MemoryStream())
+                    {
+                        await advisorDto.PictureFile.CopyToAsync(memoryStream);
+                        advisorDto.Picture = memoryStream.ToArray();
+                    }
+                }
                 await _advisorService.EditAdvisorAsync(advisorDto);
                 return RedirectToAction(nameof(Index));
             }

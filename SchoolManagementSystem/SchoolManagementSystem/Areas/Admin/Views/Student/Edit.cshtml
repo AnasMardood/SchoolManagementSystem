@@ -10,7 +10,7 @@
 <hr />
 <div class="row">
     <div class="col-md-4">
-        <form asp-action="Edit">
+        <form asp-action="Edit" enctype="multipart/form-data">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <input type="hidden" asp-for="StudentID" />
             <div class="form-group">
@@ -69,11 +69,6 @@
                 <span asp-validation-for="Status" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="ProfilePicture" class="control-label"></label>
-                <input asp-for="ProfilePicture" class="form-control" />
-                <span asp-validation-for="ProfilePicture" class="text-danger"></span>
-            </div>
-            <div class="form-group">
                 <label asp-for="Nationality" class="control-label"></label>
                 <input asp-for="Nationality" class="form-control" />
                 <span asp-validation-for="Nationality" class="text-danger"></span>
@@ -89,9 +84,32 @@
             }
         </select>
             </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label asp-for="ProfilePicture" class="w-100"></label>
+                    @if (Model.ProfilePicture != null)
+                    {
+                        <img id="ProfilePicture" alt="profile" class="profile-picture" src="data:image/*;base64,@(Convert.ToBase64String(Model.ProfilePicture))" />
+                    }
+                    else
+                    {
+                        <img id="ProfilePicture" alt="profile" class="profile-picture" src="~/images/avatar-male.jpg" />
+                    }
+                    <div class="custom-file mt-2">
+                        <input type="file"
+                               accept="image/*"
+                               asp-for="PictureFile"
+                               class="custom-file-input"
+                               onchange="document.getElementById('Picture').src = window.URL.createObjectURL(this.files[0])" />
+                        <label class="custom-file-label" asp-for="PictureFile">Choose picture...</label>
+                        <span asp-validation-for="PictureFile" class="text-danger"></span>
+                    </div>
+                </div>
+            </div>
             <div class="form-group">
                 <input type="submit" value="Save" class="btn btn-primary" />
             </div>
+
         </form>
     </div>
 </div>

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.AspNetCore.Http;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
@@ -18,7 +19,8 @@ namespace SchoolManagement.BusinessLogic.Dto
         public string Address { get; set; }
         [DataType(DataType.Date)]
         public DateTime EnrollmentDate { get; set; }
-        public string ProfilePicture { get; set; }
+        public byte[]? Picture { get; set; }
+        public IFormFile? PictureFile { get; set; }
         public string Role { get; set; }
         public List<MaterialsDTO> Materials { get; set; }
     }

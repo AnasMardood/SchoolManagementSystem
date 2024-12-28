@@ -55,6 +55,14 @@ namespace SchoolManagementSystem.Areas.Admin.Controllers
                 try
                 {
                     studentDto.ClassDTO = null;
+                    if (studentDto.PictureFile != null)
+                    {
+                        using (var memoryStream = new MemoryStream())
+                        {
+                            await studentDto.PictureFile.CopyToAsync(memoryStream);
+                            studentDto.ProfilePicture = memoryStream.ToArray();
+                        }
+                    }
                     await _studentService.CreateStudentAsync(studentDto);
                     return RedirectToAction(nameof(Index));
                 }
@@ -106,6 +114,14 @@ namespace SchoolManagementSystem.Areas.Admin.Controllers
             if (ModelState.IsValid)
             {
                 studentDto.ClassDTO = null;
+                if (studentDto.PictureFile != null)
+                {
+                    using (var memoryStream = new MemoryStream())
+                    {
+                        await studentDto.PictureFile.CopyToAsync(memoryStream);
+                        studentDto.ProfilePicture = memoryStream.ToArray();
+                    }
+                }
                 await _studentService.EditStudentAsync(studentDto);
                 return RedirectToAction(nameof(Index));
             }

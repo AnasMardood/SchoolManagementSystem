@@ -87,6 +87,21 @@
                     }
                 </select>
             </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label asp-for="ProfilePicture" class="w-100"></label>
+                    <img id="Picture" alt="profile" class="profile-picture" src="~/images/avatar-male.jpg" />
+                    <div class="custom-file mt-2">
+                        <input type="file"
+                               accept="image/*"
+                               asp-for="PictureFile"
+                               class="custom-file-input"
+                               onchange="document.getElementById('Picture').src = window.URL.createObjectURL(this.files[0])" />
+                        <label class="custom-file-label" asp-for="PictureFile">Choose picture...</label>
+                        <span asp-validation-for="PictureFile" class="text-danger"></span>
+                    </div>
+                </div>
+            </div>
             <div class="form-group">
                 <input type="submit" value="Create" class="btn btn-primary" />
             </div>
