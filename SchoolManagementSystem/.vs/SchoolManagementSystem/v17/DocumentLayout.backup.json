@@ -1,0 +1,147 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\alsae\\source\\repos\\SchoolManagementSystem2\\SchoolManagementSystem\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{896286B0-E7CB-472D-9E1B-38BDE5B647B1}|SchoolManagementSystem\\SchoolManagementSystem.csproj|c:\\users\\alsae\\source\\repos\\schoolmanagementsystem2\\schoolmanagementsystem\\schoolmanagementsystem\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{896286B0-E7CB-472D-9E1B-38BDE5B647B1}|SchoolManagementSystem\\SchoolManagementSystem.csproj|solutionrelative:schoolmanagementsystem\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{896286B0-E7CB-472D-9E1B-38BDE5B647B1}|SchoolManagementSystem\\SchoolManagementSystem.csproj|c:\\users\\alsae\\source\\repos\\schoolmanagementsystem2\\schoolmanagementsystem\\schoolmanagementsystem\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{896286B0-E7CB-472D-9E1B-38BDE5B647B1}|SchoolManagementSystem\\SchoolManagementSystem.csproj|solutionrelative:schoolmanagementsystem\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{896286B0-E7CB-472D-9E1B-38BDE5B647B1}|SchoolManagementSystem\\SchoolManagementSystem.csproj|c:\\users\\alsae\\source\\repos\\schoolmanagementsystem2\\schoolmanagementsystem\\schoolmanagementsystem\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{896286B0-E7CB-472D-9E1B-38BDE5B647B1}|SchoolManagementSystem\\SchoolManagementSystem.csproj|solutionrelative:schoolmanagementsystem\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{896286B0-E7CB-472D-9E1B-38BDE5B647B1}|SchoolManagementSystem\\SchoolManagementSystem.csproj|c:\\users\\alsae\\source\\repos\\schoolmanagementsystem2\\schoolmanagementsystem\\schoolmanagementsystem\\areas\\admin\\controllers\\classescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{896286B0-E7CB-472D-9E1B-38BDE5B647B1}|SchoolManagementSystem\\SchoolManagementSystem.csproj|solutionrelative:schoolmanagementsystem\\areas\\admin\\controllers\\classescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{896286B0-E7CB-472D-9E1B-38BDE5B647B1}|SchoolManagementSystem\\SchoolManagementSystem.csproj|c:\\users\\alsae\\source\\repos\\schoolmanagementsystem2\\schoolmanagementsystem\\schoolmanagementsystem\\areas\\admin\\controllers\\materialscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{896286B0-E7CB-472D-9E1B-38BDE5B647B1}|SchoolManagementSystem\\SchoolManagementSystem.csproj|solutionrelative:schoolmanagementsystem\\areas\\admin\\controllers\\materialscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{896286B0-E7CB-472D-9E1B-38BDE5B647B1}|SchoolManagementSystem\\SchoolManagementSystem.csproj|c:\\users\\alsae\\source\\repos\\schoolmanagementsystem2\\schoolmanagementsystem\\schoolmanagementsystem\\areas\\admin\\views\\dashboard\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{896286B0-E7CB-472D-9E1B-38BDE5B647B1}|SchoolManagementSystem\\SchoolManagementSystem.csproj|solutionrelative:schoolmanagementsystem\\areas\\admin\\views\\dashboard\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{896286B0-E7CB-472D-9E1B-38BDE5B647B1}|SchoolManagementSystem\\SchoolManagementSystem.csproj|c:\\users\\alsae\\source\\repos\\schoolmanagementsystem2\\schoolmanagementsystem\\schoolmanagementsystem\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{896286B0-E7CB-472D-9E1B-38BDE5B647B1}|SchoolManagementSystem\\SchoolManagementSystem.csproj|solutionrelative:schoolmanagementsystem\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 7,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ClassesController.cs",
+              "DocumentMoniker": "C:\\Users\\alsae\\source\\repos\\SchoolManagementSystem2\\SchoolManagementSystem\\SchoolManagementSystem\\Areas\\Admin\\Controllers\\ClassesController.cs",
+              "RelativeDocumentMoniker": "SchoolManagementSystem\\Areas\\Admin\\Controllers\\ClassesController.cs",
+              "ToolTip": "C:\\Users\\alsae\\source\\repos\\SchoolManagementSystem2\\SchoolManagementSystem\\SchoolManagementSystem\\Areas\\Admin\\Controllers\\ClassesController.cs",
+              "RelativeToolTip": "SchoolManagementSystem\\Areas\\Admin\\Controllers\\ClassesController.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAADgv1oAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-29T18:03:57.61Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MaterialsController.cs",
+              "DocumentMoniker": "C:\\Users\\alsae\\source\\repos\\SchoolManagementSystem2\\SchoolManagementSystem\\SchoolManagementSystem\\Areas\\Admin\\Controllers\\MaterialsController.cs",
+              "RelativeDocumentMoniker": "SchoolManagementSystem\\Areas\\Admin\\Controllers\\MaterialsController.cs",
+              "ToolTip": "C:\\Users\\alsae\\source\\repos\\SchoolManagementSystem2\\SchoolManagementSystem\\SchoolManagementSystem\\Areas\\Admin\\Controllers\\MaterialsController.cs",
+              "RelativeToolTip": "SchoolManagementSystem\\Areas\\Admin\\Controllers\\MaterialsController.cs",
+              "ViewState": "AgIAACsAAAAAAAAAAAAkwDIAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-29T17:44:16.547Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\alsae\\source\\repos\\SchoolManagementSystem2\\SchoolManagementSystem\\SchoolManagementSystem\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "SchoolManagementSystem\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\alsae\\source\\repos\\SchoolManagementSystem2\\SchoolManagementSystem\\SchoolManagementSystem\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "SchoolManagementSystem\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-29T17:36:51.309Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\alsae\\source\\repos\\SchoolManagementSystem2\\SchoolManagementSystem\\SchoolManagementSystem\\Areas\\Admin\\Views\\Dashboard\\Index.cshtml",
+              "RelativeDocumentMoniker": "SchoolManagementSystem\\Areas\\Admin\\Views\\Dashboard\\Index.cshtml",
+              "ToolTip": "C:\\Users\\alsae\\source\\repos\\SchoolManagementSystem2\\SchoolManagementSystem\\SchoolManagementSystem\\Areas\\Admin\\Views\\Dashboard\\Index.cshtml",
+              "RelativeToolTip": "SchoolManagementSystem\\Areas\\Admin\\Views\\Dashboard\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-29T17:33:51.604Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\alsae\\source\\repos\\SchoolManagementSystem2\\SchoolManagementSystem\\SchoolManagementSystem\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "SchoolManagementSystem\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\alsae\\source\\repos\\SchoolManagementSystem2\\SchoolManagementSystem\\SchoolManagementSystem\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "SchoolManagementSystem\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAA8AAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-29T17:32:24.351Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\alsae\\source\\repos\\SchoolManagementSystem2\\SchoolManagementSystem\\SchoolManagementSystem\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "SchoolManagementSystem\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\alsae\\source\\repos\\SchoolManagementSystem2\\SchoolManagementSystem\\SchoolManagementSystem\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "SchoolManagementSystem\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAEgAAAAAAAAAAAAAAFEAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-29T17:25:17.208Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "site.css",
+              "DocumentMoniker": "C:\\Users\\alsae\\source\\repos\\SchoolManagementSystem2\\SchoolManagementSystem\\SchoolManagementSystem\\wwwroot\\css\\site.css",
+              "RelativeDocumentMoniker": "SchoolManagementSystem\\wwwroot\\css\\site.css",
+              "ToolTip": "C:\\Users\\alsae\\source\\repos\\SchoolManagementSystem2\\SchoolManagementSystem\\SchoolManagementSystem\\wwwroot\\css\\site.css",
+              "RelativeToolTip": "SchoolManagementSystem\\wwwroot\\css\\site.css",
+              "ViewState": "AgIAAM8BAAAAAAAAAAAiwOMBAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-12-29T00:35:33.174Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

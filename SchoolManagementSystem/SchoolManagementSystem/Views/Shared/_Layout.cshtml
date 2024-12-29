@@ -5,61 +5,100 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - SchoolManagementSystem</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="~/css/site.css/>
-    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/site.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="~/SchoolManagementSystem.styles.css" asp-append-version="true" />
 </head>
-<body>
-    <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-            <div class="container-fluid">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">SchoolManagementSystem</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-                        </li>
 
-                        @if (User.IsInRole("Admin"))
-                        {
-                            <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="Admin" asp-controller="Dashboard" asp-action="Index">Admin Dashboard</a>
-                            </li>
-                        }
-                        else if (User.IsInRole("Student"))
-                        {
-                            <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="Student" asp-controller="Dashboard" asp-action="Index">Student Dashboard</a>
-                            </li>
-                        }
-                    </ul>
-                    <partial name="_LoginPartial" />
+<body>
+   
+
+    <div class="menu">
+        <ul>
+            <li class="profile">
+                <div class="img-box">
+                    <img src="#" alt="profile">
                 </div>
-            </div>
-        </nav>
-    </header>
+                <h2>sami mulla hamid</h2>
+            </li>
+            <li>
+                <a class="active" href="https://localhost:44316/">
+                    <i class="fas fa-home"></i>
+                    <p>ِAna sayfa</p>
+                </a>
+            </li>
+            <li>
+                <a href= >
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    <p>Ders programı</p>
+                </a>
+            </li>
+            <li>
+                <a href="https://localhost:44316/Admin/StudentMark">
+                    <i class="fa-solid fa-person-chalkboard"></i>
+                    <p>Öğrenci Notları</p>
+                </a>
+            </li>
+            <li>
+                <a href="Sinav Takvimi.html">
+                    <i class="fa-solid fa-laptop-file"></i>
+                    <p>Sinav Takvimi</p>
+                </a>
+            </li>
+            <li>
+                <a href="https://localhost:44316/Admin/Attendance">
+                    <i class="fa-solid fa-atom"></i>
+                    <p>Devamsız durumu</p>
+                </a>
+            </li>
+
+
+            <li>
+                <a href="Profile.html">
+                    <i class="fa-solid fa-user-graduate"></i>
+                    <p>Profile</p>
+                </a>
+            </li>
+            <li>
+                <a href="Akadamik Takvimi.html">
+                    <i class="fa-solid fa-calendar-days"></i>
+                    <p>Akadamik Takvimi</p>
+                </a>
+            </li>
+            <li>
+                <a href="https://localhost:44316/admin/advisor">
+                    <i class="fa-solid fa-restroom"></i>
+                    <p>Vali Bilgileri</p>
+                </a>
+            </li>
+            <li>
+                <a href="https://localhost:44316/Admin/Classes">
+                    <i class="fa-brands fa-readme"></i>
+                    <p>Dersler</p>
+                </a>
+            </li>
+            
+            <li class="log-out">
+                <a href="Log Out.html">
+                    <i class="fas fa-sign-out"></i>
+                    <p>Log Out</p>
+                </a>
+            </li>
+           
+        </ul>
+    </div>
+
+
     <div class="container">
         <main role="main" class="pb-3">
             @RenderBody()
         </main>
     </div>
-
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2024 - SchoolManagementSystem - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-        </div>
-    </footer>
+    
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
     @await RenderSectionAsync("Scripts", required: false)
+
 </body>
 </html>

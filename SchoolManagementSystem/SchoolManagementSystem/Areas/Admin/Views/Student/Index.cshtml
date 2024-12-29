@@ -1,14 +1,15 @@
 ﻿@model IEnumerable<SchoolManagement.BusinessLogic.Dto.StudentDTO>
 
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "Student";
 }
 
-<h1>Index</h1>
+<h1>Student</h1>
 
 <p>
-    <a asp-action="Create">Create New</a>
+    <a asp-action="Create" class="btn btn-primary">Create New</a>
 </p>
+
 <table class="table">
     <thead>
         <tr>
@@ -58,56 +59,156 @@
         </tr>
     </thead>
     <tbody>
-@foreach (var item in Model) {
         <tr>
             <td>
-                @Html.DisplayFor(modelItem => item.FirstName)
+                John
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.LastName)
+                Doe
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.MotherName)
+                Jane Doe
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.FatherName)
+                Jack Doe
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.BirthDate)
+                01/01/2005
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.EnrollementDate)
+                09/15/2020
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.ParentPhone)
+                +1234567890
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.StudentPhone)
+                +0987654321
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Gender)
+                Male
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Address)
+                123 Elm Street, Cityville
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Status)
+                Active
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.ProfilePicture)
+                <img src="profile_pictures/john_doe.jpg" alt="John Doe Profile Picture" width="50" height="50" />
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Nationality)
+                American
             </td>
             <td>
-                    @Html.DisplayFor(modelItem => item.ClassDTO.ClassName)
+                10th Grade
             </td>
             <td>
-                <a asp-action="Edit" asp-route-id="@item.StudentID">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.StudentID">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.StudentID">Delete</a>
+                <a href="/Edit/1" >Edit</a> |
+                <a href="/Details/1">Details</a> |
+                <a href="/Delete/1">Delete</a>
             </td>
         </tr>
-}
+        <tr>
+            <td>
+                Alice
+            </td>
+            <td>
+                Smith
+            </td>
+            <td>
+                Mary Smith
+            </td>
+            <td>
+                Robert Smith
+            </td>
+            <td>
+                03/22/2006
+            </td>
+            <td>
+                08/20/2021
+            </td>
+            <td>
+                +1234567888
+            </td>
+            <td>
+                +0987654322
+            </td>
+            <td>
+                Female
+            </td>
+            <td>
+                456 Oak Lane, Townsville
+            </td>
+            <td>
+                Active
+            </td>
+            <td>
+                <img src="profile_pictures/alice_smith.jpg" alt="Alice Smith Profile Picture" width="50" height="50" />
+            </td>
+            <td>
+                British
+            </td>
+            <td>
+                9th Grade
+            </td>
+            <td>
+                <a href="/Edit/2">Edit</a> |
+                <a href="/Details/2">Details</a> |
+                <a href="/Delete/2">Delete</a>
+            </td>
+        </tr>
+    <tbody>
+            @foreach (var item in Model)
+            {
+            <tr>
+                <td>
+                        @Html.DisplayFor(modelItem => item.FirstName)
+                </td>
+                <td>
+                        @Html.DisplayFor(modelItem => item.LastName)
+                </td>
+                <td>
+                        @Html.DisplayFor(modelItem => item.MotherName)
+                </td>
+                <td>
+                        @Html.DisplayFor(modelItem => item.FatherName)
+                </td>
+                <td>
+                        @Html.DisplayFor(modelItem => item.BirthDate)
+                </td>
+                <td>
+                        @Html.DisplayFor(modelItem => item.EnrollementDate)
+                </td>
+                <td>
+                        @Html.DisplayFor(modelItem => item.ParentPhone)
+                </td>
+                <td>
+                        @Html.DisplayFor(modelItem => item.StudentPhone)
+                </td>
+                <td>
+                        @Html.DisplayFor(modelItem => item.Gender)
+                </td>
+                <td>
+                        @Html.DisplayFor(modelItem => item.Address)
+                </td>
+                <td>
+                        @Html.DisplayFor(modelItem => item.Status)
+                </td>
+                <td>
+                        @Html.DisplayFor(modelItem => item.ProfilePicture)
+                </td>
+                <td>
+                        @Html.DisplayFor(modelItem => item.Nationality)
+                </td>
+                <td>
+                        @Html.DisplayFor(modelItem => item.ClassDTO.ClassName)
+                </td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.StudentID" >Edit</a> |
+                    <a asp-action="Details" asp-route-id="@item.StudentID">Details</a> |
+                    <a asp-action="Delete" asp-route-id="@item.StudentID">Delete</a>
+                </td>
+            </tr>
+            }
     </tbody>
 </table>
