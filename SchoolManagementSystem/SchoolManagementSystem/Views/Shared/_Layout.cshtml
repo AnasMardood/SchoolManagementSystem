@@ -1,62 +1,116 @@
-﻿<!DOCTYPE html>
+﻿@using SchoolManagement.DataAccess.Models
+@using SchoolManagement.DataAccess.Utilities
+@inject UserManager<ApplicationUser> UserManager
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - SchoolManagementSystem</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <title>@ViewData["Title"] - SchoolManagementSystem</title>
     <link rel="stylesheet" href="~/css/site.css/>
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="~/SchoolManagementSystem.styles.css" asp-append-version="true" />
 </head>
 <body>
-    <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-            <div class="container-fluid">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">SchoolManagementSystem</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-                        </li>
+    @if (User.IsInRole(WebSiteRole.WebSite_Admin)){
 
-                        @if (User.IsInRole("Admin"))
-                        {
-                            <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="Admin" asp-controller="Dashboard" asp-action="Index">Admin Dashboard</a>
-                            </li>
-                        }
-                        else if (User.IsInRole("Student"))
-                        {
-                            <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="Student" asp-controller="Dashboard" asp-action="Index">Student Dashboard</a>
-                            </li>
-                        }
-                    </ul>
-                    <partial name="_LoginPartial" />
-                </div>
-            </div>
-        </nav>
-    </header>
+    <div class="menu">
+        <ul>
+            <li class="profile">
+                    @if (UserManager.GetUserAsync(User).Result.Picture != null)
+                    {
+                    <li class="nav-item">
+                        <img class="avatar rounded-circle" alt="profile" src="data:image/*;base64,@(Convert.ToBase64String(UserManager.GetUserAsync(User).Result.Picture))" />
+                    </li>
+                    }
+                <h2 style="font-size: 15px;">@User.Identity.Name </h2>
+            </li>
+            <li>
+                <a class="active" href="https://localhost:44316/Home">
+                    <i class="fas fa-home"></i>
+                    <p>ِHome</p>
+                </a>
+            </li>
+            <li>
+                <a href="https://localhost:44316/admin/academiccalendars" >
+                    <i class="fa-solid fa-calendar-days"></i>
+                    <p>Academic Calendars</p>
+                </a>
+            </li>
+            <li>
+                <a href="https://localhost:44316/admin/Advisor">
+                    <i class="fa-solid fa-chalkboard-user"></i>
+
+
+                    <p>Advisor</p>
+                </a>
+            </li>
+            <li>
+                <a href="https://localhost:44316/admin/Attendance">
+                    <i class="fa-solid fa-book-open-reader"></i>
+                    <p>Attendance</p>
+                </a>
+            </li>
+            <li>
+                <a href="https://localhost:44316/admin/Classes">
+                    <i class="fa-solid fa-school-circle-check"></i>
+                    <p>Classes</p>
+                </a>
+            </li>
+
+
+            <li>
+                <a href="https://localhost:44316/admin/Materials">
+                    <i class="fa-solid fa-notes-medical"></i>
+                    <p>Materials</p>
+                </a>
+            </li>
+            <li>
+                <a href="https://localhost:44316/admin/Roles">
+                    <i class="fa-solid fa-hand-sparkles"></i>
+                    <p>Roles</p>
+                </a>
+            </li>
+            <li>
+                <a href="https://localhost:44316/admin/semesters">
+                    <i class="fa-solid fa-s"></i>
+                    <p>Semesters</p>
+                </a>
+            </li>
+            <li>
+                <a href="https://localhost:44316/admin/Student">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                    <p>Student</p>
+                </a>
+            </li>
+             <li>
+                <a href="https://localhost:44316/admin/StudentMark">
+                    <i class="fa-brands fa-markdown"></i>
+                    <p>Student Mark</p>
+                </a>
+            </li>
+             <li>
+                 <a href="https://localhost:44316/admin/User">
+                    <i class="fa-solid fa-people-line"></i>
+                     <p>User</p>
+                 </a>
+             </li>
+               
+
+                <partial name="_LoginPartial" />
+        </ul>
+    </div>
+
+    }
     <div class="container">
         <main role="main" class="pb-3">
             @RenderBody()
         </main>
     </div>
 
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2024 - SchoolManagementSystem - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-        </div>
-    </footer>
+   
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>

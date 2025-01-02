@@ -17,383 +17,385 @@ build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = SchoolManagementSystem
 build_property.RootNamespace = SchoolManagementSystem
-build_property.ProjectDir = C:\Users\ENES\Desktop\Okul_öğrenci_yönetim_Sistemi\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem\
+build_property.ProjectDir = C:\Users\alsae\source\repos\SchoolManagementSystem55\SchoolManagementSystem\SchoolManagementSystem\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\ENES\Desktop\Okul_öğrenci_yönetim_Sistemi\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem
+build_property.MSBuildProjectDirectory = C:\Users\alsae\source\repos\SchoolManagementSystem55\SchoolManagementSystem\SchoolManagementSystem
 build_property._RazorSourceGeneratorDebug = 
+build_property.EffectiveAnalysisLevelStyle = 8.0
+build_property.EnableCodeStyleSeverity = 
 
-[C:/Users/ENES/Desktop/Okul_öğrenci_yönetim_Sistemi/SchoolManagementSystem/SchoolManagementSystem/SchoolManagementSystem/Areas/Admin/Views/AcademicCalendars/Create.cshtml]
+[C:/Users/alsae/source/repos/SchoolManagementSystem55/SchoolManagementSystem/SchoolManagementSystem/Areas/Admin/Views/AcademicCalendars/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWNhZGVtaWNDYWxlbmRhcnNcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ENES/Desktop/Okul_öğrenci_yönetim_Sistemi/SchoolManagementSystem/SchoolManagementSystem/SchoolManagementSystem/Areas/Admin/Views/AcademicCalendars/Delete.cshtml]
+[C:/Users/alsae/source/repos/SchoolManagementSystem55/SchoolManagementSystem/SchoolManagementSystem/Areas/Admin/Views/AcademicCalendars/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWNhZGVtaWNDYWxlbmRhcnNcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ENES/Desktop/Okul_öğrenci_yönetim_Sistemi/SchoolManagementSystem/SchoolManagementSystem/SchoolManagementSystem/Areas/Admin/Views/AcademicCalendars/Details.cshtml]
+[C:/Users/alsae/source/repos/SchoolManagementSystem55/SchoolManagementSystem/SchoolManagementSystem/Areas/Admin/Views/AcademicCalendars/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWNhZGVtaWNDYWxlbmRhcnNcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ENES/Desktop/Okul_öğrenci_yönetim_Sistemi/SchoolManagementSystem/SchoolManagementSystem/SchoolManagementSystem/Areas/Admin/Views/AcademicCalendars/Edit.cshtml]
+[C:/Users/alsae/source/repos/SchoolManagementSystem55/SchoolManagementSystem/SchoolManagementSystem/Areas/Admin/Views/AcademicCalendars/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWNhZGVtaWNDYWxlbmRhcnNcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ENES/Desktop/Okul_öğrenci_yönetim_Sistemi/SchoolManagementSystem/SchoolManagementSystem/SchoolManagementSystem/Areas/Admin/Views/AcademicCalendars/Index.cshtml]
+[C:/Users/alsae/source/repos/SchoolManagementSystem55/SchoolManagementSystem/SchoolManagementSystem/Areas/Admin/Views/AcademicCalendars/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWNhZGVtaWNDYWxlbmRhcnNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ENES/Desktop/Okul_öğrenci_yönetim_Sistemi/SchoolManagementSystem/SchoolManagementSystem/SchoolManagementSystem/Areas/Admin/Views/Advisor/Create.cshtml]
+[C:/Users/alsae/source/repos/SchoolManagementSystem55/SchoolManagementSystem/SchoolManagementSystem/Areas/Admin/Views/Advisor/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWR2aXNvclxDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ENES/Desktop/Okul_öğrenci_yönetim_Sistemi/SchoolManagementSystem/SchoolManagementSystem/SchoolManagementSystem/Areas/Admin/Views/Advisor/Delete.cshtml]
+[C:/Users/alsae/source/repos/SchoolManagementSystem55/SchoolManagementSystem/SchoolManagementSystem/Areas/Admin/Views/Advisor/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWR2aXNvclxEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ENES/Desktop/Okul_öğrenci_yönetim_Sistemi/SchoolManagementSystem/SchoolManagementSystem/SchoolManagementSystem/Areas/Admin/Views/Advisor/Details.cshtml]
+[C:/Users/alsae/source/repos/SchoolManagementSystem55/SchoolManagementSystem/SchoolManagementSystem/Areas/Admin/Views/Advisor/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWR2aXNvclxEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ENES/Desktop/Okul_öğrenci_yönetim_Sistemi/SchoolManagementSystem/SchoolManagementSystem/SchoolManagementSystem/Areas/Admin/Views/Advisor/Edit.cshtml]
+[C:/Users/alsae/source/repos/SchoolManagementSystem55/SchoolManagementSystem/SchoolManagementSystem/Areas/Admin/Views/Advisor/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWR2aXNvclxFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ENES/Desktop/Okul_öğrenci_yönetim_Sistemi/SchoolManagementSystem/SchoolManagementSystem/SchoolManagementSystem/Areas/Admin/Views/Advisor/Index.cshtml]
+[C:/Users/alsae/source/repos/SchoolManagementSystem55/SchoolManagementSystem/SchoolManagementSystem/Areas/Admin/Views/Advisor/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWR2aXNvclxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ENES/Desktop/Okul_öğrenci_yönetim_Sistemi/SchoolManagementSystem/SchoolManagementSystem/SchoolManagementSystem/Areas/Admin/Views/Attendance/Create.cshtml]
+[C:/Users/alsae/source/repos/SchoolManagementSystem55/SchoolManagementSystem/SchoolManagementSystem/Areas/Admin/Views/Attendance/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQXR0ZW5kYW5jZVxDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ENES/Desktop/Okul_öğrenci_yönetim_Sistemi/SchoolManagementSystem/SchoolManagementSystem/SchoolManagementSystem/Areas/Admin/Views/Attendance/Delete.cshtml]
+[C:/Users/alsae/source/repos/SchoolManagementSystem55/SchoolManagementSystem/SchoolManagementSystem/Areas/Admin/Views/Attendance/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQXR0ZW5kYW5jZVxEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ENES/Desktop/Okul_öğrenci_yönetim_Sistemi/SchoolManagementSystem/SchoolManagementSystem/SchoolManagementSystem/Areas/Admin/Views/Attendance/Edit.cshtml]
+[C:/Users/alsae/source/repos/SchoolManagementSystem55/SchoolManagementSystem/SchoolManagementSystem/Areas/Admin/Views/Attendance/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQXR0ZW5kYW5jZVxFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ENES/Desktop/Okul_öğrenci_yönetim_Sistemi/SchoolManagementSystem/SchoolManagementSystem/SchoolManagementSystem/Areas/Admin/Views/Attendance/Index.cshtml]
+[C:/Users/alsae/source/repos/SchoolManagementSystem55/SchoolManagementSystem/SchoolManagementSystem/Areas/Admin/Views/Attendance/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQXR0ZW5kYW5jZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ENES/Desktop/Okul_öğrenci_yönetim_Sistemi/SchoolManagementSystem/SchoolManagementSystem/SchoolManagementSystem/Areas/Admin/Views/Classes/Create.cshtml]
+[C:/Users/alsae/source/repos/SchoolManagementSystem55/SchoolManagementSystem/SchoolManagementSystem/Areas/Admin/Views/Classes/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQ2xhc3Nlc1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ENES/Desktop/Okul_öğrenci_yönetim_Sistemi/SchoolManagementSystem/SchoolManagementSystem/SchoolManagementSystem/Areas/Admin/Views/Classes/Delete.cshtml]
+[C:/Users/alsae/source/repos/SchoolManagementSystem55/SchoolManagementSystem/SchoolManagementSystem/Areas/Admin/Views/Classes/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQ2xhc3Nlc1xEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ENES/Desktop/Okul_öğrenci_yönetim_Sistemi/SchoolManagementSystem/SchoolManagementSystem/SchoolManagementSystem/Areas/Admin/Views/Classes/Edit.cshtml]
+[C:/Users/alsae/source/repos/SchoolManagementSystem55/SchoolManagementSystem/SchoolManagementSystem/Areas/Admin/Views/Classes/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQ2xhc3Nlc1xFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ENES/Desktop/Okul_öğrenci_yönetim_Sistemi/SchoolManagementSystem/SchoolManagementSystem/SchoolManagementSystem/Areas/Admin/Views/Classes/Index.cshtml]
+[C:/Users/alsae/source/repos/SchoolManagementSystem55/SchoolManagementSystem/SchoolManagementSystem/Areas/Admin/Views/Classes/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQ2xhc3Nlc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ENES/Desktop/Okul_öğrenci_yönetim_Sistemi/SchoolManagementSystem/SchoolManagementSystem/SchoolManagementSystem/Areas/Admin/Views/Dashboard/Index.cshtml]
+[C:/Users/alsae/source/repos/SchoolManagementSystem55/SchoolManagementSystem/SchoolManagementSystem/Areas/Admin/Views/Dashboard/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcRGFzaGJvYXJkXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ENES/Desktop/Okul_öğrenci_yönetim_Sistemi/SchoolManagementSystem/SchoolManagementSystem/SchoolManagementSystem/Areas/Admin/Views/Materials/Create.cshtml]
+[C:/Users/alsae/source/repos/SchoolManagementSystem55/SchoolManagementSystem/SchoolManagementSystem/Areas/Admin/Views/Materials/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcTWF0ZXJpYWxzXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ENES/Desktop/Okul_öğrenci_yönetim_Sistemi/SchoolManagementSystem/SchoolManagementSystem/SchoolManagementSystem/Areas/Admin/Views/Materials/Delete.cshtml]
+[C:/Users/alsae/source/repos/SchoolManagementSystem55/SchoolManagementSystem/SchoolManagementSystem/Areas/Admin/Views/Materials/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcTWF0ZXJpYWxzXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ENES/Desktop/Okul_öğrenci_yönetim_Sistemi/SchoolManagementSystem/SchoolManagementSystem/SchoolManagementSystem/Areas/Admin/Views/Materials/Edit.cshtml]
+[C:/Users/alsae/source/repos/SchoolManagementSystem55/SchoolManagementSystem/SchoolManagementSystem/Areas/Admin/Views/Materials/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcTWF0ZXJpYWxzXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ENES/Desktop/Okul_öğrenci_yönetim_Sistemi/SchoolManagementSystem/SchoolManagementSystem/SchoolManagementSystem/Areas/Admin/Views/Materials/Index.cshtml]
+[C:/Users/alsae/source/repos/SchoolManagementSystem55/SchoolManagementSystem/SchoolManagementSystem/Areas/Admin/Views/Materials/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcTWF0ZXJpYWxzXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ENES/Desktop/Okul_öğrenci_yönetim_Sistemi/SchoolManagementSystem/SchoolManagementSystem/SchoolManagementSystem/Areas/Admin/Views/Roles/Index.cshtml]
+[C:/Users/alsae/source/repos/SchoolManagementSystem55/SchoolManagementSystem/SchoolManagementSystem/Areas/Admin/Views/Roles/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUm9sZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ENES/Desktop/Okul_öğrenci_yönetim_Sistemi/SchoolManagementSystem/SchoolManagementSystem/SchoolManagementSystem/Areas/Admin/Views/Semesters/Create.cshtml]
+[C:/Users/alsae/source/repos/SchoolManagementSystem55/SchoolManagementSystem/SchoolManagementSystem/Areas/Admin/Views/Semesters/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2VtZXN0ZXJzXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ENES/Desktop/Okul_öğrenci_yönetim_Sistemi/SchoolManagementSystem/SchoolManagementSystem/SchoolManagementSystem/Areas/Admin/Views/Semesters/Delete.cshtml]
+[C:/Users/alsae/source/repos/SchoolManagementSystem55/SchoolManagementSystem/SchoolManagementSystem/Areas/Admin/Views/Semesters/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2VtZXN0ZXJzXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ENES/Desktop/Okul_öğrenci_yönetim_Sistemi/SchoolManagementSystem/SchoolManagementSystem/SchoolManagementSystem/Areas/Admin/Views/Semesters/Details.cshtml]
+[C:/Users/alsae/source/repos/SchoolManagementSystem55/SchoolManagementSystem/SchoolManagementSystem/Areas/Admin/Views/Semesters/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2VtZXN0ZXJzXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ENES/Desktop/Okul_öğrenci_yönetim_Sistemi/SchoolManagementSystem/SchoolManagementSystem/SchoolManagementSystem/Areas/Admin/Views/Semesters/Edit.cshtml]
+[C:/Users/alsae/source/repos/SchoolManagementSystem55/SchoolManagementSystem/SchoolManagementSystem/Areas/Admin/Views/Semesters/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2VtZXN0ZXJzXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ENES/Desktop/Okul_öğrenci_yönetim_Sistemi/SchoolManagementSystem/SchoolManagementSystem/SchoolManagementSystem/Areas/Admin/Views/Semesters/Index.cshtml]
+[C:/Users/alsae/source/repos/SchoolManagementSystem55/SchoolManagementSystem/SchoolManagementSystem/Areas/Admin/Views/Semesters/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2VtZXN0ZXJzXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ENES/Desktop/Okul_öğrenci_yönetim_Sistemi/SchoolManagementSystem/SchoolManagementSystem/SchoolManagementSystem/Areas/Admin/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/alsae/source/repos/SchoolManagementSystem55/SchoolManagementSystem/SchoolManagementSystem/Areas/Admin/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ENES/Desktop/Okul_öğrenci_yönetim_Sistemi/SchoolManagementSystem/SchoolManagementSystem/SchoolManagementSystem/Areas/Admin/Views/StudentMark/Create.cshtml]
+[C:/Users/alsae/source/repos/SchoolManagementSystem55/SchoolManagementSystem/SchoolManagementSystem/Areas/Admin/Views/StudentMark/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU3R1ZGVudE1hcmtcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ENES/Desktop/Okul_öğrenci_yönetim_Sistemi/SchoolManagementSystem/SchoolManagementSystem/SchoolManagementSystem/Areas/Admin/Views/StudentMark/Delete.cshtml]
+[C:/Users/alsae/source/repos/SchoolManagementSystem55/SchoolManagementSystem/SchoolManagementSystem/Areas/Admin/Views/StudentMark/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU3R1ZGVudE1hcmtcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ENES/Desktop/Okul_öğrenci_yönetim_Sistemi/SchoolManagementSystem/SchoolManagementSystem/SchoolManagementSystem/Areas/Admin/Views/StudentMark/Edit.cshtml]
+[C:/Users/alsae/source/repos/SchoolManagementSystem55/SchoolManagementSystem/SchoolManagementSystem/Areas/Admin/Views/StudentMark/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU3R1ZGVudE1hcmtcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ENES/Desktop/Okul_öğrenci_yönetim_Sistemi/SchoolManagementSystem/SchoolManagementSystem/SchoolManagementSystem/Areas/Admin/Views/StudentMark/Index.cshtml]
+[C:/Users/alsae/source/repos/SchoolManagementSystem55/SchoolManagementSystem/SchoolManagementSystem/Areas/Admin/Views/StudentMark/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU3R1ZGVudE1hcmtcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ENES/Desktop/Okul_öğrenci_yönetim_Sistemi/SchoolManagementSystem/SchoolManagementSystem/SchoolManagementSystem/Areas/Admin/Views/Student/Create.cshtml]
+[C:/Users/alsae/source/repos/SchoolManagementSystem55/SchoolManagementSystem/SchoolManagementSystem/Areas/Admin/Views/Student/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU3R1ZGVudFxDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ENES/Desktop/Okul_öğrenci_yönetim_Sistemi/SchoolManagementSystem/SchoolManagementSystem/SchoolManagementSystem/Areas/Admin/Views/Student/Delete.cshtml]
+[C:/Users/alsae/source/repos/SchoolManagementSystem55/SchoolManagementSystem/SchoolManagementSystem/Areas/Admin/Views/Student/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU3R1ZGVudFxEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ENES/Desktop/Okul_öğrenci_yönetim_Sistemi/SchoolManagementSystem/SchoolManagementSystem/SchoolManagementSystem/Areas/Admin/Views/Student/Details.cshtml]
+[C:/Users/alsae/source/repos/SchoolManagementSystem55/SchoolManagementSystem/SchoolManagementSystem/Areas/Admin/Views/Student/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU3R1ZGVudFxEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ENES/Desktop/Okul_öğrenci_yönetim_Sistemi/SchoolManagementSystem/SchoolManagementSystem/SchoolManagementSystem/Areas/Admin/Views/Student/Edit.cshtml]
+[C:/Users/alsae/source/repos/SchoolManagementSystem55/SchoolManagementSystem/SchoolManagementSystem/Areas/Admin/Views/Student/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU3R1ZGVudFxFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ENES/Desktop/Okul_öğrenci_yönetim_Sistemi/SchoolManagementSystem/SchoolManagementSystem/SchoolManagementSystem/Areas/Admin/Views/Student/Index.cshtml]
+[C:/Users/alsae/source/repos/SchoolManagementSystem55/SchoolManagementSystem/SchoolManagementSystem/Areas/Admin/Views/Student/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU3R1ZGVudFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ENES/Desktop/Okul_öğrenci_yönetim_Sistemi/SchoolManagementSystem/SchoolManagementSystem/SchoolManagementSystem/Areas/Admin/Views/User/Delete.cshtml]
+[C:/Users/alsae/source/repos/SchoolManagementSystem55/SchoolManagementSystem/SchoolManagementSystem/Areas/Admin/Views/User/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcVXNlclxEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ENES/Desktop/Okul_öğrenci_yönetim_Sistemi/SchoolManagementSystem/SchoolManagementSystem/SchoolManagementSystem/Areas/Admin/Views/User/Edit.cshtml]
+[C:/Users/alsae/source/repos/SchoolManagementSystem55/SchoolManagementSystem/SchoolManagementSystem/Areas/Admin/Views/User/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcVXNlclxFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ENES/Desktop/Okul_öğrenci_yönetim_Sistemi/SchoolManagementSystem/SchoolManagementSystem/SchoolManagementSystem/Areas/Admin/Views/User/Index.cshtml]
+[C:/Users/alsae/source/repos/SchoolManagementSystem55/SchoolManagementSystem/SchoolManagementSystem/Areas/Admin/Views/User/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcVXNlclxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ENES/Desktop/Okul_öğrenci_yönetim_Sistemi/SchoolManagementSystem/SchoolManagementSystem/SchoolManagementSystem/Areas/Admin/Views/_ViewImports.cshtml]
+[C:/Users/alsae/source/repos/SchoolManagementSystem55/SchoolManagementSystem/SchoolManagementSystem/Areas/Admin/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ENES/Desktop/Okul_öğrenci_yönetim_Sistemi/SchoolManagementSystem/SchoolManagementSystem/SchoolManagementSystem/Areas/Admin/Views/_ViewStart.cshtml]
+[C:/Users/alsae/source/repos/SchoolManagementSystem55/SchoolManagementSystem/SchoolManagementSystem/Areas/Admin/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ENES/Desktop/Okul_öğrenci_yönetim_Sistemi/SchoolManagementSystem/SchoolManagementSystem/SchoolManagementSystem/Areas/Identity/Pages/Account/AccessDenied.cshtml]
+[C:/Users/alsae/source/repos/SchoolManagementSystem55/SchoolManagementSystem/SchoolManagementSystem/Areas/Identity/Pages/Account/AccessDenied.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxBY2Nlc3NEZW5pZWQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ENES/Desktop/Okul_öğrenci_yönetim_Sistemi/SchoolManagementSystem/SchoolManagementSystem/SchoolManagementSystem/Areas/Identity/Pages/Account/ConfirmEmail.cshtml]
+[C:/Users/alsae/source/repos/SchoolManagementSystem55/SchoolManagementSystem/SchoolManagementSystem/Areas/Identity/Pages/Account/ConfirmEmail.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxDb25maXJtRW1haWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ENES/Desktop/Okul_öğrenci_yönetim_Sistemi/SchoolManagementSystem/SchoolManagementSystem/SchoolManagementSystem/Areas/Identity/Pages/Account/ConfirmEmailChange.cshtml]
+[C:/Users/alsae/source/repos/SchoolManagementSystem55/SchoolManagementSystem/SchoolManagementSystem/Areas/Identity/Pages/Account/ConfirmEmailChange.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxDb25maXJtRW1haWxDaGFuZ2UuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ENES/Desktop/Okul_öğrenci_yönetim_Sistemi/SchoolManagementSystem/SchoolManagementSystem/SchoolManagementSystem/Areas/Identity/Pages/Account/ExternalLogin.cshtml]
+[C:/Users/alsae/source/repos/SchoolManagementSystem55/SchoolManagementSystem/SchoolManagementSystem/Areas/Identity/Pages/Account/ExternalLogin.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxFeHRlcm5hbExvZ2luLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ENES/Desktop/Okul_öğrenci_yönetim_Sistemi/SchoolManagementSystem/SchoolManagementSystem/SchoolManagementSystem/Areas/Identity/Pages/Account/ForgotPassword.cshtml]
+[C:/Users/alsae/source/repos/SchoolManagementSystem55/SchoolManagementSystem/SchoolManagementSystem/Areas/Identity/Pages/Account/ForgotPassword.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxGb3Jnb3RQYXNzd29yZC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ENES/Desktop/Okul_öğrenci_yönetim_Sistemi/SchoolManagementSystem/SchoolManagementSystem/SchoolManagementSystem/Areas/Identity/Pages/Account/ForgotPasswordConfirmation.cshtml]
+[C:/Users/alsae/source/repos/SchoolManagementSystem55/SchoolManagementSystem/SchoolManagementSystem/Areas/Identity/Pages/Account/ForgotPasswordConfirmation.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxGb3Jnb3RQYXNzd29yZENvbmZpcm1hdGlvbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ENES/Desktop/Okul_öğrenci_yönetim_Sistemi/SchoolManagementSystem/SchoolManagementSystem/SchoolManagementSystem/Areas/Identity/Pages/Account/Lockout.cshtml]
+[C:/Users/alsae/source/repos/SchoolManagementSystem55/SchoolManagementSystem/SchoolManagementSystem/Areas/Identity/Pages/Account/Lockout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxMb2Nrb3V0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ENES/Desktop/Okul_öğrenci_yönetim_Sistemi/SchoolManagementSystem/SchoolManagementSystem/SchoolManagementSystem/Areas/Identity/Pages/Account/Login.cshtml]
+[C:/Users/alsae/source/repos/SchoolManagementSystem55/SchoolManagementSystem/SchoolManagementSystem/Areas/Identity/Pages/Account/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ENES/Desktop/Okul_öğrenci_yönetim_Sistemi/SchoolManagementSystem/SchoolManagementSystem/SchoolManagementSystem/Areas/Identity/Pages/Account/LoginWith2fa.cshtml]
+[C:/Users/alsae/source/repos/SchoolManagementSystem55/SchoolManagementSystem/SchoolManagementSystem/Areas/Identity/Pages/Account/LoginWith2fa.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxMb2dpbldpdGgyZmEuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ENES/Desktop/Okul_öğrenci_yönetim_Sistemi/SchoolManagementSystem/SchoolManagementSystem/SchoolManagementSystem/Areas/Identity/Pages/Account/LoginWithRecoveryCode.cshtml]
+[C:/Users/alsae/source/repos/SchoolManagementSystem55/SchoolManagementSystem/SchoolManagementSystem/Areas/Identity/Pages/Account/LoginWithRecoveryCode.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxMb2dpbldpdGhSZWNvdmVyeUNvZGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ENES/Desktop/Okul_öğrenci_yönetim_Sistemi/SchoolManagementSystem/SchoolManagementSystem/SchoolManagementSystem/Areas/Identity/Pages/Account/Logout.cshtml]
+[C:/Users/alsae/source/repos/SchoolManagementSystem55/SchoolManagementSystem/SchoolManagementSystem/Areas/Identity/Pages/Account/Logout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxMb2dvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ENES/Desktop/Okul_öğrenci_yönetim_Sistemi/SchoolManagementSystem/SchoolManagementSystem/SchoolManagementSystem/Areas/Identity/Pages/Account/Manage/ChangePassword.cshtml]
+[C:/Users/alsae/source/repos/SchoolManagementSystem55/SchoolManagementSystem/SchoolManagementSystem/Areas/Identity/Pages/Account/Manage/ChangePassword.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcQ2hhbmdlUGFzc3dvcmQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ENES/Desktop/Okul_öğrenci_yönetim_Sistemi/SchoolManagementSystem/SchoolManagementSystem/SchoolManagementSystem/Areas/Identity/Pages/Account/Manage/DeletePersonalData.cshtml]
+[C:/Users/alsae/source/repos/SchoolManagementSystem55/SchoolManagementSystem/SchoolManagementSystem/Areas/Identity/Pages/Account/Manage/DeletePersonalData.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcRGVsZXRlUGVyc29uYWxEYXRhLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ENES/Desktop/Okul_öğrenci_yönetim_Sistemi/SchoolManagementSystem/SchoolManagementSystem/SchoolManagementSystem/Areas/Identity/Pages/Account/Manage/Disable2fa.cshtml]
+[C:/Users/alsae/source/repos/SchoolManagementSystem55/SchoolManagementSystem/SchoolManagementSystem/Areas/Identity/Pages/Account/Manage/Disable2fa.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcRGlzYWJsZTJmYS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ENES/Desktop/Okul_öğrenci_yönetim_Sistemi/SchoolManagementSystem/SchoolManagementSystem/SchoolManagementSystem/Areas/Identity/Pages/Account/Manage/DownloadPersonalData.cshtml]
+[C:/Users/alsae/source/repos/SchoolManagementSystem55/SchoolManagementSystem/SchoolManagementSystem/Areas/Identity/Pages/Account/Manage/DownloadPersonalData.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcRG93bmxvYWRQZXJzb25hbERhdGEuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ENES/Desktop/Okul_öğrenci_yönetim_Sistemi/SchoolManagementSystem/SchoolManagementSystem/SchoolManagementSystem/Areas/Identity/Pages/Account/Manage/Email.cshtml]
+[C:/Users/alsae/source/repos/SchoolManagementSystem55/SchoolManagementSystem/SchoolManagementSystem/Areas/Identity/Pages/Account/Manage/Email.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcRW1haWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ENES/Desktop/Okul_öğrenci_yönetim_Sistemi/SchoolManagementSystem/SchoolManagementSystem/SchoolManagementSystem/Areas/Identity/Pages/Account/Manage/EnableAuthenticator.cshtml]
+[C:/Users/alsae/source/repos/SchoolManagementSystem55/SchoolManagementSystem/SchoolManagementSystem/Areas/Identity/Pages/Account/Manage/EnableAuthenticator.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcRW5hYmxlQXV0aGVudGljYXRvci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ENES/Desktop/Okul_öğrenci_yönetim_Sistemi/SchoolManagementSystem/SchoolManagementSystem/SchoolManagementSystem/Areas/Identity/Pages/Account/Manage/ExternalLogins.cshtml]
+[C:/Users/alsae/source/repos/SchoolManagementSystem55/SchoolManagementSystem/SchoolManagementSystem/Areas/Identity/Pages/Account/Manage/ExternalLogins.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcRXh0ZXJuYWxMb2dpbnMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ENES/Desktop/Okul_öğrenci_yönetim_Sistemi/SchoolManagementSystem/SchoolManagementSystem/SchoolManagementSystem/Areas/Identity/Pages/Account/Manage/GenerateRecoveryCodes.cshtml]
+[C:/Users/alsae/source/repos/SchoolManagementSystem55/SchoolManagementSystem/SchoolManagementSystem/Areas/Identity/Pages/Account/Manage/GenerateRecoveryCodes.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcR2VuZXJhdGVSZWNvdmVyeUNvZGVzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ENES/Desktop/Okul_öğrenci_yönetim_Sistemi/SchoolManagementSystem/SchoolManagementSystem/SchoolManagementSystem/Areas/Identity/Pages/Account/Manage/Index.cshtml]
+[C:/Users/alsae/source/repos/SchoolManagementSystem55/SchoolManagementSystem/SchoolManagementSystem/Areas/Identity/Pages/Account/Manage/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ENES/Desktop/Okul_öğrenci_yönetim_Sistemi/SchoolManagementSystem/SchoolManagementSystem/SchoolManagementSystem/Areas/Identity/Pages/Account/Manage/PersonalData.cshtml]
+[C:/Users/alsae/source/repos/SchoolManagementSystem55/SchoolManagementSystem/SchoolManagementSystem/Areas/Identity/Pages/Account/Manage/PersonalData.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcUGVyc29uYWxEYXRhLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ENES/Desktop/Okul_öğrenci_yönetim_Sistemi/SchoolManagementSystem/SchoolManagementSystem/SchoolManagementSystem/Areas/Identity/Pages/Account/Manage/ResetAuthenticator.cshtml]
+[C:/Users/alsae/source/repos/SchoolManagementSystem55/SchoolManagementSystem/SchoolManagementSystem/Areas/Identity/Pages/Account/Manage/ResetAuthenticator.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcUmVzZXRBdXRoZW50aWNhdG9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ENES/Desktop/Okul_öğrenci_yönetim_Sistemi/SchoolManagementSystem/SchoolManagementSystem/SchoolManagementSystem/Areas/Identity/Pages/Account/Manage/SetPassword.cshtml]
+[C:/Users/alsae/source/repos/SchoolManagementSystem55/SchoolManagementSystem/SchoolManagementSystem/Areas/Identity/Pages/Account/Manage/SetPassword.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcU2V0UGFzc3dvcmQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ENES/Desktop/Okul_öğrenci_yönetim_Sistemi/SchoolManagementSystem/SchoolManagementSystem/SchoolManagementSystem/Areas/Identity/Pages/Account/Manage/ShowRecoveryCodes.cshtml]
+[C:/Users/alsae/source/repos/SchoolManagementSystem55/SchoolManagementSystem/SchoolManagementSystem/Areas/Identity/Pages/Account/Manage/ShowRecoveryCodes.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcU2hvd1JlY292ZXJ5Q29kZXMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ENES/Desktop/Okul_öğrenci_yönetim_Sistemi/SchoolManagementSystem/SchoolManagementSystem/SchoolManagementSystem/Areas/Identity/Pages/Account/Manage/TwoFactorAuthentication.cshtml]
+[C:/Users/alsae/source/repos/SchoolManagementSystem55/SchoolManagementSystem/SchoolManagementSystem/Areas/Identity/Pages/Account/Manage/TwoFactorAuthentication.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcVHdvRmFjdG9yQXV0aGVudGljYXRpb24uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ENES/Desktop/Okul_öğrenci_yönetim_Sistemi/SchoolManagementSystem/SchoolManagementSystem/SchoolManagementSystem/Areas/Identity/Pages/Account/Manage/_Layout.cshtml]
+[C:/Users/alsae/source/repos/SchoolManagementSystem55/SchoolManagementSystem/SchoolManagementSystem/Areas/Identity/Pages/Account/Manage/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcX0xheW91dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ENES/Desktop/Okul_öğrenci_yönetim_Sistemi/SchoolManagementSystem/SchoolManagementSystem/SchoolManagementSystem/Areas/Identity/Pages/Account/Manage/_ManageNav.cshtml]
+[C:/Users/alsae/source/repos/SchoolManagementSystem55/SchoolManagementSystem/SchoolManagementSystem/Areas/Identity/Pages/Account/Manage/_ManageNav.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcX01hbmFnZU5hdi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ENES/Desktop/Okul_öğrenci_yönetim_Sistemi/SchoolManagementSystem/SchoolManagementSystem/SchoolManagementSystem/Areas/Identity/Pages/Account/Manage/_StatusMessage.cshtml]
+[C:/Users/alsae/source/repos/SchoolManagementSystem55/SchoolManagementSystem/SchoolManagementSystem/Areas/Identity/Pages/Account/Manage/_StatusMessage.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcX1N0YXR1c01lc3NhZ2UuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ENES/Desktop/Okul_öğrenci_yönetim_Sistemi/SchoolManagementSystem/SchoolManagementSystem/SchoolManagementSystem/Areas/Identity/Pages/Account/Manage/_ViewImports.cshtml]
+[C:/Users/alsae/source/repos/SchoolManagementSystem55/SchoolManagementSystem/SchoolManagementSystem/Areas/Identity/Pages/Account/Manage/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ENES/Desktop/Okul_öğrenci_yönetim_Sistemi/SchoolManagementSystem/SchoolManagementSystem/SchoolManagementSystem/Areas/Identity/Pages/Account/Register.cshtml]
+[C:/Users/alsae/source/repos/SchoolManagementSystem55/SchoolManagementSystem/SchoolManagementSystem/Areas/Identity/Pages/Account/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ENES/Desktop/Okul_öğrenci_yönetim_Sistemi/SchoolManagementSystem/SchoolManagementSystem/SchoolManagementSystem/Areas/Identity/Pages/Account/RegisterConfirmation.cshtml]
+[C:/Users/alsae/source/repos/SchoolManagementSystem55/SchoolManagementSystem/SchoolManagementSystem/Areas/Identity/Pages/Account/RegisterConfirmation.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxSZWdpc3RlckNvbmZpcm1hdGlvbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ENES/Desktop/Okul_öğrenci_yönetim_Sistemi/SchoolManagementSystem/SchoolManagementSystem/SchoolManagementSystem/Areas/Identity/Pages/Account/ResendEmailConfirmation.cshtml]
+[C:/Users/alsae/source/repos/SchoolManagementSystem55/SchoolManagementSystem/SchoolManagementSystem/Areas/Identity/Pages/Account/ResendEmailConfirmation.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxSZXNlbmRFbWFpbENvbmZpcm1hdGlvbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ENES/Desktop/Okul_öğrenci_yönetim_Sistemi/SchoolManagementSystem/SchoolManagementSystem/SchoolManagementSystem/Areas/Identity/Pages/Account/ResetPassword.cshtml]
+[C:/Users/alsae/source/repos/SchoolManagementSystem55/SchoolManagementSystem/SchoolManagementSystem/Areas/Identity/Pages/Account/ResetPassword.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxSZXNldFBhc3N3b3JkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ENES/Desktop/Okul_öğrenci_yönetim_Sistemi/SchoolManagementSystem/SchoolManagementSystem/SchoolManagementSystem/Areas/Identity/Pages/Account/ResetPasswordConfirmation.cshtml]
+[C:/Users/alsae/source/repos/SchoolManagementSystem55/SchoolManagementSystem/SchoolManagementSystem/Areas/Identity/Pages/Account/ResetPasswordConfirmation.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxSZXNldFBhc3N3b3JkQ29uZmlybWF0aW9uLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ENES/Desktop/Okul_öğrenci_yönetim_Sistemi/SchoolManagementSystem/SchoolManagementSystem/SchoolManagementSystem/Areas/Identity/Pages/Account/_StatusMessage.cshtml]
+[C:/Users/alsae/source/repos/SchoolManagementSystem55/SchoolManagementSystem/SchoolManagementSystem/Areas/Identity/Pages/Account/_StatusMessage.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxfU3RhdHVzTWVzc2FnZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ENES/Desktop/Okul_öğrenci_yönetim_Sistemi/SchoolManagementSystem/SchoolManagementSystem/SchoolManagementSystem/Areas/Identity/Pages/Account/_ViewImports.cshtml]
+[C:/Users/alsae/source/repos/SchoolManagementSystem55/SchoolManagementSystem/SchoolManagementSystem/Areas/Identity/Pages/Account/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxfVmlld0ltcG9ydHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ENES/Desktop/Okul_öğrenci_yönetim_Sistemi/SchoolManagementSystem/SchoolManagementSystem/SchoolManagementSystem/Areas/Identity/Pages/Error.cshtml]
+[C:/Users/alsae/source/repos/SchoolManagementSystem55/SchoolManagementSystem/SchoolManagementSystem/Areas/Identity/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ENES/Desktop/Okul_öğrenci_yönetim_Sistemi/SchoolManagementSystem/SchoolManagementSystem/SchoolManagementSystem/Areas/Identity/Pages/_ValidationScriptsPartial.cshtml]
+[C:/Users/alsae/source/repos/SchoolManagementSystem55/SchoolManagementSystem/SchoolManagementSystem/Areas/Identity/Pages/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZhbGlkYXRpb25TY3JpcHRzUGFydGlhbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ENES/Desktop/Okul_öğrenci_yönetim_Sistemi/SchoolManagementSystem/SchoolManagementSystem/SchoolManagementSystem/Areas/Identity/Pages/_ViewImports.cshtml]
+[C:/Users/alsae/source/repos/SchoolManagementSystem55/SchoolManagementSystem/SchoolManagementSystem/Areas/Identity/Pages/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ENES/Desktop/Okul_öğrenci_yönetim_Sistemi/SchoolManagementSystem/SchoolManagementSystem/SchoolManagementSystem/Areas/Identity/Pages/_ViewStart.cshtml]
+[C:/Users/alsae/source/repos/SchoolManagementSystem55/SchoolManagementSystem/SchoolManagementSystem/Areas/Identity/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ENES/Desktop/Okul_öğrenci_yönetim_Sistemi/SchoolManagementSystem/SchoolManagementSystem/SchoolManagementSystem/Areas/Student/Views/Dashboard/Index.cshtml]
+[C:/Users/alsae/source/repos/SchoolManagementSystem55/SchoolManagementSystem/SchoolManagementSystem/Areas/Student/Views/Dashboard/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcU3R1ZGVudFxWaWV3c1xEYXNoYm9hcmRcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ENES/Desktop/Okul_öğrenci_yönetim_Sistemi/SchoolManagementSystem/SchoolManagementSystem/SchoolManagementSystem/Views/Home/Index.cshtml]
+[C:/Users/alsae/source/repos/SchoolManagementSystem55/SchoolManagementSystem/SchoolManagementSystem/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ENES/Desktop/Okul_öğrenci_yönetim_Sistemi/SchoolManagementSystem/SchoolManagementSystem/SchoolManagementSystem/Views/Home/Privacy.cshtml]
+[C:/Users/alsae/source/repos/SchoolManagementSystem55/SchoolManagementSystem/SchoolManagementSystem/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ENES/Desktop/Okul_öğrenci_yönetim_Sistemi/SchoolManagementSystem/SchoolManagementSystem/SchoolManagementSystem/Views/Shared/Error.cshtml]
+[C:/Users/alsae/source/repos/SchoolManagementSystem55/SchoolManagementSystem/SchoolManagementSystem/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ENES/Desktop/Okul_öğrenci_yönetim_Sistemi/SchoolManagementSystem/SchoolManagementSystem/SchoolManagementSystem/Views/Shared/_LoginPartial.cshtml]
+[C:/Users/alsae/source/repos/SchoolManagementSystem55/SchoolManagementSystem/SchoolManagementSystem/Views/Shared/_LoginPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Mb2dpblBhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ENES/Desktop/Okul_öğrenci_yönetim_Sistemi/SchoolManagementSystem/SchoolManagementSystem/SchoolManagementSystem/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/alsae/source/repos/SchoolManagementSystem55/SchoolManagementSystem/SchoolManagementSystem/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ENES/Desktop/Okul_öğrenci_yönetim_Sistemi/SchoolManagementSystem/SchoolManagementSystem/SchoolManagementSystem/Views/_ViewImports.cshtml]
+[C:/Users/alsae/source/repos/SchoolManagementSystem55/SchoolManagementSystem/SchoolManagementSystem/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ENES/Desktop/Okul_öğrenci_yönetim_Sistemi/SchoolManagementSystem/SchoolManagementSystem/SchoolManagementSystem/Views/_ViewStart.cshtml]
+[C:/Users/alsae/source/repos/SchoolManagementSystem55/SchoolManagementSystem/SchoolManagementSystem/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ENES/Desktop/Okul_öğrenci_yönetim_Sistemi/SchoolManagementSystem/SchoolManagementSystem/SchoolManagementSystem/Views/Shared/_Layout.cshtml]
+[C:/Users/alsae/source/repos/SchoolManagementSystem55/SchoolManagementSystem/SchoolManagementSystem/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-asyxypky5p

@@ -1,13 +1,17 @@
 ﻿@model IEnumerable<SchoolManagement.BusinessLogic.Dto.MaterialsDTO>
 
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "Materials";
 }
+<div class="content">
+    <div class="title-info">
+        <p>Materials</p>
+        <i class="fas fa-chart-bar"></i>
+    </div>
 
-<h1>Index</h1>
 
 <p>
-    <a asp-action="Create">Create New</a>
+    <a asp-action="Create" class="btn btn-primary">Create New</a>
 </p>
 <table class="table">
     <thead>
@@ -49,8 +53,8 @@
                 @Html.DisplayFor(modelItem => item.AdvisorID)
             </td>
             <td>
-                <a asp-action="Edit" asp-route-id="@item.MaterialID">Edit</a> |
-                <a asp-action="Delete" asp-route-id="@item.MaterialID">Delete</a>
+                    <a asp-action="Edit" asp-route-id="@item.MaterialID" class="button">Edit</a> |
+                    <a asp-action="Delete" asp-route-id="@item.MaterialID" class="button">Delete</a>
             </td>
         </tr>
 }
