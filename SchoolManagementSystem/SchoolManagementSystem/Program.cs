@@ -25,7 +25,7 @@ builder.Services.AddRazorPages();
 
 builder.Services.AddControllersWithViews();
 builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
-builder.Services.AddScoped<IEmailSender, EmailSender>();
+
 builder.Services.AddScoped<IStudentRepository, StudentRepository>();
 builder.Services.AddScoped<IMaterialsRepository,MaterialsRepository>();
 builder.Services.AddScoped<IAcademicCalendarRepository,AcademicCalendarRepository>();

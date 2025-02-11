@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Öğrenci Notları</title>
+</head>
+<body>
+    <div class="menu">
+        <ul>
+            <li class="profile">
+                <div class="img-box">
+                    <img src="12.jpeg" alt="profile">
+                </div>
+                <h2>sami mulla hamid</h2>
+            </li>
+            <li>
+                <a class="active" href="index.html">
+                    <i class="fas fa-home"></i>
+                    <p>Ana Sayfa</p>
+                </a>
+            </li>
+            <li>
+                <a href="Ders programı.html">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    <p>Dars programı</p>
+                </a>
+            </li>
+            <li>
+                <a href="Öğrenci Notları.html">
+                    <i class="fa-solid fa-person-chalkboard"></i>
+                    <p>Öğrenci Notları</p>
+                </a>
+            </li>
+            <li>
+                <a href="Sinav Takvimi.html">
+                    <i class="fa-solid fa-laptop-file"></i>
+                    <p>Sinav Takvimi</p>
+                </a>
+            </li>
+            <li>
+                <a href="Profile.html">
+                    <i class="fa-solid fa-user-graduate"></i>
+                    <p>Profile</p>
+                </a>
+            </li>
+            <li>
+                <a href="Akadamik Takvimi.html">
+                    <i class="fa-solid fa-calendar-days"></i>
+                    <p>Akadamik Takvimi</p>
+                </a>
+            </li>
+            <li>
+                <a href="Vali Bilgileri.html">
+                    <i class="fa-solid fa-restroom"></i>
+                    <p>Vali Bilgileri</p>
+                </a>
+            </li>
+            <li>
+                <a href="Dersler.html">
+                    <i class="fa-brands fa-readme"></i>
+                    <p>Dersler</p>
+                </a>
+            </li>
+            <li class="log-out">
+                <a href="Log Out.html">
+                    <i class="fas fa-sign-out"></i>
+                    <p>Log Out</p>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="Öğrenci-notu-table">
+        <table>
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Ders Adı</th>
+                    <th>Exam Type</th>
+                    <th>Ara Sınavı 1</th>
+                    <th>Final Sınavı 1</th>
+                    <th>Ara Sınavı 2</th>
+                    <th>Final Sınavı 2</th>
+                    <th>Son Not</th>
+                </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+    </div>
+
+    <script>
+        const baseUrl = `${window.location.origin}/api/StudentMark`;
+
+        function fetchStudentMarks() {
+            fetch(baseUrl)
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error(`HTTP error! status: ${response.status}`);
+                    }
+                    return response.json();
+                })
+                .then(data => updateStudentMarksTable(data))
+                .catch(error => console.error("Error fetching student marks:", error));
+        }
+
+        function updateStudentMarksTable(data) {
+            const tableBody = document.querySelector(".Öğrenci-notu-table tbody");
+            tableBody.innerHTML = ""; 
+
+            data.forEach((mark, index) => {
+                const row = `
+                    <tr>
+                        <th>${index + 1}</th>
+                        <td>${mark.materialsDTO?.lessonsName || "غير متاح"}</td>
+                        <td>${mark.examType === "1" ? "Ara Sınavı 1" : "Ara Sınavı 2"}</td>
+                        <td>${mark.examType === "1" ? mark.mark : "--"}</td>
+                        <td>${mark.examType === "2" ? mark.mark : "--"}</td>
+                        <td>--</td>
+                        <td>--</td>
+                        <td>${mark.mark || "--"}</td>
+                    </tr>
+                `;
+                tableBody.innerHTML += row;
+            });
+        }
+
+        document.addEventListener("DOMContentLoaded", fetchStudentMarks);
+    </script>
+</body>
+</html>

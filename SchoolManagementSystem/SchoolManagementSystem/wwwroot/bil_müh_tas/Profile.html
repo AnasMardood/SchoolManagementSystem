@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css" >
+             <style>
+        .form-group input {
+            color: #f5f5f5; 
+            background-color: transparent; 
+            border: 1px solid #ccc; 
+        }
+
+        .form-group input:disabled {
+            color: #f5f5f5;
+        }
+    </style>
+    <script>
+        const apiUrl = `${window.location.origin}/api/Student`;
+
+        function fetchStudentData(studentId) {
+            fetch(`${apiUrl}/${studentId}`)
+                .then(response => {
+                    if (!response.ok) throw new Error(`HTTP error! Status: ${response.status}`);
+                    return response.json();
+                })
+                .then(data => {
+                    console.log("Received data:", data); // طباعة البيانات المستلمة إلى وحدة التحكم
+
+                    document.getElementById("first-name").value = data.firstName;
+                    document.getElementById("last-name").value = data.lastName;
+                    document.getElementById("birth-date").value = data.birthDate.split("T")[0];
+                    document.getElementById("id-number").value = data.studentID;
+                    document.getElementById("nationality").value = data.nationality;
+                    document.getElementById("gender").value = data.gender;
+                })
+                .catch(error => console.error("Error fetching student data:", error));
+        }
+
+        window.onload = () => {
+            const studentId = 11; 
+            fetchStudentData(studentId);
+        };
+    </script>
+</head>
+<body>
+    <div class="menu">
+        <ul>
+            <li>
+                <a class="active" href="index.html">
+                    <i class="fas fa-home"></i>
+                    <p>Ana sayfa</p>
+                </a>
+            </li>
+            <li>
+                <a href="Ders programı.html">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    <p>Ders programı</p>
+                </a>
+            </li>
+            <li>
+                <a href="Öğrenci Notları.html">
+                    <i class="fa-solid fa-person-chalkboard"></i>
+                    <p>Öğrenci Notları</p>
+                </a>
+            </li>
+            <li>
+                <a href="Sinav Takvimi.html">
+                    <i class="fa-solid fa-laptop-file"></i>
+                    <p>Sinav Takvimi</p>
+                </a>
+            </li>
+            <li>
+                <a href="Profile.html">
+                    <i class="fa-solid fa-user-graduate"></i>
+                    <p>Profile</p>
+                </a>
+            </li>
+            <li>
+                <a href="Akadamik Takvimi.html">
+                    <i class="fa-solid fa-calendar-days"></i>
+                    <p>Akadamik Takvimi</p>
+                </a>
+            </li>
+            <li>
+                <a href="Vali Bilgileri.html">
+                    <i class="fa-solid fa-restroom"></i>
+                    <p>Vali Bilgileri</p>
+                </a>
+            </li>
+            <li>
+                <a href="Dersler.html">
+                    <i class="fa-brands fa-readme"></i>
+                    <p>Dersler</p>
+                </a>
+            </li>
+            <li class="log-out">
+                <a href="Log Out.html">
+                    <i class="fas fa-sign-out"></i>
+                    <p>Log Out</p>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="profile-container">
+        <h2>Profile</h2>
+        <form>
+            <div class="form-group">
+                <label for="first-name">İsim</label>
+                <input type="text" id="first-name" placeholder="İsim gir" disabled>
+            </div>
+            <div class="form-group">
+                <label for="last-name">Soyisim</label>
+                <input type="text" id="last-name" placeholder="Soyisim gir" disabled>
+            </div>
+            <div class="form-group">
+                <label for="birth-date">Döğüm Tarihi</label>
+                <input type="date" id="birth-date" disabled>
+            </div>
+            <div class="form-group">
+                <label for="id-number">Öğrenci No</label>
+                <input type="text" id="id-number" placeholder="Kimlik No Gir" disabled>
+            </div>
+            <div class="form-group">
+                <label for="nationality">Uyruğu</label>
+                <input type="text" id="nationality" placeholder="Uyruğu gir" disabled>
+            </div>
+            <div class="form-group">
+                <label for="gender">Cinsiyet</label>
+                <input type="text" id="gender" placeholder="Cinsiyet gir" disabled>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

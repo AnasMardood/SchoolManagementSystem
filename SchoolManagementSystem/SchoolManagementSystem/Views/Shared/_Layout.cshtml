@@ -14,96 +14,225 @@
     <link rel="stylesheet" href="~/SchoolManagementSystem.styles.css" asp-append-version="true" />
 </head>
 <body>
-    @if (User.IsInRole(WebSiteRole.WebSite_Admin)){
 
-    <div class="menu">
-        <ul>
-            <li class="profile">
-                    @if (UserManager.GetUserAsync(User).Result.Picture != null)
-                    {
-                    <li class="nav-item">
-                        <img class="avatar rounded-circle" alt="profile" src="data:image/*;base64,@(Convert.ToBase64String(UserManager.GetUserAsync(User).Result.Picture))" />
+    @if (User.IsInRole(WebSiteRole.WebSite_Admin))
+    {
+  @*       <body>
+            <div class="menu">
+                <ul>
+                    <li class="profile">
+                        @if (UserManager.GetUserAsync(User).Result.Picture != null)
+                        {
+                        <li class="nav-item">
+                            <img class="avatar rounded-circle" alt="profile" src="data:image/*;base64,@(Convert.ToBase64String(UserManager.GetUserAsync(User).Result.Picture))" />
+                        </li>
+                        }
+                    <h2 style="font-size: 15px;">@User.Identity.Name </h2>
                     </li>
-                    }
-                <h2 style="font-size: 15px;">@User.Identity.Name </h2>
-            </li>
-            <li>
-                <a class="active" href="https://localhost:44316/Home">
-                    <i class="fas fa-home"></i>
-                    <p>ِHome</p>
-                </a>
-            </li>
-            <li>
-                <a href="https://localhost:44316/admin/academiccalendars" >
-                    <i class="fa-solid fa-calendar-days"></i>
-                    <p>Academic Calendars</p>
-                </a>
-            </li>
-            <li>
-                <a href="https://localhost:44316/admin/Advisor">
-                    <i class="fa-solid fa-chalkboard-user"></i>
+                    <li>
+                        <a class="active" href="https://localhost:44316/Home">
+                            <i class="fas fa-home"></i>
+                            <p>ِHome</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://localhost:44316/admin/academiccalendars">
+                            <i class="fa-solid fa-calendar-days"></i>
+                            <p>Academic Calendars</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://localhost:44316/admin/Advisor">
+                            <i class="fa-solid fa-chalkboard-user"></i>
 
 
-                    <p>Advisor</p>
-                </a>
-            </li>
-            <li>
-                <a href="https://localhost:44316/admin/Attendance">
-                    <i class="fa-solid fa-book-open-reader"></i>
-                    <p>Attendance</p>
-                </a>
-            </li>
-            <li>
-                <a href="https://localhost:44316/admin/Classes">
-                    <i class="fa-solid fa-school-circle-check"></i>
-                    <p>Classes</p>
-                </a>
-            </li>
+                            <p>Advisor</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://localhost:44316/admin/Attendance">
+                            <i class="fa-solid fa-book-open-reader"></i>
+                            <p>Attendance</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://localhost:44316/admin/Classes">
+                            <i class="fa-solid fa-school-circle-check"></i>
+                            <p>Classes</p>
+                        </a>
+                    </li>
 
 
-            <li>
-                <a href="https://localhost:44316/admin/Materials">
-                    <i class="fa-solid fa-notes-medical"></i>
-                    <p>Materials</p>
-                </a>
-            </li>
-            <li>
-                <a href="https://localhost:44316/admin/Roles">
-                    <i class="fa-solid fa-hand-sparkles"></i>
-                    <p>Roles</p>
-                </a>
-            </li>
-            <li>
-                <a href="https://localhost:44316/admin/semesters">
-                    <i class="fa-solid fa-s"></i>
-                    <p>Semesters</p>
-                </a>
-            </li>
-            <li>
-                <a href="https://localhost:44316/admin/Student">
-                    <i class="fa-solid fa-graduation-cap"></i>
-                    <p>Student</p>
-                </a>
-            </li>
-             <li>
-                <a href="https://localhost:44316/admin/StudentMark">
-                    <i class="fa-brands fa-markdown"></i>
-                    <p>Student Mark</p>
-                </a>
-            </li>
-             <li>
-                 <a href="https://localhost:44316/admin/User">
-                    <i class="fa-solid fa-people-line"></i>
-                     <p>User</p>
-                 </a>
-             </li>
-               
+                    <li>
+                        <a href="https://localhost:44316/admin/Materials">
+                            <i class="fa-solid fa-notes-medical"></i>
+                            <p>Materials</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://localhost:44316/admin/Roles">
+                            <i class="fa-solid fa-hand-sparkles"></i>
+                            <p>Roles</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://localhost:44316/admin/semesters">
+                            <i class="fa-solid fa-s"></i>
+                            <p>Semesters</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://localhost:44316/admin/Student">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                            <p>Student</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://localhost:44316/admin/StudentMark">
+                            <i class="fa-brands fa-markdown"></i>
+                            <p>Student Mark</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://localhost:44316/admin/User">
+                            <i class="fa-solid fa-people-line"></i>
+                            <p>User</p>
+                        </a>
+                    </li>
 
-                <partial name="_LoginPartial" />
-        </ul>
-    </div>
+                    <partial name="_LoginPartial" />
+                </ul>
+            </div>
 
+        </body> *@
+        <li class="nav-item">
+            <a class="nav-link text-dark" asp-area="Admin" asp-controller="Dashboard" asp-action="Index">Admin Dashboard</a>
+        </li>
     }
+    else if (User.IsInRole(WebSiteRole.WebSite_Student))
+        {
+
+        <body>
+            <div class="menu">
+                <ul>
+                    <li class="profile">
+                        <div class="img-box">
+                            <img src="~/bil_müh_tas/12.jpeg" alt="profile">
+                        </div>
+                        <h2>sami mulla hamid</h2>
+                    </li>
+                    <li>
+                        <a class="active" href="https://localhost:7267/bil_m%C3%BCh_tas/index.html">
+                            <i class="fas fa-home"></i>
+                            <p>ِAna sayfa</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="~/bil_müh_tas/Ders programı.html">
+                            <i class="fa-solid fa-bag-shopping"></i>
+                            <p>Dars programı</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="~/bil_müh_tas/Öğrenci Notları.html">
+                            <i class="fa-solid fa-person-chalkboard"></i>
+                            <p>Öğrenci Notları</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="~/bil_müh_tas/Sinav Takvimi.html">
+                            <i class="fa-solid fa-laptop-file"></i>
+                            <p>Sinav Takvimi</p>
+                        </a>
+                    </li>
+
+
+
+                    <li>
+                        <a href="~/bil_müh_tas/Profile.html">
+                            <i class="fa-solid fa-user-graduate"></i>
+                            <p>Profile</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="~/bil_müh_tas/Akadamik Takvimi.html">
+                            <i class="fa-solid fa-calendar-days"></i>
+                            <p>Akadamik Takvimi</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="~/bil_müh_tas/Vali Bilgileri.html">
+                            <i class="fa-solid fa-restroom"></i>
+                            <p>Vali Bilgileri</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="~/bil_müh_tas/Dersler.html">
+                            <i class="fa-brands fa-readme"></i>
+                            <p>Dersler</p>
+                        </a>
+                    </li>
+                    <partial name="_LoginPartial" />
+
+
+                </ul>
+            </div>
+           
+
+          
+ @*            <div class="content">
+                <div class="title-info">
+                    <p>Ana Sayfa</p>
+                    <i class="fas fa-chart-bar"></i>
+                </div>
+
+
+                <div class="data-info">
+                    <div class="box">
+                        <i class="fas fa-user"></i>
+                        <div class="data">
+                            <p>Devamsız Gün Sayı</p>
+                            <span>5</span>               <!--user sayı -->
+                        </div>
+                    </div>
+                    <div class="box">
+                        <i class="fa-solid fa-bars-progress"></i>
+                        <div class="data">
+                            <p>Tamamlayın ödevleri</p>
+                            <span>2</span>               <!--user sayı -->
+                        </div>
+                    </div>
+                    <div class="box">
+                        <i class="fa-solid fa-align-justify"></i>
+                        <div class="data">
+                            <p>Beklenin ödevleri</p>
+                            <span>100</span>               <!--user sayı -->
+                        </div>
+                    </div>
+                    <div class="box">
+                        <i class="fa-solid fa-volume-high"></i>
+                        <div class="data">
+                            <p>Duyurular</p>
+                            <span>100</span>               <!--user sayı -->
+                        </div>
+                    </div>
+                    <div class="box">
+                        <i class="fa-solid fa-comments"></i>
+                        <div class="data">
+                            <p>Mesajları</p>
+                            <span>100</span>               <!--user sayı -->
+                        </div>
+                    </div>
+                </div>
+            </div> *@
+        
+        </body>
+
+@*             <li class="nav-item">
+                <a class="nav-link text-dark" asp-area="Student" asp-controller="Dashboard" asp-action="Index">Student Dashboard</a>
+            </li> *@
+        }
+
     <div class="container">
         <main role="main" class="pb-3">
             @RenderBody()

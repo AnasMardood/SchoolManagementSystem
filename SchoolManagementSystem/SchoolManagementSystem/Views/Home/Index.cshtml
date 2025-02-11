@@ -1,4 +1,6 @@
-﻿
+﻿@using SchoolManagement.DataAccess.Models
+@using SchoolManagement.DataAccess.Utilities
+@inject UserManager<ApplicationUser> UserManager;
 
 @{
   
@@ -10,47 +12,50 @@
 
 <body>
 
-    <div class="content">
+      <div class="content">
         <div class="title-info">
             <p>Ana Sayfa</p>
             <i class="fas fa-chart-bar"></i>
         </div>
-
-
+        
+ 
         <div class="data-info">
+                       @if (User.IsInRole(WebSiteRole.WebSite_Admin))
+    {
             <div class="box">
                 <i class="fas fa-user"></i>
                 <div class="data">
                     <p>User</p>
-                    <span>100</span>               <!--user sayı -->
+                    <span>6</span>               <!--user sayı -->
                 </div>
             </div>
+    }
             <div class="box">
                 <i class="fa-solid fa-bars-progress"></i>
                 <div class="data">
                     <p>Tamamlayın ödevleri</p>
-                    <span>2</span>               <!--user sayı -->
+                    <span>0</span>               <!--user sayı -->
                 </div>
             </div>
             <div class="box">
                 <i class="fa-solid fa-align-justify"></i>
                 <div class="data">
                     <p>Beklenin ödevleri</p>
-                    <span>100</span>               <!--user sayı -->
+                    <span>0</span>               <!--user sayı -->
                 </div>
             </div>
             <div class="box">
                 <i class="fa-solid fa-volume-high"></i>
                 <div class="data">
                     <p>Duyurular</p>
-                    <span>100</span>               <!--user sayı -->
+                    <span>1</span>               <!--user sayı -->
                 </div>
             </div>
             <div class="box">
                 <i class="fa-solid fa-comments"></i>
                 <div class="data">
                     <p>Mesajları</p>
-                    <span>100</span>               <!--user sayı -->
+                    <span>0</span>               <!--user sayı -->
                 </div>
             </div>
         </div>
