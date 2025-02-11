@@ -34,7 +34,10 @@ namespace SchoolManagementSystem.Areas.Admin.Controllers
         // GET: AttendanceController/Create
         public async Task<ActionResult> Create()
         {
-            ListingMaterialsandStudent();
+            var students = await _studentService.GetAllStudent();
+            var materials = await _materialsService.GetMaterialsAsyn();
+            ViewBag.Students = new SelectList(students, "StudentID", "FirstName");
+            ViewBag.Materials = new SelectList(materials, "MaterialID", "LessonsName");
             return View();
         }
 
@@ -67,7 +70,10 @@ namespace SchoolManagementSystem.Areas.Admin.Controllers
                 _logger.LogError(ex, "Error occurred while creating attendance.");
             }
 
-            ListingMaterialsandStudent();
+            var students = await _studentService.GetAllStudent();
+            var materials = await _materialsService.GetMaterialsAsyn();
+            ViewBag.Students = new SelectList(students, "StudentID", "FirstName");
+            ViewBag.Materials = new SelectList(materials, "MaterialID", "LessonsName");
             return View(attendanceDTO);
         }
 
@@ -103,7 +109,10 @@ namespace SchoolManagementSystem.Areas.Admin.Controllers
             {
                 _logger.LogError(ex, "Error occurred while updating attendance.");
             }
-            ListingMaterialsandStudent();
+            var students = await _studentService.GetAllStudent();
+            var materials = await _materialsService.GetMaterialsAsyn();
+            ViewBag.Students = new SelectList(students, "StudentID", "FirstName");
+            ViewBag.Materials = new SelectList(materials, "MaterialID", "LessonsName");
             return View(attendanceDTO);
         }
 
@@ -111,7 +120,10 @@ namespace SchoolManagementSystem.Areas.Admin.Controllers
         public async Task<ActionResult> Delete(int id)
         {
             var attendance = await _attendanceService.GetAttendancesWithDetailsAsync(id);
-            ListingMaterialsandStudent();
+            var students = await _studentService.GetAllStudent();
+            var materials = await _materialsService.GetMaterialsAsyn();
+            ViewBag.Students = new SelectList(students, "StudentID", "FirstName");
+            ViewBag.Materials = new SelectList(materials, "MaterialID", "LessonsName");
             return View(attendance);
         }
 

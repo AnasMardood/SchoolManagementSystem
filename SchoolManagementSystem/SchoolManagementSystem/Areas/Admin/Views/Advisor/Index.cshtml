@@ -1,12 +1,16 @@
 ﻿@model IEnumerable<SchoolManagement.BusinessLogic.Dto.AdvisorDTO>
 
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "Advisor";
 }
-<h1>Index</h1>
+<div class="content">
+    <div class="title-info">
+        <p>Advisor</p>
+        <i class="fas fa-chart-bar"></i>
+    </div>
 
 <p>
-    <a asp-action="Create">Create New</a>
+    <a asp-action="Create" class="btn btn-primary">Create New</a>
 </p>
 <table class="table">
     <thead>
@@ -85,9 +89,9 @@
             </td>          
             
             <td>
-                <a asp-action="Edit" asp-route-id="@item.AdvisorID">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.AdvisorID">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.AdvisorID">Delete</a>
+                    <a asp-action="Edit" asp-route-id="@item.AdvisorID" class="button">Edit</a> |
+                    <a asp-action="Details" asp-route-id="@item.AdvisorID" class="button">Details</a> |
+                    <a asp-action="Delete" asp-route-id="@item.AdvisorID" class="button">Delete</a>
             </td>
         </tr>
 }

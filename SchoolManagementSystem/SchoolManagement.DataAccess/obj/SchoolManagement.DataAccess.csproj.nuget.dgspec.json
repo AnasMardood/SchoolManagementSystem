@@ -1,27 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ENES\\Desktop\\Okul_öğrenci_yönetim_Sistemi\\SchoolManagementSystem\\SchoolManagementSystem\\SchoolManagement.DataAccess\\SchoolManagement.DataAccess.csproj": {}
+    "C:\\Users\\alsae\\source\\repos\\SchoolManagementSystem55\\SchoolManagementSystem\\SchoolManagement.DataAccess\\SchoolManagement.DataAccess.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ENES\\Desktop\\Okul_öğrenci_yönetim_Sistemi\\SchoolManagementSystem\\SchoolManagementSystem\\SchoolManagement.DataAccess\\SchoolManagement.DataAccess.csproj": {
+    "C:\\Users\\alsae\\source\\repos\\SchoolManagementSystem55\\SchoolManagementSystem\\SchoolManagement.DataAccess\\SchoolManagement.DataAccess.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ENES\\Desktop\\Okul_öğrenci_yönetim_Sistemi\\SchoolManagementSystem\\SchoolManagementSystem\\SchoolManagement.DataAccess\\SchoolManagement.DataAccess.csproj",
+        "projectUniqueName": "C:\\Users\\alsae\\source\\repos\\SchoolManagementSystem55\\SchoolManagementSystem\\SchoolManagement.DataAccess\\SchoolManagement.DataAccess.csproj",
         "projectName": "SchoolManagement.DataAccess",
-        "projectPath": "C:\\Users\\ENES\\Desktop\\Okul_öğrenci_yönetim_Sistemi\\SchoolManagementSystem\\SchoolManagementSystem\\SchoolManagement.DataAccess\\SchoolManagement.DataAccess.csproj",
-        "packagesPath": "C:\\Users\\ENES\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ENES\\Desktop\\Okul_öğrenci_yönetim_Sistemi\\SchoolManagementSystem\\SchoolManagementSystem\\SchoolManagement.DataAccess\\obj\\",
+        "projectPath": "C:\\Users\\alsae\\source\\repos\\SchoolManagementSystem55\\SchoolManagementSystem\\SchoolManagement.DataAccess\\SchoolManagement.DataAccess.csproj",
+        "packagesPath": "C:\\Users\\alsae\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\alsae\\source\\repos\\SchoolManagementSystem55\\SchoolManagementSystem\\SchoolManagement.DataAccess\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\ENES\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\alsae\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -39,7 +37,8 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        }
+        },
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net8.0": {
@@ -74,7 +73,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
