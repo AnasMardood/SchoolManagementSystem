@@ -23,4 +23,9 @@ namespace SchoolManagement.DataAccess.Repositories
                 .ToListAsync();
         }
     }
+    public interface ISemesterRepository : IBaseRepository<Semester>
+    {
+        Task<IEnumerable<Semester>> GetSemestersWithStudentAsync();
+
+    }
 }

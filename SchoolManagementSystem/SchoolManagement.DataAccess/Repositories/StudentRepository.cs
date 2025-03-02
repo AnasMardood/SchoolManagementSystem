@@ -40,5 +40,12 @@ namespace SchoolManagement.DataAccess.Repositories
                   .ToListAsync();
         }
     }
+    public interface IStudentRepository : IBaseRepository<Student>
+    {
+        Task<IEnumerable<Student>> GetAllStudent();
+        Task<Student> GetStudentWithDetailsAsync(int StudentId);
+        Task<IEnumerable<Student>> GetStudentByClassAsync(int ClassId);
+
     }
+}
 

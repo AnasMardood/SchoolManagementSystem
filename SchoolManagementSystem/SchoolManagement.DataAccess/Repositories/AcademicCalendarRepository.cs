@@ -7,6 +7,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static SchoolManagement.DataAccess.Repositories.AcademicCalendarRepository;
 
 namespace SchoolManagement.DataAccess.Repositories
 {
@@ -29,6 +30,11 @@ namespace SchoolManagement.DataAccess.Repositories
         public async Task<AcademicCalendar> GetEventDetailsAsync(int eventId)
         {
             return await _dbSet.FirstOrDefaultAsync(e => e.EventID == eventId);
+        }
+        public interface IAcademicCalendarRepository : IBaseRepository<AcademicCalendar>
+        {
+            Task<IEnumerable<AcademicCalendar>> GetEventsForMonthAsync(DateTime month);
+            Task<AcademicCalendar> GetEventDetailsAsync(int eventId);
         }
     }
 }

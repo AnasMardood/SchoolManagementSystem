@@ -39,5 +39,12 @@ namespace SchoolManagement.DataAccess.Repositories
                                 .FirstOrDefaultAsync(m => m.MaterialID == materialId);
         }
     }
+    public interface IMaterialsRepository : IBaseRepository<Materials>
+    {
+        Task<IEnumerable<Materials>> GetMaterialsBySemesterAsync(int classId);
+        Task<IEnumerable<Materials>> GetMaterialsAsync();
+        Task<Materials> GetMaterialsWithDetailsAsync(int materialId);
+
+    }
 }
 

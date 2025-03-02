@@ -27,4 +27,9 @@ namespace SchoolManagement.DataAccess.Repositories
         }
 
     }
+    public interface IAdvisorRepository : IBaseRepository<Advisor>
+    {
+        Task<Advisor> GetAdvisorWithMaterialsAsync(int advisorId);
+        Task<IEnumerable<Advisor>> GetAdvisorWithMaterialsAsync();
+    }
 }
