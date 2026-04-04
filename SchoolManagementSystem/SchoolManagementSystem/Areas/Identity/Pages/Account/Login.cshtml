@@ -1,51 +1,50 @@
-﻿@page
+@page
 @model LoginModel
 
 @{
     ViewData["Title"] = "Log in";
 }
 
-<h1>@ViewData["Title"]</h1>
-<div class="row">
-    <div class="col-md-4">
-        <section>
-            <form id="account" method="post">
-                <h2>Use a local account to log in.</h2>
-                <hr />
-                <div asp-validation-summary="ModelOnly" class="text-danger" role="alert"></div>
-                <div class="form-floating mb-3">
-                    <input asp-for="Input.Email" class="form-control" autocomplete="username" aria-required="true" placeholder="name@example.com" />
-                    <label asp-for="Input.Email" class="form-label">Email</label>
-                    <span asp-validation-for="Input.Email" class="text-danger"></span>
-                </div>
-                <div class="form-floating mb-3">
-                    <input asp-for="Input.Password" class="form-control" autocomplete="current-password" aria-required="true" placeholder="password" />
-                    <label asp-for="Input.Password" class="form-label">Password</label>
-                    <span asp-validation-for="Input.Password" class="text-danger"></span>
-                </div>
-                <div class="checkbox mb-3">
-                    <label asp-for="Input.RememberMe" class="form-label">
-                        <input class="form-check-input" asp-for="Input.RememberMe" />
+<div class="auth-wrapper">
+    <div class="modern-card auth-card shadow-lg">
+        <div class="text-center mb-4">
+            <h2 class="fw-bold text-primary"><i class="fa-solid fa-graduation-cap"></i></h2>
+            <h4 class="fw-bold text-dark mt-2">Welcome Back</h4>
+            <p class="text-muted">Use a local account to log in.</p>
+        </div>
+        
+        <form id="account" method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger mb-3" role="alert"></div>
+            
+            <div class="mb-3 form-floating">
+                <input asp-for="Input.Email" class="form-control form-control-modern" autocomplete="username" aria-required="true" placeholder="name@example.com" />
+                <label asp-for="Input.Email">Email address</label>
+                <span asp-validation-for="Input.Email" class="text-danger small"></span>
+            </div>
+            
+            <div class="mb-3 form-floating">
+                <input asp-for="Input.Password" class="form-control form-control-modern" autocomplete="current-password" aria-required="true" placeholder="Password" />
+                <label asp-for="Input.Password">Password</label>
+                <span asp-validation-for="Input.Password" class="text-danger small"></span>
+            </div>
+            
+            <div class="d-flex justify-content-between align-items-center mb-4">
+                <div class="form-check">
+                    <input class="form-check-input" asp-for="Input.RememberMe" id="rememberMe" />
+                    <label class="form-check-label text-muted" for="rememberMe">
                         @Html.DisplayNameFor(m => m.Input.RememberMe)
                     </label>
                 </div>
-                <div>
-                    <button id="login-submit" type="submit" class="w-100 btn btn-lg btn-primary" style="margin-bottom: 15px">Log in</button>
-                </div>
-                <div>
-
-                    <p>
-                        <a id="forgot-password" asp-page="./ForgotPassword" class="btn btn-primary">Forgot your password?</a>
-                    </p>
-                    <p>
-                        <a asp-page="./Register" asp-route-returnUrl="@Model.ReturnUrl" class="btn btn-primary">Register as a new user</a>
-                    </p>
-                    <p>
-                        <a id="resend-confirmation" asp-page="./ResendEmailConfirmation" class="btn btn-primary">Resend email confirmation</a>
-                    </p>
-                </div>
-            </form>
-        </section>
+                <a id="forgot-password" asp-page="./ForgotPassword" class="text-decoration-none small text-primary fw-medium">Forgot password?</a>
+            </div>
+            
+            <button id="login-submit" type="submit" class="w-100 btn btn-modern btn-modern-primary py-2 mb-3">Log in</button>
+            
+            <div class="text-center mt-3 text-muted small">
+                <a asp-page="./Register" asp-route-returnUrl="@Model.ReturnUrl" class="text-decoration-none fw-medium">Register as a new user</a> | 
+                <a id="resend-confirmation" asp-page="./ResendEmailConfirmation" class="text-decoration-none fw-medium">Resend confirmation</a>
+            </div>
+        </form>
     </div>
 </div>
 
