@@ -1,0 +1,62 @@
+﻿@model IEnumerable<SchoolManagement.BusinessLogic.Dto.MaterialsDTO>
+
+@{
+    ViewData["Title"] = "Materials";
+}
+<div class="content">
+    <div class="title-info">
+        <p>Materials</p>
+        <i class="fas fa-chart-bar"></i>
+    </div>
+
+
+<p>
+    <a asp-action="Create" class="btn btn-primary">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.MaterialID)
+            </th>      
+            <th>
+                @Html.DisplayNameFor(model => model.LessonsName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CreditHours)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ClassID)
+            </th>        
+            <th>
+                @Html.DisplayNameFor(model => model.AdvisorID)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.MaterialID)
+            </td>           
+            <td>
+                @Html.DisplayFor(modelItem => item.LessonsName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CreditHours)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ClassID)
+            </td>           
+            <td>
+                @Html.DisplayFor(modelItem => item.AdvisorID)
+            </td>
+            <td>
+                    <a asp-action="Edit" asp-route-id="@item.MaterialID" class="button">Edit</a> |
+                    <a asp-action="Delete" asp-route-id="@item.MaterialID" class="button">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

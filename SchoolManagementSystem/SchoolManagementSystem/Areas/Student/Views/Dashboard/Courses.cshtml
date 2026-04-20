@@ -1,0 +1,43 @@
+@model IEnumerable<SchoolManagement.DataAccess.Models.Materials>
+@{
+    ViewData["Title"] = "Courses";
+}
+
+<div class="modern-card mt-4">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <h4 class="card-title-modern m-0"><i class="fa-brands fa-readme text-success"></i> My Current Courses</h4>
+    </div>
+
+    <div class="table-responsive">
+        <table class="table modern-table">
+            <thead>
+                <tr>
+                    <th>Course Code</th>
+                    <th>Course Name</th>
+                    <th>Instructor (Advisor)</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                @if(Model != null && Model.Any())
+                {
+                    foreach (var m in Model)
+                    {
+                        <tr>
+                            <td>@m.MaterialID</td>
+                            <td class="fw-bold">@m.LessonsName</td>
+                            <td>@(m.Advisor != null ? m.Advisor.FirstName + " " + m.Advisor.LastName : "-")</td>
+                            <td><span class="badge bg-primary rounded-pill px-3 py-2">Active</span></td>
+                        </tr>
+                    }
+                }
+                else
+                {
+                    <tr>
+                        <td colspan="4" class="text-center text-muted">No registered courses found.</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

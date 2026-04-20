@@ -1,0 +1,125 @@
+@using SchoolManagement.DataAccess.Models
+@using SchoolManagement.DataAccess.Utilities
+@inject UserManager<ApplicationUser> UserManager
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - School System</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="~/css/modern-site.css" asp-append-version="true" />
+</head>
+<body>
+
+    <div class="app-wrapper">
+        
+        <!-- Sidebar Navigation -->
+        @if (User.Identity.IsAuthenticated)
+        {
+            <aside class="app-sidebar">
+                <div class="sidebar-header">
+                    <h4><i class="fa-solid fa-graduation-cap me-2"></i> School System</h4>
+                </div>
+                <nav class="sidebar-nav">
+                    
+                    @if (User.IsInRole(WebSiteRole.WebSite_Admin))
+                    {
+                        <div class="px-4 py-2 text-muted small fw-bold text-uppercase">Admin Panel</div>
+                        <a class="sidebar-nav-link" href="/Admin/Dashboard">
+                            <i class="fas fa-home"></i> <span>Dashboard</span>
+                        </a>
+                        <a class="sidebar-nav-link" href="/Admin/AcademicCalendars">
+                            <i class="fa-solid fa-calendar-days"></i> <span>Academic Calendars</span>
+                        </a>
+                        <a class="sidebar-nav-link" href="/Admin/Advisor">
+                            <i class="fa-solid fa-chalkboard-user"></i> <span>Advisors</span>
+                        </a>
+                        <a class="sidebar-nav-link" href="/Admin/Attendance">
+                            <i class="fa-solid fa-book-open-reader"></i> <span>Attendance</span>
+                        </a>
+                        <a class="sidebar-nav-link" href="/Admin/Classes">
+                            <i class="fa-solid fa-school-circle-check"></i> <span>Classes</span>
+                        </a>
+                        <a class="sidebar-nav-link" href="/Admin/Materials">
+                            <i class="fa-solid fa-notes-medical"></i> <span>Materials</span>
+                        </a>
+                        <a class="sidebar-nav-link" href="/Admin/Roles">
+                            <i class="fa-solid fa-hand-sparkles"></i> <span>Roles</span>
+                        </a>
+                        <a class="sidebar-nav-link" href="/Admin/Semesters">
+                            <i class="fa-solid fa-s"></i> <span>Semesters</span>
+                        </a>
+                        <a class="sidebar-nav-link" href="/Admin/Student">
+                            <i class="fa-solid fa-user-graduate"></i> <span>Students</span>
+                        </a>
+                        <a class="sidebar-nav-link" href="/Admin/StudentMark">
+                            <i class="fa-brands fa-markdown"></i> <span>Student Marks</span>
+                        </a>
+                        <a class="sidebar-nav-link" href="/Admin/User">
+                            <i class="fa-solid fa-people-line"></i> <span>Users</span>
+                        </a>
+                    }
+                    else if (User.IsInRole(WebSiteRole.WebSite_Student))
+                    {
+                        <!-- Student Menu mimicking old structure but cleaned up -->
+                        <div class="px-4 py-2 text-muted small fw-bold text-uppercase">Student Portal</div>
+                        <a class="sidebar-nav-link" href="/Home/Index">
+                            <i class="fas fa-home"></i> <span>Home</span>
+                        </a>
+                        <a class="sidebar-nav-link" href="/Student/Dashboard/Schedule">
+                            <i class="fa-solid fa-calendar-week"></i> <span>Schedule</span>
+                        </a>
+                        <a class="sidebar-nav-link" href="/Student/Dashboard/Grades">
+                            <i class="fa-solid fa-star"></i> <span>Grades</span>
+                        </a>
+                        <a class="sidebar-nav-link" href="/Student/Dashboard/Exams">
+                            <i class="fa-solid fa-clock"></i> <span>Exam Schedule</span>
+                        </a>
+                        <a class="sidebar-nav-link" href="/Identity/Account/Manage">
+                            <i class="fa-solid fa-user-graduate"></i> <span>Profile</span>
+                        </a>
+                        <a class="sidebar-nav-link" href="/Student/Dashboard/AcademicCalendar">
+                            <i class="fa-solid fa-calendar-days"></i> <span>Academic Calendar</span>
+                        </a>
+                        <a class="sidebar-nav-link" href="/Student/Dashboard/ParentInfo">
+                            <i class="fa-solid fa-restroom"></i> <span>Parent Info</span>
+                        </a>
+                        <a class="sidebar-nav-link" href="/Student/Dashboard/Courses">
+                            <i class="fa-brands fa-readme"></i> <span>Courses</span>
+                        </a>
+                    }
+                </nav>
+            </aside>
+        }
+
+        <!-- Main Content Area -->
+        <div class="app-main @(!User.Identity.IsAuthenticated ? "ms-0" : "")">
+            
+            <!-- Top Header -->
+            <header class="app-header">
+                <div class="d-flex align-items-center">
+                    @if (User.Identity.IsAuthenticated)
+                    {
+                        <h5 class="mb-0 text-muted fw-normal d-none d-md-block">Welcome, @User.Identity.Name</h5>
+                    }
+                </div>
+                <div>
+                     <partial name="_LoginPartial" />
+                </div>
+            </header>
+
+            <!-- Page Content -->
+            <main class="app-content">
+                @RenderBody()
+            </main>
+        </div>
+    </div>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

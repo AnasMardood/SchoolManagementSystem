@@ -1,0 +1,43 @@
+@model IEnumerable<SchoolManagement.BusinessLogic.Dto.ClassDTO>
+
+@{
+    ViewData["Title"] = "Classes";
+}
+<div class="modern-card mt-4">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <h4 class="card-title-modern m-0"><i class="fa-solid fa-school-circle-check text-primary"></i> Classes Management</h4>
+        <a asp-action="Create" class="btn btn-modern btn-modern-primary"><i class="fa-solid fa-plus me-1"></i> Create New</a>
+    </div>
+
+    <div class="table-responsive">
+        <table class="table modern-table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.ClassID)
+            </th>      
+            <th>
+                @Html.DisplayNameFor(model => model.ClassName)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.ClassID)
+            </td>     
+            <td>
+                @Html.DisplayFor(modelItem => item.ClassName)
+            </td>
+            <td>
+                    <a asp-action="Edit" asp-route-id="@item.ClassID" class="btn btn-sm btn-outline-primary">Edit</a> |
+                    <a asp-action="Delete" asp-route-id="@item.ClassID" class="btn btn-sm btn-outline-danger">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
+    </div>
+</div>

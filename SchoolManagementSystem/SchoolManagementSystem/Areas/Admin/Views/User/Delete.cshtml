@@ -1,0 +1,17 @@
+﻿@model SchoolManagement.BusinessLogic.Dto.ApplicationUserDTO
+
+<h2>Delete User</h2>
+
+<h3>Are you sure you want to delete this user?</h3>
+
+<div>
+    <h4>@Model.FirstName @Model.LastName</h4>
+    <p><strong>Email : </strong>@Model.Email</p>
+    <p><strong>Role : </strong>@string.Join(" , ",@Model.Roles.ToList())</p>
+</div>
+
+<form asp-action="Delete" method="post">
+    <input type="hidden" asp-for="Id" />
+    <button type="submit" class="btn btn-danger">Delete</button>
+    <a asp-action="Index" class="btn btn-secondary">Cancel</a>
+</form>
