@@ -1,4 +1,4 @@
-﻿// Licensed to the .NET Foundation under one or more agreements.
+// Licensed to the .NET Foundation under one or more agreements.
 // The .NET Foundation licenses this file to you under the MIT license.
 #nullable disable
 
@@ -103,6 +103,25 @@ namespace SchoolManagementSystem.Areas.Identity.Pages.Account
                 if (result.Succeeded)
                 {
                     _logger.LogInformation("User logged in.");
+
+                    var user = await _userManager.FindByEmailAsync(Input.Email);
+                    if (user == null)
+                    {
+                        user = await _userManager.FindByNameAsync(Input.Email);
+                    }
+
+                    if (user != null && (returnUrl == "/" || returnUrl == "~/" || returnUrl == Url.Content("~/")))
+                    {
+                        var roles = await _userManager.GetRolesAsync(user);
+                        if (roles.Contains(WebSiteRole.WebSite_Student))
+                        {
+                            return LocalRedirect("~/Home/Index"); // Default student dashboard area per layout rules
+                        }
+                        else if (roles.Contains(WebSiteRole.WebSite_Admin))
+                        {
+                            return LocalRedirect("~/Admin/Dashboard");
+                        }
+                    }
 
                     return LocalRedirect(returnUrl);
                 }

@@ -7,11 +7,12 @@ using SchoolManagement.DataAccess.Data;
 using SchoolManagement.DataAccess.Models;
 using SchoolManagement.DataAccess.Repositories;
 using SchoolManagement.DataAccess.Utilities;
+using static SchoolManagement.DataAccess.Repositories.AcademicCalendarRepository;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-var connectionString = builder.Configuration.GetConnectionString("DefaultConnection") ?? throw new InvalidOperationException("Connection string 'DefaultConnection' not found.");
+var connectionString = builder.Configuration.GetConnectionString("Data_Connection") ?? throw new InvalidOperationException("Connection string 'DefaultConnection' not found.");
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlServer(connectionString),ServiceLifetime.Scoped);
 builder.Services.AddDatabaseDeveloperPageExceptionFilter();

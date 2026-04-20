@@ -24,3 +24,16 @@ C:\Users\alsae\Source\Repos\SchoolManagementSystem55\SchoolManagementSystem\Scho
 C:\Users\alsae\Source\Repos\SchoolManagementSystem55\SchoolManagementSystem\SchoolManagement.DataAccess\obj\Debug\net8.0\refint\SchoolManagement.DataAccess.dll
 C:\Users\alsae\Source\Repos\SchoolManagementSystem55\SchoolManagementSystem\SchoolManagement.DataAccess\obj\Debug\net8.0\SchoolManagement.DataAccess.pdb
 C:\Users\alsae\Source\Repos\SchoolManagementSystem55\SchoolManagementSystem\SchoolManagement.DataAccess\obj\Debug\net8.0\ref\SchoolManagement.DataAccess.dll
+C:\Users\user\Desktop\Projects\Yeni klasör (2)\SchoolManagementSystem\SchoolManagement.DataAccess\bin\Debug\net8.0\SchoolManagement.DataAccess.deps.json
+C:\Users\user\Desktop\Projects\Yeni klasör (2)\SchoolManagementSystem\SchoolManagement.DataAccess\bin\Debug\net8.0\SchoolManagement.DataAccess.dll
+C:\Users\user\Desktop\Projects\Yeni klasör (2)\SchoolManagementSystem\SchoolManagement.DataAccess\bin\Debug\net8.0\SchoolManagement.DataAccess.pdb
+C:\Users\user\Desktop\Projects\Yeni klasör (2)\SchoolManagementSystem\SchoolManagement.DataAccess\obj\Debug\net8.0\SchoolManagement.DataAccess.csproj.AssemblyReference.cache
+C:\Users\user\Desktop\Projects\Yeni klasör (2)\SchoolManagementSystem\SchoolManagement.DataAccess\obj\Debug\net8.0\SchoolManagement.DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user\Desktop\Projects\Yeni klasör (2)\SchoolManagementSystem\SchoolManagement.DataAccess\obj\Debug\net8.0\SchoolManagement.DataAccess.AssemblyInfoInputs.cache
+C:\Users\user\Desktop\Projects\Yeni klasör (2)\SchoolManagementSystem\SchoolManagement.DataAccess\obj\Debug\net8.0\SchoolManagement.DataAccess.AssemblyInfo.cs
+C:\Users\user\Desktop\Projects\Yeni klasör (2)\SchoolManagementSystem\SchoolManagement.DataAccess\obj\Debug\net8.0\SchoolManagement.DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\user\Desktop\Projects\Yeni klasör (2)\SchoolManagementSystem\SchoolManagement.DataAccess\obj\Debug\net8.0\SchoolManagement.DataAccess.sourcelink.json
+C:\Users\user\Desktop\Projects\Yeni klasör (2)\SchoolManagementSystem\SchoolManagement.DataAccess\obj\Debug\net8.0\SchoolManagement.DataAccess.dll
+C:\Users\user\Desktop\Projects\Yeni klasör (2)\SchoolManagementSystem\SchoolManagement.DataAccess\obj\Debug\net8.0\refint\SchoolManagement.DataAccess.dll
+C:\Users\user\Desktop\Projects\Yeni klasör (2)\SchoolManagementSystem\SchoolManagement.DataAccess\obj\Debug\net8.0\SchoolManagement.DataAccess.pdb
+C:\Users\user\Desktop\Projects\Yeni klasör (2)\SchoolManagementSystem\SchoolManagement.DataAccess\obj\Debug\net8.0\ref\SchoolManagement.DataAccess.dll

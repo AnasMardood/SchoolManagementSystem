@@ -1,4 +1,4 @@
-﻿@using SchoolManagement.DataAccess.Models
+@using SchoolManagement.DataAccess.Models
 @using SchoolManagement.DataAccess.Utilities
 @inject UserManager<ApplicationUser> UserManager
 <!DOCTYPE html>
@@ -6,240 +6,117 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - School System</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-    <title>@ViewData["Title"] - SchoolManagementSystem</title>
-    <link rel="stylesheet" href="~/css/site.css/>
-    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="~/SchoolManagementSystem.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/modern-site.css" asp-append-version="true" />
 </head>
 <body>
 
-    @if (User.IsInRole(WebSiteRole.WebSite_Admin))
-    {
-  @*       <body>
-            <div class="menu">
-                <ul>
-                    <li class="profile">
-                        @if (UserManager.GetUserAsync(User).Result.Picture != null)
-                        {
-                        <li class="nav-item">
-                            <img class="avatar rounded-circle" alt="profile" src="data:image/*;base64,@(Convert.ToBase64String(UserManager.GetUserAsync(User).Result.Picture))" />
-                        </li>
-                        }
-                    <h2 style="font-size: 15px;">@User.Identity.Name </h2>
-                    </li>
-                    <li>
-                        <a class="active" href="https://localhost:44316/Home">
-                            <i class="fas fa-home"></i>
-                            <p>ِHome</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://localhost:44316/admin/academiccalendars">
-                            <i class="fa-solid fa-calendar-days"></i>
-                            <p>Academic Calendars</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://localhost:44316/admin/Advisor">
-                            <i class="fa-solid fa-chalkboard-user"></i>
-
-
-                            <p>Advisor</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://localhost:44316/admin/Attendance">
-                            <i class="fa-solid fa-book-open-reader"></i>
-                            <p>Attendance</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://localhost:44316/admin/Classes">
-                            <i class="fa-solid fa-school-circle-check"></i>
-                            <p>Classes</p>
-                        </a>
-                    </li>
-
-
-                    <li>
-                        <a href="https://localhost:44316/admin/Materials">
-                            <i class="fa-solid fa-notes-medical"></i>
-                            <p>Materials</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://localhost:44316/admin/Roles">
-                            <i class="fa-solid fa-hand-sparkles"></i>
-                            <p>Roles</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://localhost:44316/admin/semesters">
-                            <i class="fa-solid fa-s"></i>
-                            <p>Semesters</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://localhost:44316/admin/Student">
-                            <i class="fa-solid fa-graduation-cap"></i>
-                            <p>Student</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://localhost:44316/admin/StudentMark">
-                            <i class="fa-brands fa-markdown"></i>
-                            <p>Student Mark</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://localhost:44316/admin/User">
-                            <i class="fa-solid fa-people-line"></i>
-                            <p>User</p>
-                        </a>
-                    </li>
-
-                    <partial name="_LoginPartial" />
-                </ul>
-            </div>
-
-        </body> *@
-        <li class="nav-item">
-            <a class="nav-link text-dark" asp-area="Admin" asp-controller="Dashboard" asp-action="Index">Admin Dashboard</a>
-        </li>
-    }
-    else if (User.IsInRole(WebSiteRole.WebSite_Student))
-        {
-
-        <body>
-            <div class="menu">
-                <ul>
-                    <li class="profile">
-                        <div class="img-box">
-                            <img src="~/bil_müh_tas/12.jpeg" alt="profile">
-                        </div>
-                        <h2>sami mulla hamid</h2>
-                    </li>
-                    <li>
-                        <a class="active" href="https://localhost:7267/bil_m%C3%BCh_tas/index.html">
-                            <i class="fas fa-home"></i>
-                            <p>ِAna sayfa</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="~/bil_müh_tas/Ders programı.html">
-                            <i class="fa-solid fa-bag-shopping"></i>
-                            <p>Dars programı</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="~/bil_müh_tas/Öğrenci Notları.html">
-                            <i class="fa-solid fa-person-chalkboard"></i>
-                            <p>Öğrenci Notları</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="~/bil_müh_tas/Sinav Takvimi.html">
-                            <i class="fa-solid fa-laptop-file"></i>
-                            <p>Sinav Takvimi</p>
-                        </a>
-                    </li>
-
-
-
-                    <li>
-                        <a href="~/bil_müh_tas/Profile.html">
-                            <i class="fa-solid fa-user-graduate"></i>
-                            <p>Profile</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="~/bil_müh_tas/Akadamik Takvimi.html">
-                            <i class="fa-solid fa-calendar-days"></i>
-                            <p>Akadamik Takvimi</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="~/bil_müh_tas/Vali Bilgileri.html">
-                            <i class="fa-solid fa-restroom"></i>
-                            <p>Vali Bilgileri</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="~/bil_müh_tas/Dersler.html">
-                            <i class="fa-brands fa-readme"></i>
-                            <p>Dersler</p>
-                        </a>
-                    </li>
-                    <partial name="_LoginPartial" />
-
-
-                </ul>
-            </div>
-           
-
-          
- @*            <div class="content">
-                <div class="title-info">
-                    <p>Ana Sayfa</p>
-                    <i class="fas fa-chart-bar"></i>
-                </div>
-
-
-                <div class="data-info">
-                    <div class="box">
-                        <i class="fas fa-user"></i>
-                        <div class="data">
-                            <p>Devamsız Gün Sayı</p>
-                            <span>5</span>               <!--user sayı -->
-                        </div>
-                    </div>
-                    <div class="box">
-                        <i class="fa-solid fa-bars-progress"></i>
-                        <div class="data">
-                            <p>Tamamlayın ödevleri</p>
-                            <span>2</span>               <!--user sayı -->
-                        </div>
-                    </div>
-                    <div class="box">
-                        <i class="fa-solid fa-align-justify"></i>
-                        <div class="data">
-                            <p>Beklenin ödevleri</p>
-                            <span>100</span>               <!--user sayı -->
-                        </div>
-                    </div>
-                    <div class="box">
-                        <i class="fa-solid fa-volume-high"></i>
-                        <div class="data">
-                            <p>Duyurular</p>
-                            <span>100</span>               <!--user sayı -->
-                        </div>
-                    </div>
-                    <div class="box">
-                        <i class="fa-solid fa-comments"></i>
-                        <div class="data">
-                            <p>Mesajları</p>
-                            <span>100</span>               <!--user sayı -->
-                        </div>
-                    </div>
-                </div>
-            </div> *@
+    <div class="app-wrapper">
         
-        </body>
-
-@*             <li class="nav-item">
-                <a class="nav-link text-dark" asp-area="Student" asp-controller="Dashboard" asp-action="Index">Student Dashboard</a>
-            </li> *@
+        <!-- Sidebar Navigation -->
+        @if (User.Identity.IsAuthenticated)
+        {
+            <aside class="app-sidebar">
+                <div class="sidebar-header">
+                    <h4><i class="fa-solid fa-graduation-cap me-2"></i> School System</h4>
+                </div>
+                <nav class="sidebar-nav">
+                    
+                    @if (User.IsInRole(WebSiteRole.WebSite_Admin))
+                    {
+                        <div class="px-4 py-2 text-muted small fw-bold text-uppercase">Admin Panel</div>
+                        <a class="sidebar-nav-link" href="/Admin/Dashboard">
+                            <i class="fas fa-home"></i> <span>Dashboard</span>
+                        </a>
+                        <a class="sidebar-nav-link" href="/Admin/AcademicCalendars">
+                            <i class="fa-solid fa-calendar-days"></i> <span>Academic Calendars</span>
+                        </a>
+                        <a class="sidebar-nav-link" href="/Admin/Advisor">
+                            <i class="fa-solid fa-chalkboard-user"></i> <span>Advisors</span>
+                        </a>
+                        <a class="sidebar-nav-link" href="/Admin/Attendance">
+                            <i class="fa-solid fa-book-open-reader"></i> <span>Attendance</span>
+                        </a>
+                        <a class="sidebar-nav-link" href="/Admin/Classes">
+                            <i class="fa-solid fa-school-circle-check"></i> <span>Classes</span>
+                        </a>
+                        <a class="sidebar-nav-link" href="/Admin/Materials">
+                            <i class="fa-solid fa-notes-medical"></i> <span>Materials</span>
+                        </a>
+                        <a class="sidebar-nav-link" href="/Admin/Roles">
+                            <i class="fa-solid fa-hand-sparkles"></i> <span>Roles</span>
+                        </a>
+                        <a class="sidebar-nav-link" href="/Admin/Semesters">
+                            <i class="fa-solid fa-s"></i> <span>Semesters</span>
+                        </a>
+                        <a class="sidebar-nav-link" href="/Admin/Student">
+                            <i class="fa-solid fa-user-graduate"></i> <span>Students</span>
+                        </a>
+                        <a class="sidebar-nav-link" href="/Admin/StudentMark">
+                            <i class="fa-brands fa-markdown"></i> <span>Student Marks</span>
+                        </a>
+                        <a class="sidebar-nav-link" href="/Admin/User">
+                            <i class="fa-solid fa-people-line"></i> <span>Users</span>
+                        </a>
+                    }
+                    else if (User.IsInRole(WebSiteRole.WebSite_Student))
+                    {
+                        <!-- Student Menu mimicking old structure but cleaned up -->
+                        <div class="px-4 py-2 text-muted small fw-bold text-uppercase">Student Portal</div>
+                        <a class="sidebar-nav-link" href="/Home/Index">
+                            <i class="fas fa-home"></i> <span>Home</span>
+                        </a>
+                        <a class="sidebar-nav-link" href="/Student/Dashboard/Schedule">
+                            <i class="fa-solid fa-calendar-week"></i> <span>Schedule</span>
+                        </a>
+                        <a class="sidebar-nav-link" href="/Student/Dashboard/Grades">
+                            <i class="fa-solid fa-star"></i> <span>Grades</span>
+                        </a>
+                        <a class="sidebar-nav-link" href="/Student/Dashboard/Exams">
+                            <i class="fa-solid fa-clock"></i> <span>Exam Schedule</span>
+                        </a>
+                        <a class="sidebar-nav-link" href="/Identity/Account/Manage">
+                            <i class="fa-solid fa-user-graduate"></i> <span>Profile</span>
+                        </a>
+                        <a class="sidebar-nav-link" href="/Student/Dashboard/AcademicCalendar">
+                            <i class="fa-solid fa-calendar-days"></i> <span>Academic Calendar</span>
+                        </a>
+                        <a class="sidebar-nav-link" href="/Student/Dashboard/ParentInfo">
+                            <i class="fa-solid fa-restroom"></i> <span>Parent Info</span>
+                        </a>
+                        <a class="sidebar-nav-link" href="/Student/Dashboard/Courses">
+                            <i class="fa-brands fa-readme"></i> <span>Courses</span>
+                        </a>
+                    }
+                </nav>
+            </aside>
         }
 
-    <div class="container">
-        <main role="main" class="pb-3">
-            @RenderBody()
-        </main>
+        <!-- Main Content Area -->
+        <div class="app-main @(!User.Identity.IsAuthenticated ? "ms-0" : "")">
+            
+            <!-- Top Header -->
+            <header class="app-header">
+                <div class="d-flex align-items-center">
+                    @if (User.Identity.IsAuthenticated)
+                    {
+                        <h5 class="mb-0 text-muted fw-normal d-none d-md-block">Welcome, @User.Identity.Name</h5>
+                    }
+                </div>
+                <div>
+                     <partial name="_LoginPartial" />
+                </div>
+            </header>
+
+            <!-- Page Content -->
+            <main class="app-content">
+                @RenderBody()
+            </main>
+        </div>
     </div>
 
-   
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>

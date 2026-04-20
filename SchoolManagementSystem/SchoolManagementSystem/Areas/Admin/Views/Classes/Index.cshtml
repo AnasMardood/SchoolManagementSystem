@@ -1,17 +1,16 @@
-﻿@model IEnumerable<SchoolManagement.BusinessLogic.Dto.ClassDTO>
+@model IEnumerable<SchoolManagement.BusinessLogic.Dto.ClassDTO>
 
 @{
     ViewData["Title"] = "Classes";
 }
-<div class="content">
-    <div class="title-info">
-        <p>Classes</p>
-        <i class="fas fa-chart-bar"></i>
+<div class="modern-card mt-4">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <h4 class="card-title-modern m-0"><i class="fa-solid fa-school-circle-check text-primary"></i> Classes Management</h4>
+        <a asp-action="Create" class="btn btn-modern btn-modern-primary"><i class="fa-solid fa-plus me-1"></i> Create New</a>
     </div>
-<p>
-    <a asp-action="Create" class="btn btn-primary">Create New</a>
-</p>
-<table class="table">
+
+    <div class="table-responsive">
+        <table class="table modern-table">
     <thead>
         <tr>
             <th>
@@ -33,10 +32,12 @@
                 @Html.DisplayFor(modelItem => item.ClassName)
             </td>
             <td>
-                    <a asp-action="Edit" asp-route-id="@item.ClassID" class="button">Edit</a> |
-                    <a asp-action="Delete" asp-route-id="@item.ClassID" class="button">Delete</a>
+                    <a asp-action="Edit" asp-route-id="@item.ClassID" class="btn btn-sm btn-outline-primary">Edit</a> |
+                    <a asp-action="Delete" asp-route-id="@item.ClassID" class="btn btn-sm btn-outline-danger">Delete</a>
             </td>
         </tr>
 }
     </tbody>
 </table>
+    </div>
+</div>

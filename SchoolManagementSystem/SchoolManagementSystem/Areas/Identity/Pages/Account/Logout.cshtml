@@ -1,21 +1,29 @@
-﻿@page
+@page
 @model LogoutModel
 @{
     ViewData["Title"] = "Log out";
 }
 
-<header>
-    <h1>@ViewData["Title"]</h1>
-    @{
-        if (User.Identity?.IsAuthenticated ?? false)
-        {
-            <form class="form-inline" asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="@Url.Page("/", new { area = "" })" method="post">
-                <button type="submit" class="nav-link btn btn-link text-dark">Click here to Logout</button>
-            </form>
+<div class="auth-wrapper">
+    <div class="modern-card auth-card shadow-lg text-center p-5">
+        <div class="mb-4">
+            <h2 class="fw-bold text-primary" style="font-size: 3rem;"><i class="fa-solid fa-right-from-bracket"></i></h2>
+            <h4 class="fw-bold text-dark mt-3">@ViewData["Title"]</h4>
+        </div>
+        
+        @{
+            if (User.Identity?.IsAuthenticated ?? false)
+            {
+                <p class="text-muted mb-4">Are you sure you want to log out?</p>
+                <form class="form-inline d-inline" asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="@Url.Page("/", new { area = "" })" method="post">
+                    <button type="submit" class="btn btn-modern btn-modern-primary px-4 py-2">Confirm Logout</button>
+                </form>
+            }
+            else
+            {
+                <p class="text-muted mb-4">You have successfully logged out of the application.</p>
+                <a href="/" class="btn btn-modern btn-outline-secondary px-4 py-2">Return Home</a>
+            }
         }
-        else
-        {
-            <p>You have successfully logged out of the application.</p>
-        }
-    }
-</header>
+    </div>
+</div>

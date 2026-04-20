@@ -1,0 +1,43 @@
+@model IEnumerable<SchoolManagement.DataAccess.Models.AcademicCalendar>
+@{
+    ViewData["Title"] = "Academic Calendar";
+}
+
+<div class="modern-card mt-4">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <h4 class="card-title-modern m-0"><i class="fa-solid fa-calendar-days text-info"></i> Academic Calendar</h4>
+    </div>
+
+    <div class="table-responsive">
+        <table class="table modern-table">
+            <thead>
+                <tr>
+                    <th>Event Title</th>
+                    <th>Description</th>
+                    <th>Start Date</th>
+                    <th>End Date</th>
+                </tr>
+            </thead>
+            <tbody>
+                @if(Model != null && Model.Any())
+                {
+                    foreach (var item in Model)
+                    {
+                        <tr>
+                            <td class="fw-bold">@item.EventTitle</td>
+                            <td class="text-muted">@item.Description</td>
+                            <td>@item.StartDate.ToString("dd MMMM yyyy")</td>
+                            <td>@item.EndDate.ToString("dd MMMM yyyy")</td>
+                        </tr>
+                    }
+                }
+                else
+                {
+                    <tr>
+                        <td colspan="4" class="text-center text-muted">No calendar events found.</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
